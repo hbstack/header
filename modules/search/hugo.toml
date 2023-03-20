@@ -1,0 +1,7 @@
+[[module.imports]]
+path = "github.com/hbstack/header"
+
+[[module.imports]]
+path = "github.com/hbstack/search"
+
+[params.hugopress.modules.hb-header-search.hooks.hb-header-togglers-begin]
