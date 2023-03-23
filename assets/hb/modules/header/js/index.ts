@@ -4,7 +4,7 @@ import "js/bootstrap/src/offcanvas";
 (() => {
     document.addEventListener('DOMContentLoaded', () => {
         const header = document.querySelector('.hb-header') as HTMLElement
-        if (!header) {
+        if (!header || window.innerWidth >= 576) {
             return;
         }
 
