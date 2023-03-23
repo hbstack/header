@@ -20,7 +20,6 @@ import "js/bootstrap/src/offcanvas";
 
         let h = 0;
         window.addEventListener('scroll', () => {
-            console.log( document.documentElement.scrollTop, h)
             document.documentElement.scrollTop > h ? hide() : show();
             h = document.documentElement.scrollTop;
         })
