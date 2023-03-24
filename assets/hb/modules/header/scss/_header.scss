@@ -62,6 +62,11 @@ $hb-header-margin-bottom: 2rem;
     }
 }
 
+.hb-header-logo {
+    height: 32px;
+    width: auto;
+}
+
 @if $hb-header-logo-bg {
     .hb-header-logo {
         background: $hb-header-logo-bg;
