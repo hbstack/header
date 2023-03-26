@@ -1,6 +1,6 @@
 {{- $logo := partialCached "hb/functions/logo" . }}
 {{- with $logo }}
-  {{- $logo = $logo.Resize "x48" }}
+  {{- $logo = $logo.Resize "x64" }}
   <img
     src="{{ $logo.Permalink }}"
     alt="Logo"
