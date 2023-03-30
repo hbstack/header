@@ -3,6 +3,7 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mF
 github.com/hbstack/hb v0.1.2 h1:GEx20g1w53Do3bu3aiyK5ubfkpjQIcHNHBx1lJKCzCk=
 github.com/hbstack/hb v0.1.2/go.mod h1:j1CyW+HWmbqdAgagn8FPEtdTGZEdTHVZdml+vqfsKiU=
 github.com/hbstack/hb v0.1.3/go.mod h1:p+O1/GkVyi+dksOPttoPWB1g7Tjtf7Mhxu+YfYwFn4M=
+github.com/hbstack/hb v0.1.4/go.mod h1:MRDu9z0Iq6B3xTCS8QQ5zX0hzGKDQYMxNXm+GLXinqU=
 github.com/hugomods/icons v0.6.0 h1:G6RU93okhPPRDh/jqcew9gwkcYpSpg0rCBv4S6yUAFw=
 github.com/hugomods/icons/vendors/bootstrap v0.4.0 h1:+2r0aWG/qdsdLBtQ+b5VN7z3Kh/M0/TduF9ZxW0d9Kg=
 github.com/hugomods/icons/vendors/bootstrap v0.4.0/go.mod h1:my/xxEyTvWAym67NVfhWRvdQKrHcscU43neIBXnlbfM=
