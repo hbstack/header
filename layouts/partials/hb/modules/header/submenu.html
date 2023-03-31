@@ -17,7 +17,7 @@
       {{- with $menu.Params.icon }}
         <div
           class="dropdown-item-icon bg-body-secondary bg-gradient rounded me-2 p-2">
-          {{- partial "hb/modules/header/submenu-icon" . }}
+          {{- partialCached "hb/modules/header/submenu-icon" . . }}
         </div>
       {{- end }}
       <div class="dropdown-item-content">

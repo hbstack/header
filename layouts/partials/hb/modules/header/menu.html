@@ -11,7 +11,7 @@
     {{/* Split the toggle button and menu link if URL presents. */}}
     {{- if $menu.URL }}
       <a
-        class="nav-link pe-0 d-inline-flex align-items-center"
+        class="nav-link pe-0 d-inline-flex align-items-center{{ cond $current ` active` `` }}"
         href="{{ $menu.URL }}"
         {{ if $current }}aria-current="page"{{ end }}
         {{ if $isExternal }}
@@ -58,7 +58,7 @@
       {{- end }}
       {{- range $menu.Children }}
         {{- $submenuCtx := dict "Menu" . "Page" $page }}
-        {{- partialCached "hb/modules/header/submenu" $submenuCtx $submenuCtx }}
+        {{- partial "hb/modules/header/submenu" $submenuCtx }}
       {{- end }}
     </ul>
   </li>
