@@ -1,7 +1,19 @@
-<!-- Button trigger modal -->
-<button
-  type="button"
-  class="search-modal-toggle hb-header-search-toggle border-0 bg-transparent px-2"
-  aria-label="Toggle search">
-  {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" "search") }}
-</button>
+<div class="search-modal-toggle hb-header-search-form position-relative d-flex">
+  <button
+    type="button"
+    class="hb-header-search-icon border-0 bg-transparent px-2"
+    aria-label="Toggle search">
+    {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" "search") }}
+  </button>
+  <input
+    class="form-control form-control-sm rounded-5 d-none d-xxl-block ms-xxl-1"
+    disabled
+    placeholder="{{ i18n `search` }}" />
+  {{- with index site.Params.search "shortcut_search" }}
+    <span class="hb-header-search-keys position-absolute d-none d-xxl-block">
+      {{- range . }}
+        <kbd>{{ replace . "Control" "CTRL" | title }}</kbd>
+      {{- end }}
+    </span>
+  {{- end }}
+</div>
