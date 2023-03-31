@@ -3,9 +3,9 @@ $hb-header-menu-margin-x: 0.125rem;
 @include hb-header-theme("") {
     .hb-header {
         .navbar {
-            --#{$prefix}navbar-hover-color: var(--#{$prefix}primary-text);
-            --#{$prefix}navbar-active-color: var(--#{$prefix}primary-text);
-            --#{$prefix}nav-link-hover-color: var(--#{$prefix}primary-text);
+            --#{$prefix}navbar-hover-color: var(--#{$prefix}primary-text-emphasis);
+            --#{$prefix}navbar-active-color: var(--#{$prefix}primary-text-emphasis);
+            --#{$prefix}nav-link-hover-color: var(--#{$prefix}primary-text-emphasis);
         }
     }
 
@@ -21,7 +21,7 @@ $hb-header-menu-margin-x: 0.125rem;
                 padding-right: 0;
 
                 &::after {
-                    border-bottom: solid 3px var(--#{$prefix}primary-text);
+                    border-bottom: solid 3px var(--#{$prefix}primary-text-emphasis);
                     bottom: -#{$navbar-padding-y};
                     display: block;
                     content: "";
