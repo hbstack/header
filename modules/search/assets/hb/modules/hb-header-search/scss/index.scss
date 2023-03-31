@@ -16,6 +16,7 @@
 
 .hb-header-search-form {
     cursor: pointer;
+    margin-bottom: 0.25rem;
 
     input {
         cursor: pointer;
@@ -25,6 +26,10 @@
 }
 
 .hb-header-search-keys {
-    top: 0.1rem;
+    top: 0.075rem;
     right: 0.5rem;
+
+    kbd {
+        font-size: 0.75rem;
+    }
 }
