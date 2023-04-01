@@ -4,6 +4,14 @@ $hb-header-menus-alignment: "center" !default;
 $hb-header-logo-bg: null !default;
 $hb-header-margin-bottom: 2rem;
 
+:root {
+    --#{$prefix}header-navbar-active-color: var(--#{$prefix}primary);
+
+    &[data-bs-theme="dark"] {
+      --#{$prefix}header-navbar-active-color: var(--#{$prefix}primary-text-emphasis);
+    }
+}
+
 @if $hb-header-sticky {
     html {
         scroll-padding-top: $hb-scroll-padding-top;
