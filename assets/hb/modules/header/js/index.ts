@@ -19,9 +19,12 @@ import "js/bootstrap/src/offcanvas";
         }
 
         let h = 0;
+        const threshold = 20;
         window.addEventListener('scroll', () => {
-            document.documentElement.scrollTop > h ? hide() : show();
-            h = document.documentElement.scrollTop;
+            if (Math.abs(document.documentElement.scrollTop - h) > threshold) {
+                document.documentElement.scrollTop > h ? hide() : show();
+                h = document.documentElement.scrollTop;
+            }
         })
     })
 })()
