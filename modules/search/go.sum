@@ -1,5 +1,6 @@
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20001 h1:xkJJPlzmGxKitnbJHlm7ARK7OJvWsglcM0FbzHS2Neg=
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20001/go.mod h1:QKCtI6xnS1xr+zaQyVR8KF4Ec1UvErhvsazehZj/MlI=
+github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20002/go.mod h1:Q6TrjM78wB13zkOMBSV4IZIZ54tbshmE2fem9CYx2pU=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hbstack/header v0.1.8 h1:xOYwg7odpTu7Ba/ly6s690JaSPu95V8R3XRI5Guie54=
 github.com/hbstack/header v0.1.8/go.mod h1:GTEtmH6u2C2gaJoadFE41yBqo1vH6r9Zu5AJYXx4U48=
@@ -19,5 +20,6 @@ github.com/hugomods/search v0.1.1/go.mod h1:CtE2vosGhBCUADzSEHYf2VPJbm3SQegtC/VY
 github.com/krisk/Fuse v6.6.2+incompatible h1:laigOpZFs/xUi9zGjVu5t19bcvzRVufoXCnPSgQZmYI=
 github.com/krisk/Fuse v6.6.2+incompatible/go.mod h1:3moWv8rDjwoKic9nwiPLgZjldkbdTAbtzJHCu/Vsj4A=
 github.com/twbs/bootstrap v5.3.0-alpha2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
+github.com/twbs/bootstrap v5.3.0-alpha3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.10.3 h1:8i0wcDkk04KXd2ofLtMHUERkA5OkrpAzDyBVv/PJaL0=
 github.com/twbs/icons v1.10.3/go.mod h1:GnRlymgVWp5iVJCMa0Me5b6tFyGpVc2bSxPMRGIJmyA=
