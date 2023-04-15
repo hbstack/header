@@ -1,12 +1,6 @@
 .hb-header-search-icon {
     color: var(--#{$prefix}navbar-color);
 
-    &:hover {
-        svg {
-            color: var(--#{$prefix}navbar-hover-color);
-        }
-    }
-
     @include media-breakpoint-up(xxl) {
         position: absolute;
         left: 0.25rem;
