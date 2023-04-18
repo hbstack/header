@@ -3,6 +3,7 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20002/go.mod h1:Q6TrjM78
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hbstack/header v0.1.11 h1:ojtefTTz3VcqZEtBshJwe1/b78YJEQhj23JeVFFxaWA=
 github.com/hbstack/header v0.1.11/go.mod h1:2oiFsujD8aUmdmBfcSHYvdOg7mYLqYPqB7zaXHkH+/A=
+github.com/hbstack/header v0.1.12/go.mod h1:BRtu4Awm9tOa4b1wKzY8TZRhsm9IqVJh67CWnh09Yco=
 github.com/hbstack/search v0.1.7 h1:5u1aCCAqtuh0vHENqGOvKsJ0q7il7kO2zYnBWjETAFw=
 github.com/hbstack/search v0.1.7/go.mod h1:VLRF5mP2a1YBMH+o+0zEFEclb+NzKlpZmIfY+1aIGDM=
 github.com/hugomods/base v0.1.0 h1:3o9Y85BvXHjkYzZfswM/EtthQ8GOYKN8aXHkIWqu3/8=
