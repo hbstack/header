@@ -1,0 +1,41 @@
+/* stylelint-disable selector-class-pattern, alpha-value-notation, media-feature-range-notation */
+
+.DocSearch-Container {
+    --docsearch-modal-background: var(--#{$prefix}body-bg) !important;
+    --docsearch-text-color: var(--#{$prefix}body-color) !important;
+    --docsearch-primary-color: var(--#{$prefix}primary) !important;
+    --docsearch-searchbox-focus-background: var(--#{$prefix}body-bg) !important;
+    --docsearch-hit-background: var(--#{$prefix}body-bg) !important;
+    --docsearch-hit-color: var(--#{$prefix}body-color) !important;
+    --docsearch-hit-shadow: 0 1px 3px 0 var(--hb-border-color) !important;
+    --docsearch-footer-background: var(--#{$prefix}body-bg) !important;
+    --docsearch-footer-shadow: 0 -1px 0 0 var(--hb-border-color), 0 -3px 6px 0 rgba(69, 98, 155, 0.12) !important;
+
+    z-index: 1070 !important;
+
+    @media (width: 750px) {
+        position: fixed;
+    }
+}
+
+.DocSearch-Button {
+    @media (max-width: 750px) {
+        --docsearch-text-color: var(--#{$prefix}navbar-color) !important;
+
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+}
+
+.DocSearch-Hits {
+    mark {
+        text-decoration: underline;
+        padding: 0;
+    }
+}
+
+.DocSearch-Hit-icon {
+    display: flex;
+}
+
+/* stylelint-enable selector-class-pattern, alpha-value-notation, media-feature-range-notation */
