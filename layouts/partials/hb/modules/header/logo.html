@@ -1,10 +1,11 @@
 {{- $logo := partialCached "hb/functions/logo" . }}
 {{- with $logo }}
-  {{- $logo = $logo.Resize "x64" }}
+  {{- $logo = partial "hb/functions/image-resize" (dict "Image" $logo "Size" "x64") }}
+  {{- $size := partial "hb/functions/image-size" $logo }}
   <img
     src="{{ $logo.Permalink }}"
     alt="Logo"
-    width="{{ $logo.Width }}"
-    height="{{ $logo.Height }}"
-    class="hb-header-logo d-inline-block align-text-top me-1" />
+    width="{{ $size.Width }}"
+    height="{{ $size.Height }}"
+    class="hb-header-logo d-inline-block align-text-top me-2" />
 {{- end -}}
