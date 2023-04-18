@@ -1,0 +1,19 @@
+[[module.imports]]
+path = "github.com/hbstack/header"
+
+[params.hugopress.modules.hb-header-docsearch.hooks.head-end]
+cacheable = true
+
+[params.hugopress.modules.hb-header-docsearch.hooks.body-end]
+cacheable = true
+
+[params.hugopress.modules.hb-header-docsearch.hooks.hb-header-togglers-begin]
+cacheable = true
+
+[params.docsearch]
+css_url = "https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+js_url = "https://cdn.jsdelivr.net/npm/@docsearch/js@3"
+app_id = ""
+api_key = ""
+debug = false
+index_name = ""
