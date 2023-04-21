@@ -1,4 +1,10 @@
-<a class="navbar-brand d-flex align-items-center" href="{{ site.Home.RelPermalink }}">
-  {{- partialCached "hb/modules/header/logo" . -}}
-  {{- partialCached "hb/modules/header/functions/brand" . -}}
-</a>
+{{- $logo := partialCached "hb/modules/header/logo" . }}
+{{- $brand := partialCached "hb/modules/header/functions/brand" . }}
+{{- if or $logo $brand }}
+  <a
+    class="navbar-brand d-flex align-items-center"
+    href="{{ site.Home.RelPermalink }}">
+    {{- $logo -}}
+    {{- $brand -}}
+  </a>
+{{- end }}
