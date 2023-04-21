@@ -1,6 +1,10 @@
 $hb-header-menu-margin-x: 0.125rem;
 
 @include hb-header-theme("") {
+    .navbar-brand {
+        padding-top: $navbar-brand-padding-y - 0.19rem; // 3px
+    }
+
     .hb-header {
         .navbar {
             --#{$prefix}navbar-hover-color: var(--#{$prefix}header-navbar-active-color);
