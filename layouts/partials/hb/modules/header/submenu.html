@@ -16,7 +16,7 @@
       {{- $menu.Pre -}}
       {{- with $menu.Params.icon }}
         <div
-          class="dropdown-item-icon bg-body-secondary bg-gradient rounded me-2 p-2">
+          class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2">
           {{- partialCached "hb/modules/header/submenu-icon" . . }}
         </div>
       {{- end }}
