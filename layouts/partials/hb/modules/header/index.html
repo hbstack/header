@@ -37,8 +37,8 @@
           {{/* Menus begin. */}}
           <ul class="hb-header-menus navbar-nav flex-row flex-wrap">
             {{- $page := . }}
-            {{- range .Site.Menus.main -}}
-              {{- $menuCtx := dict "Menu" . "Page" $page }}
+            {{- range $i, $menu := .Site.Menus.main -}}
+              {{- $menuCtx := dict "Menu" $menu "Page" $page "IsFirst" (eq 0 $i) }}
               {{- partial "hb/modules/header/menu" $menuCtx }}
             {{- end -}}
           </ul>

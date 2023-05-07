@@ -48,7 +48,7 @@
       </a>
     {{- end }}
     <ul
-      class="hb-header-submenus dropdown-menu dropdown-menu-end"
+      class="hb-header-submenus dropdown-menu{{ cond .IsFirst `` ` dropdown-menu-end` }}"
       aria-labelledby="{{ $menuID }}"
       data-bs-popper="none">
       {{- with $menu.Params.header }}
