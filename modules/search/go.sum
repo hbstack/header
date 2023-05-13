@@ -16,6 +16,7 @@ github.com/hugomods/search v0.1.2 h1:WOhPTlPIGqfh3ZYKAsgPfC9pW80rW2axAE0MTErz+Uk
 github.com/hugomods/search v0.1.2/go.mod h1:DvQd/Hm/l+iPnOqH06c2F1Yk5UilWpTJwrmo12uSO/Q=
 github.com/hugomods/search v0.2.0/go.mod h1:ubxewYgrPKLvsfKvvp3xIHSEQUkST8LO7R1dHZNVBAA=
 github.com/hugomods/search v0.2.1/go.mod h1:ubxewYgrPKLvsfKvvp3xIHSEQUkST8LO7R1dHZNVBAA=
+github.com/hugomods/search v0.3.1/go.mod h1:HAGNaRUV4YKc73pt4WEM0lxIXrbOcKHHDgy9FvC+SxY=
 github.com/krisk/Fuse v6.6.2+incompatible h1:laigOpZFs/xUi9zGjVu5t19bcvzRVufoXCnPSgQZmYI=
 github.com/krisk/Fuse v6.6.2+incompatible/go.mod h1:3moWv8rDjwoKic9nwiPLgZjldkbdTAbtzJHCu/Vsj4A=
 github.com/twbs/bootstrap v5.3.0-alpha3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
