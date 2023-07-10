@@ -24,7 +24,8 @@
                 "modules/search",
                 "modules/socials",
                 "modules/theme-toggle",
-                "themes/classic"
+                "themes/classic",
+                "themes/pills"
             ]
         },
         "modules/docsearch": {
@@ -44,6 +45,9 @@
         },
         "themes/classic": {
             "component": "themes/classic"
+        },
+        "themes/pills": {
+            "component": "themes/pills"
         }
     }
 }
