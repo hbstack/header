@@ -5,6 +5,7 @@
     "release-type": "go",
     "tag-separator": "/",
     "changelog-sections": [
+        { "type": "BREAKING CHANGE", "section": "BREAKING CHANGES 💥"},
         { "type": "chore", "section": "Miscellaneous Chores", "hidden": true },
         { "type": "ci", "section": "Continuous Integration" },
         { "type": "docs", "section": "Documentation 📝" },
