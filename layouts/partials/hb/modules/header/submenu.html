@@ -3,6 +3,15 @@
 {{- $menu := .Menu }}
 {{- $url := $menu.URL | absURL }}
 {{- $active := partial "hb/modules/header/functions/is-current" (dict "Page" .Page "Menu" .Menu) }}
+{{- $isExternal := not (hasPrefix $url $baseURL) }}
+{{- $target := "" }}
+{{- $rel := "" }}
+{{- if $isExternal }}
+  {{- $target = "_blank" }}
+  {{- $rel = "external" }}
+{{- end }}
+{{- $target = default $target .Menu.Params.target }}
+{{- $rel = default $rel .Menu.Params.rel }}
 <li>
   {{- if $menu.Params.divider }}
     <hr class="dropdown-divider" />
@@ -10,9 +19,8 @@
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center{{ cond $active ` active` `` }}"
       href="{{ $url }}"
-      {{ if not (hasPrefix $url $baseURL) }}
-        target="_blank" rel="noopener noreferrer"
-      {{ end }}>
+      {{ with $target }}target="{{ . }}"{{ end }}
+      {{ with $rel }}rel="{{ . }}"{{ end }}>
       {{- $menu.Pre -}}
       {{- with $menu.Params.icon }}
         <div
