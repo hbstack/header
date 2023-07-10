@@ -4,6 +4,7 @@
     "monorepo-tags": true,
     "release-type": "go",
     "tag-separator": "/",
+    "separate-pull-requests": true,
     "changelog-sections": [
         { "type": "BREAKING CHANGE", "section": "BREAKING CHANGES 💥"},
         { "type": "chore", "section": "Miscellaneous Chores", "hidden": true },
@@ -23,8 +24,7 @@
                 "modules/search",
                 "modules/socials",
                 "modules/theme-toggle"
-            ],
-            "separate-pull-requests": true
+            ]
         },
         "modules/docsearch": {
             "component": "modules/docsearch"
