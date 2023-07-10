@@ -8,9 +8,3 @@ The universal header for HB framework.
 [![License](https://img.shields.io/github/license/hbstack/header?style=flat-square)](https://github.com/hbstack/header/blob/main/LICENSE)
 [![Version](https://img.shields.io/badge/dynamic/json?color=blue&label=version&query=name&url=https://api.razonyang.com/v1/github/tag/hbstack/header&style=flat-square)](https://github.com/hbstack/header/tags)
 [![Lint](https://github.com/hbstack/header/actions/workflows/lint.yml/badge.svg?style=flat-square)](https://github.com/hbstack/header/actions/workflows/lint.yml)
-
-## Modules
-
-| Name | Path | Version | Docs |
-| ---- | ---- | ---| ---- |
-| ``
