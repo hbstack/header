@@ -4,6 +4,14 @@
 {{- $url := $menu.URL | absURL -}}
 {{- $current := partial "hb/modules/header/functions/is-current" (dict "Page" .Page "Menu" .Menu) }}
 {{- $isExternal := not (hasPrefix $url $baseURL) }}
+{{- $target := "" }}
+{{- $rel := "" }}
+{{- if $isExternal }}
+  {{- $target = "_blank" }}
+  {{- $rel = "external" }}
+{{- end }}
+{{- $target = default $target .Menu.Params.target }}
+{{- $rel = default $rel .Menu.Params.rel }}
 {{- $menuID := printf "header-menu-%s" ($menu.Identifier | lower) }}
 {{- if $menu.HasChildren -}}
   <li
@@ -14,9 +22,8 @@
         class="nav-link pe-0 d-inline-flex align-items-center{{ cond $current ` active` `` }}"
         href="{{ $menu.URL }}"
         {{ if $current }}aria-current="page"{{ end }}
-        {{ if $isExternal }}
-          target="_blank" rel="noopener noreferrer"
-        {{ end }}>
+        {{ with $target }}target="{{ . }}"{{ end }}
+        {{ with $rel }}rel="{{ . }}"{{ end }}>
         {{- partialCached "hb/modules/header/menu-name" $menu $menu -}}
       </a>
       <a
@@ -69,7 +76,8 @@
       class="nav-link{{ cond $current ` active` `` }}"
       {{ if $current }}aria-current="page"{{ end }}
       href="{{ $url }}"
-      {{ if $isExternal }}target="_blank" rel="noopener noreferrer"{{ end }}>
+      {{ with $target }}target="{{ . }}"{{ end }}
+      {{ with $rel }}rel="{{ . }}"{{ end }}>
       {{- partialCached "hb/modules/header/menu-name" $menu $menu -}}
     </a>
   </li>
