@@ -1,0 +1,34 @@
+.hb-header-nav {
+  @extend .bg-body;
+}
+
+.hb-header-menus {
+  gap: 0.25rem;
+}
+
+.hb-header-menu {
+  @include media-breakpoint-down(xxl) {
+    padding: 0 0.5rem;
+  }
+
+  &.active,
+  &:hover {
+    border-radius: 5px;
+    background: var(--#{$prefix}primary);
+    --#{$prefix}navbar-active-color: #fff;
+
+    .nav-link {
+      color: #fff;
+    }
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .hb-header-panel {
+    padding: 0 0.25rem;
+  }
+
+  .hb-header-submenus {
+    margin-bottom: 0.5rem;
+  }
+}
