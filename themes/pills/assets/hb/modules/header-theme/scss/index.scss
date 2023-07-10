@@ -13,9 +13,10 @@
 
   &.active,
   &:hover {
+    --#{$prefix}navbar-active-color: #fff;
+
     border-radius: 5px;
     background: var(--#{$prefix}primary);
-    --#{$prefix}navbar-active-color: #fff;
 
     .nav-link {
       color: #fff;
