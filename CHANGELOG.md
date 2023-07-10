@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/hbstack/header/compare/v0.3.0...v0.4.0) (2023-07-10)
+
+
+### Features ✨
+
+* add the classic theme module ([727a413](https://github.com/hbstack/header/commit/727a413c8e974b45207b17e08d40d6194aec0743))
+
 ## [0.3.0](https://github.com/hbstack/header/compare/v0.2.0...v0.3.0) (2023-07-10)
 
 
