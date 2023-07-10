@@ -4,5 +4,6 @@
     "modules/language-picker": "0.1.2",
     "modules/search": "0.1.10",
     "modules/socials": "0.1.2",
-    "modules/theme-toggle": "0.1.2"
+    "modules/theme-toggle": "0.1.2",
+    "themes/classic": "0.0.1"
 }

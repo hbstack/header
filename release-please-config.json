@@ -23,7 +23,8 @@
                 "modules/language-picker",
                 "modules/search",
                 "modules/socials",
-                "modules/theme-toggle"
+                "modules/theme-toggle",
+                "themes/classic"
             ]
         },
         "modules/docsearch": {
@@ -40,6 +41,9 @@
         },
         "modules/theme-toggle": {
             "component": "modules/theme-toggle"
+        },
+        "themes/classic": {
+            "component": "themes/classic"
         }
     }
 }
