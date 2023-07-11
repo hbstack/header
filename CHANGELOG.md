@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0](https://github.com/hbstack/header/compare/v0.3.0...v0.4.0) (2023-07-11)
+
+
+### Features ✨
+
+* add the classic theme module ([727a413](https://github.com/hbstack/header/commit/727a413c8e974b45207b17e08d40d6194aec0743))
+* add the pills theme ([#127](https://github.com/hbstack/header/issues/127)) ([21851d7](https://github.com/hbstack/header/commit/21851d7a103438c9aaa7444b39ea45c7a18f62e4))
+
 ## [0.3.0](https://github.com/hbstack/header/compare/v0.2.0...v0.3.0) (2023-07-10)
 
 
