@@ -33,10 +33,13 @@ $hb-header-margin-bottom: 2rem;
 
     .dropdown-item-desc {
         font-size: 0.8rem;
-        max-width: 280px;
         opacity: 0.7;
         width: max-content;
         word-break: keep-all;
+
+        @include media-breakpoint-down(xxl) {
+            max-width: 280px;
+        }
     }
 }
 
