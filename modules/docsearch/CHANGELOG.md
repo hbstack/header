@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/hbstack/header/compare/modules/docsearch/v0.1.3...modules/docsearch/v0.1.4) (2023-07-18)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.4.0 ([0cc4db6](https://github.com/hbstack/header/commit/0cc4db635992d28aa69c4f1b9a8d222b736ad4b7))
+
 ## [0.1.3](https://github.com/hbstack/header/compare/modules/docsearch/v0.1.2...modules/docsearch/v0.1.3) (2023-07-11)
 
 
