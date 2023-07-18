@@ -2,7 +2,7 @@
     ".": "0.4.0",
     "modules/docsearch": "0.1.3",
     "modules/language-picker": "0.1.2",
-    "modules/search": "0.1.10",
+    "modules/search": "0.1.11",
     "modules/socials": "0.1.3",
     "modules/theme-toggle": "0.1.2",
     "themes/classic": "0.1.0",
