@@ -38,7 +38,7 @@
           <ul class="hb-header-menus navbar-nav flex-row flex-wrap">
             {{- $page := . }}
             {{- range $i, $menu := .Site.Menus.main -}}
-              {{- $menuCtx := dict "Menu" $menu "Page" $page "IsFirst" (eq 0 $i) }}
+              {{- $menuCtx := dict "Menu" $menu "Page" $page "Index" $i }}
               {{- partial "hb/modules/header/menu" $menuCtx }}
             {{- end -}}
           </ul>
@@ -47,7 +47,7 @@
           <ul class="hb-header-panel navbar-nav flex-row flex-wrap">
             {{- if partial "hugopress/functions/has-modules" "hb-header-panel" }}
               <li class="nav-item py-2 py-xxl-1 col-12 col-xxl-auto">
-                <hr class="d-xxl-none my-2 text-body-50">
+                <hr class="d-xxl-none my-2 text-body-50" />
               </li>
             {{- end }}
             {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-panel" "Page" .) }}
