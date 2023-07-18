@@ -14,8 +14,11 @@
 {{- $rel = default $rel .Menu.Params.rel }}
 {{- $menuID := printf "header-menu-%s" ($menu.Identifier | lower) }}
 {{- if $menu.HasChildren -}}
-  <li
-    class="hb-header-menu nav-item dropdown col-12 col-xxl-auto{{ cond $current ` active` `` }}">
+  {{- $dropdownClasses := slice "hb-header-menu dropdown nav-item col-12 col-xxl-auto" }}
+  {{- if $current }}
+    {{- $dropdownClasses = $dropdownClasses | append "active" }}
+  {{- end }}
+  <li class="{{ delimit $dropdownClasses ` ` }}">
     {{/* Split the toggle button and menu link if URL presents. */}}
     {{- if $menu.URL }}
       <a
@@ -54,8 +57,14 @@
         </div>
       </a>
     {{- end }}
+    {{- $alignment := "" }}
+    {{- if isset $menu.Params "alignment" }}
+      {{- $alignment = printf " dropdown-menu-%s" $menu.Params.alignment }}
+    {{- else if ge .Index 6 }}
+      {{- $alignment = " dropdown-menu-end" }}
+    {{- end }}
     <ul
-      class="hb-header-submenus dropdown-menu{{ cond .IsFirst `` ` dropdown-menu-end` }}"
+      class="hb-header-submenus dropdown-menu{{ $alignment }} "
       aria-labelledby="{{ $menuID }}"
       data-bs-popper="none">
       {{- with $menu.Params.header }}
