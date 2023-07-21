@@ -39,7 +39,7 @@
             {{- $page := . }}
             {{- range $i, $menu := .Site.Menus.main -}}
               {{- $menuCtx := dict "Menu" $menu "Page" $page "Index" $i }}
-              {{- partial "hb/modules/header/menu" $menuCtx }}
+              {{- partialCached "hb/modules/header/menu" $menuCtx $menuCtx }}
             {{- end -}}
           </ul>
           {{/* Menus end. */}}
