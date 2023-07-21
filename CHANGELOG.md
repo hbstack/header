@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/hbstack/header/compare/v0.4.0...v0.4.1) (2023-07-21)
+
+
+### Performance Improvements ⚡️
+
+* caching partials ([#146](https://github.com/hbstack/header/issues/146)) ([339f9ac](https://github.com/hbstack/header/commit/339f9ac839cd09ef2148422f3e81ddc3544cf32d))
+
 ## [0.4.0](https://github.com/hbstack/header/compare/v0.3.0...v0.4.0) (2023-07-18)
 
 
