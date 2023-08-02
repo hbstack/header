@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.5](https://github.com/hbstack/header/compare/modules/socials/v0.1.4...modules/socials/v0.1.5) (2023-08-02)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.4.1 ([7fb4bef](https://github.com/hbstack/header/commit/7fb4befacd66e5a8ae4d2d8b96b2df17c510d30b))
+* **deps:** update module github.com/hugomods/hugopress to v0.2.1 ([03b14f6](https://github.com/hbstack/header/commit/03b14f692b394f1415e2a3ec140648a0e1457210))
+* **deps:** update module github.com/hugomods/icons/vendors/simple-icons to v1.0.7 ([7dafa9b](https://github.com/hbstack/header/commit/7dafa9b7c2c9e3c692d5228ec780ffa5ed569beb))
+* **deps:** update module github.com/hugomods/icons/vendors/simple-icons to v1.0.8 ([3dcbcac](https://github.com/hbstack/header/commit/3dcbcacc04dc4b16e5de7cf0fda781003222825b))
+
 ## [0.1.4](https://github.com/hbstack/header/compare/modules/socials/v0.1.3...modules/socials/v0.1.4) (2023-07-18)
 
 
