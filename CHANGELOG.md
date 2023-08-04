@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.3](https://github.com/hbstack/header/compare/v0.4.2...v0.4.3) (2023-08-04)
+
+
+### Bug Fixes 🐞
+
+* avoid generating invalid style if the logo background is not set ([#158](https://github.com/hbstack/header/issues/158)) ([3662f8c](https://github.com/hbstack/header/commit/3662f8c30338f27fbf2464e04c14b7745d0d7920))
+
+
+### Styles 🎨
+
+* show the shadow only when scrolling ([#162](https://github.com/hbstack/header/issues/162)) ([b87bc7d](https://github.com/hbstack/header/commit/b87bc7dadc57ca1c8c49451f17d47dedfbde583f))
+
 ## [0.4.1](https://github.com/hbstack/header/compare/v0.4.0...v0.4.1) (2023-07-21)
 
 
