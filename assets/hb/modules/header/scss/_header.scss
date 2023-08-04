@@ -20,7 +20,7 @@ $hb-header-margin-bottom: 2rem;
 
 .hb-header {
     margin-bottom: $hb-header-margin-bottom;
-    transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in, box-shadow 1s;
 
     @if $hb-header-sticky {
         @extend .sticky-top;
