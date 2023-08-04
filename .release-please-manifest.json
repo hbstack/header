@@ -5,6 +5,6 @@
     "modules/search": "0.1.12",
     "modules/socials": "0.1.5",
     "modules/theme-toggle": "0.1.4",
-    "themes/classic": "0.1.2",
+    "themes/classic": "0.2.0",
     "themes/pills": "0.1.2"
 }
