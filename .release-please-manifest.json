@@ -4,7 +4,7 @@
     "modules/language-picker": "0.1.4",
     "modules/search": "0.1.13",
     "modules/socials": "0.1.6",
-    "modules/theme-toggle": "0.1.4",
+    "modules/theme-toggle": "0.1.5",
     "themes/classic": "0.2.0",
-    "themes/pills": "0.1.2"
+    "themes/pills": "0.2.0"
 }
