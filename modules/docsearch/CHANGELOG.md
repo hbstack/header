@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.6](https://github.com/hbstack/header/compare/modules/docsearch-v0.1.5...modules/docsearch/v0.1.6) (2023-08-04)
+## [0.1.6](https://github.com/hbstack/header/compare/modules/docsearch-v0.1.5...modules/docsearch/v0.1.6) (2023-08-05)
 
 
 ### Continuous Integration
