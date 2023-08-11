@@ -2,7 +2,6 @@
     "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
     "bootstrap-sha": "24a92d71a4d2687a68fa2e4640d865efe57b00a4",
     "monorepo-tags": true,
-    "separate-pull-requests": true,
     "release-type": "go",
     "tag-separator": "/",
     "changelog-sections": [
@@ -19,35 +18,57 @@
     "packages": {
         ".": {
             "exclude-paths": [
-                "modules/docsearch",
-                "modules/language-picker",
-                "modules/search",
-                "modules/socials",
-                "modules/theme-toggle",
-                "themes/classic",
-                "themes/pills"
-            ]
+                "modules",
+                "themes"
+            ],
+            "component": "."
         },
         "modules/docsearch": {
-            "component": "modules/docsearch"
+            "component": "modules/docsearch",
+            "dependencies": ["."]
         },
         "modules/language-picker": {
-            "component": "modules/language-picker"
+            "component": "modules/language-picker",
+            "dependencies": ["."]
         },
         "modules/search": {
-            "component": "modules/search"
+            "component": "modules/search",
+            "dependencies": ["."]
         },
         "modules/socials": {
-            "component": "modules/socials"
+            "component": "modules/socials",
+            "dependencies": ["."]
         },
         "modules/theme-toggle": {
-            "component": "modules/theme-toggle"
+            "component": "modules/theme-toggle",
+            "dependencies": ["."]
         },
         "themes/classic": {
-            "component": "themes/classic"
+            "component": "themes/classic",
+            "dependencies": ["."]
         },
         "themes/pills": {
-            "component": "themes/pills"
+            "component": "themes/pills",
+            "dependencies": ["."]
         }
-    }
+    },
+    "plugins": [
+      {
+        "type": "node-workspace"
+      },
+      {
+        "type": "linked-versions",
+        "groupName": "modules",
+        "components": [
+            ".",
+            "modules/docsearch",
+            "modules/language-picker",
+            "modules/search",
+            "modules/socials",
+            "modules/theme-toggle",
+            "themes/classic",
+            "themes/pills"
+        ]
+      }
+    ]
 }
