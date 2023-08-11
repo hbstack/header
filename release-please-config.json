@@ -2,8 +2,8 @@
     "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
     "bootstrap-sha": "24a92d71a4d2687a68fa2e4640d865efe57b00a4",
     "monorepo-tags": true,
-    "separate-pull-requests": true,
     "release-type": "go",
+    "separate-pull-requests": true,
     "tag-separator": "/",
     "changelog-sections": [
         { "type": "BREAKING CHANGE", "section": "BREAKING CHANGES 💥"},
@@ -19,35 +19,37 @@
     "packages": {
         ".": {
             "exclude-paths": [
-                "modules/docsearch",
-                "modules/language-picker",
-                "modules/search",
-                "modules/socials",
-                "modules/theme-toggle",
-                "themes/classic",
-                "themes/pills"
+                "modules",
+                "themes"
             ]
         },
         "modules/docsearch": {
-            "component": "modules/docsearch"
+            "component": "modules/docsearch",
+            "version-file": "modules/docsearch/.release-please-manifest.json"
         },
         "modules/language-picker": {
-            "component": "modules/language-picker"
+            "component": "modules/language-picker",
+            "version-file": "modules/language-picker/.release-please-manifest.json"
         },
         "modules/search": {
-            "component": "modules/search"
+            "component": "modules/search",
+            "version-file": "modules/search/.release-please-manifest.json"
         },
         "modules/socials": {
-            "component": "modules/socials"
+            "component": "modules/socials",
+            "version-file": "modules/socials/.release-please-manifest.json"
         },
         "modules/theme-toggle": {
-            "component": "modules/theme-toggle"
+            "component": "modules/theme-toggle",
+            "version-file": "modules/theme-toggle/.release-please-manifest.json"
         },
         "themes/classic": {
-            "component": "themes/classic"
+            "component": "themes/classic",
+            "version-file": "themes/classic/.release-please-manifest.json"
         },
         "themes/pills": {
-            "component": "themes/pills"
+            "component": "themes/pills",
+            "version-file": "themes/pills/.release-please-manifest.json"
         }
     }
 }
