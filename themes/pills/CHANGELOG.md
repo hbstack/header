@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/hbstack/header/compare/themes/pills/v0.2.0...themes/pills/v0.5.0) (2023-08-11)
+
+
+### Miscellaneous Chores
+
+* **themes/pills:** Synchronize modules versions
+
 ## [0.2.0](https://github.com/hbstack/header/compare/themes/pills-v0.1.2...themes/pills/v0.2.0) (2023-08-05)
 
 

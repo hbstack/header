@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/hbstack/header/compare/modules/search/v0.1.13...modules/search/v0.5.0) (2023-08-11)
+
+
+### Miscellaneous Chores
+
+* **modules/search:** Synchronize modules versions
+
 ## [0.1.13](https://github.com/hbstack/header/compare/modules/search-v0.1.12...modules/search/v0.1.13) (2023-08-04)
 
 
