@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.4](https://github.com/hbstack/header/compare/v0.4.3...v0.4.4) (2023-08-11)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/hb to v0.5.2 ([d8c0d4b](https://github.com/hbstack/header/commit/d8c0d4b5c012f3db0dee9c660e2037456cf04481))
+
+
+### Bug Fixes 🐞
+
+* **deps:** update dependency stylelint-scss to v5.1.0 ([14496ee](https://github.com/hbstack/header/commit/14496ee9f04e142fdb7aab95188826bee53daeaa))
+
 ## [0.4.3](https://github.com/hbstack/header/compare/v0.4.2...v0.4.3) (2023-08-04)
 
 
