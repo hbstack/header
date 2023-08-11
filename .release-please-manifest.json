@@ -1,6 +1,6 @@
 {
     ".": "0.4.3",
-    "modules/docsearch": "0.1.5",
+    "modules/docsearch": "0.1.6",
     "modules/language-picker": "0.1.5",
     "modules/search": "0.1.13",
     "modules/socials": "0.1.6",
