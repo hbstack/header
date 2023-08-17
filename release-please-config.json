@@ -18,7 +18,9 @@
     "packages": {
         ".": {
             "exclude-paths": [
+                ".release-please-manifest.json",
                 "modules",
+                "release-please-config.json",
                 "themes"
             ]
         },
