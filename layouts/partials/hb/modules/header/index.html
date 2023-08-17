@@ -1,5 +1,7 @@
 {{- $params := $.Site.Params.hb.header }}
-<header class="hb-header">
+<header class="hb-header"
+  {{ partial "hugopress/functions/render-attributes" (dict "Name" "hb-header" "Page" .) | safeHTMLAttr }}>
+  {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-begin" "Page" .) }}
   <nav class="hb-header-nav navbar navbar-expand-xxl">
     <div
       class="{{ cond $params.full_width `container-fluid` `container-xxl` }}">
@@ -57,4 +59,5 @@
       </div>
     </div>
   </nav>
+  {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-end" "Page" .) }}
 </header>

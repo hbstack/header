@@ -4,26 +4,27 @@ import "js/bootstrap/src/offcanvas";
 (() => {
     document.addEventListener('DOMContentLoaded', () => {
         const header = document.querySelector('.hb-header') as HTMLElement
+        const nav = header.querySelector('.hb-header-nav') as HTMLElement
         if (!header) {
             return;
         }
 
         const shadow = () => {
-            header.classList.add('shadow-sm')
+            nav.classList.add('shadow-sm')
         }
 
         const removeShadow = () => {
-            header.classList.contains('shadow-sm') && header.classList.remove('shadow-sm')
+            nav.classList.contains('shadow-sm') && nav.classList.remove('shadow-sm')
         }
 
         const show = () => {
-            header.style.removeProperty('opacity');
-            header.style.removeProperty('z-index');
+            nav.style.removeProperty('opacity');
+            nav.style.removeProperty('z-index');
         }
 
         const hide = () => {
-            header.style.opacity = '0';
-            header.style.zIndex = '0';
+            nav.style.opacity = '0';
+            nav.style.zIndex = '0';
         }
 
         let h = 0;
