@@ -22,6 +22,9 @@
                 "themes"
             ]
         },
+        "modules/banner": {
+            "component": "modules/banner"
+        },
         "modules/docsearch": {
             "component": "modules/docsearch"
         },

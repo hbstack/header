@@ -1,0 +1,23 @@
+{{- with .Params.header.banner }}
+  {{- $img := relURL .img }}
+  {{- with $.Resources.GetMatch .img }}
+    {{- $img = .RelPermalink }}
+  {{- else }}
+    {{- with resources.GetMatch .img }}
+      {{- $img = .RelPermalink }}
+    {{- end }}
+  {{- end }}
+  <style>
+    .hb-header {
+      background-image: url('{{ $img }}');
+    }
+  </style>
+  <div class="hb-header-banner container d-flex flex-column justify-content-center text-white">
+    <div class="row">
+      <div class="col col-lg-8">
+        <h1 class="display-1">{{ default $.Title .title | markdownify }}</h1>
+        <div class="lead">{{ default $.Description .description | markdownify }}</div>
+      </div>
+    </div>
+  </div>
+{{- end }}

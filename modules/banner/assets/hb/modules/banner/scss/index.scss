@@ -1,0 +1,27 @@
+.hb-header {
+    &[data-banner] {
+        height: 100vh;
+
+        .hb-header-nav {
+            background: transparent !important;
+        }
+
+        .navbar-toggler {
+            color: #fff;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            .hb-header-nav {
+                --#{$prefix}navbar-color: #fff;
+            }
+
+            .vr {
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+.hb-header-banner {
+    height: 100vh;
+}
