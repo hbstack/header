@@ -2,7 +2,7 @@ $hb-header-sticky: true !default;
 $hb-scroll-padding-top: 68px !default;
 $hb-header-menus-alignment: "center" !default;
 $hb-header-logo-bg: null !default;
-$hb-header-margin-bottom: 2rem;
+$hb-header-margin-bottom: if($hb-header-sticky, 6rem, 2rem);
 
 :root {
     --#{$prefix}header-navbar-active-color: var(--#{$prefix}primary);
@@ -20,11 +20,6 @@ $hb-header-margin-bottom: 2rem;
 
 .hb-header {
     margin-bottom: $hb-header-margin-bottom;
-    transition: opacity 0.2s ease-in, box-shadow 1s;
-
-    @if $hb-header-sticky {
-        @extend .sticky-top;
-    }
 
     .dropdown-item {
         --#{$prefix}dropdown-item-padding-x: 0.5rem;
@@ -40,6 +35,14 @@ $hb-header-margin-bottom: 2rem;
         @include media-breakpoint-down(xxl) {
             max-width: 280px;
         }
+    }
+}
+
+.hb-header-nav {
+    transition: 1s;
+
+    @if $hb-header-sticky {
+        @extend .fixed-top;
     }
 }
 
