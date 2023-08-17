@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.5.0](https://github.com/hbstack/header/compare/v0.4.4...v0.5.0) (2023-08-17)
+
+
+### Features ✨
+
+* add the hb-header attributes, hb-header-begin and hb-header-end hooks ([#197](https://github.com/hbstack/header/issues/197)) ([72aebcc](https://github.com/hbstack/header/commit/72aebcc6e34120eae4cfadf36ec59f9f8899b20e))
+
+
+### Styles 🎨
+
+* replace sticky-top with fixed-top on header menus. ([72aebcc](https://github.com/hbstack/header/commit/72aebcc6e34120eae4cfadf36ec59f9f8899b20e))
+
 ## [0.4.4](https://github.com/hbstack/header/compare/v0.4.3...v0.4.4) (2023-08-11)
 
 

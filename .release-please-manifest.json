@@ -1,10 +1,10 @@
 {
-    ".": "0.4.4",
-    "modules/docsearch": "0.1.6",
-    "modules/language-picker": "0.1.5",
-    "modules/search": "0.1.13",
-    "modules/socials": "0.1.7",
-    "modules/theme-toggle": "0.1.5",
-    "themes/classic": "0.2.0",
-    "themes/pills": "0.2.0"
+    ".": "0.5.0",
+    "modules/docsearch": "0.1.7",
+    "modules/language-picker": "0.1.6",
+    "modules/search": "0.1.14",
+    "modules/socials": "0.1.8",
+    "modules/theme-toggle": "0.1.6",
+    "themes/classic": "0.2.1",
+    "themes/pills": "0.2.1"
 }
