@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/hbstack/header/compare/modules/banner/v0.1.1...modules/banner/v0.1.2) (2023-08-18)
+
+
+### Bug Fixes 🐞
+
+* **banner:** add the data-banner attribute to PurgeCSS safelist ([#204](https://github.com/hbstack/header/issues/204)) ([68a28ee](https://github.com/hbstack/header/commit/68a28eed5727b804112dd2373ea4352502f9ac22))
+
 ## [0.1.1](https://github.com/hbstack/header/compare/modules/banner/v0.1.0...modules/banner/v0.1.1) (2023-08-18)
 
 
