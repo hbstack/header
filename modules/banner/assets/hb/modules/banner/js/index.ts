@@ -5,11 +5,23 @@
       return;
     }
 
+    const scrolling = () => {
+      header.removeAttribute("data-banner");
+    }
+
+    const reset = () => {
+      header.setAttribute("data-banner", "");
+    }
+
+    if (document.documentElement.scrollTop !== 0) {
+      scrolling();
+    }
+
     window.addEventListener("scroll", () => {
       if (document.documentElement.scrollTop === 0) {
-        header.setAttribute("data-banner", "");
+        reset();
       } else {
-        header.removeAttribute("data-banner");
+        scrolling();
       }
     });
   });
