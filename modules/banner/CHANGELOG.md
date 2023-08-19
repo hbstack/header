@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/hbstack/header/compare/modules/banner/v0.1.2...modules/banner/v0.2.0) (2023-08-19)
+
+
+### Features ✨
+
+* **banner:** allow specifying multiple images for different screens ([#207](https://github.com/hbstack/header/issues/207)) ([b619a1b](https://github.com/hbstack/header/commit/b619a1b007ba9be01fc09cd6dc915f6a77f217bc))
+
 ## [0.1.2](https://github.com/hbstack/header/compare/modules/banner/v0.1.1...modules/banner/v0.1.2) (2023-08-18)
 
 
