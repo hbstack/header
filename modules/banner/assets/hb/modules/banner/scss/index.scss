@@ -1,7 +1,7 @@
 .hb-header {
-    &[data-banner] {
-        height: 100vh;
+    height: 100vh;
 
+    &[data-banner] {
         .hb-header-nav {
             background: transparent !important;
         }
@@ -22,6 +22,11 @@
     }
 }
 
-.hb-header-banner {
+.hb-header-banner-img {
+    object-fit: cover;
+}
+
+.hb-header-banner,
+.hb-header-banner-img {
     height: 100vh;
 }

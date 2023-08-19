@@ -1,22 +1,40 @@
 {{- with .Params.header.banner }}
-  {{- $img := relURL .img }}
-  {{- with $.Resources.GetMatch .img }}
-    {{- $img = .RelPermalink }}
+  {{- $sources := slice }}
+  {{- $img := "" }}
+  {{- if reflect.IsSlice .img }}
+    {{- range .img }}
+      {{- if .media }}
+        {{- $sources = $sources | append . }}
+      {{- else }}
+        {{- $img = .src | relURL }}
+      {{- end }}
+    {{- end }}
   {{- else }}
-    {{- with resources.GetMatch .img }}
+    {{- $img = relURL .img }}
+    {{- with $.Resources.GetMatch .img }}
       {{- $img = .RelPermalink }}
+    {{- else }}
+      {{- with resources.GetMatch .img }}
+        {{- $img = .RelPermalink }}
+      {{- end }}
     {{- end }}
   {{- end }}
-  <style>
-    .hb-header {
-      background-image: url('{{ $img }}');
-    }
-  </style>
-  <div class="hb-header-banner container d-flex flex-column justify-content-center text-white">
-    <div class="row">
-      <div class="col col-lg-8">
-        <h1 class="display-1">{{ default $.Title .title | markdownify }}</h1>
-        <div class="lead">{{ default $.Description .description | markdownify }}</div>
+  <picture>
+    {{- range $sources }}
+      <source
+        srcset="{{ .src }}"
+        media="{{ .media }}"
+        {{ with .type }}type="{{ . }}"{{ end }}/>
+    {{- end }}
+    <img class="img-fluid hb-header-banner-img d-block w-100 position-absolute top-0" src="{{ $img }}">
+  </picture>
+  <div class="hb-header-banner col d-flex flex-column justify-content-center text-white z-1 position-absolute top-0 w-100">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-8">
+          <h1 class="display-1">{{ default $.Title .title | markdownify }}</h1>
+          <div class="lead">{{ default $.Description .description | markdownify }}</div>
+        </div>
       </div>
     </div>
   </div>
