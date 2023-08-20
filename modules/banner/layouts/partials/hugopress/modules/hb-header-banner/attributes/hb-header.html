@@ -1,5 +1,0 @@
-{{- $v := newScratch }}
-{{- with .Page.Params.header.banner }}
-  {{- $v.Set "data-banner" "" }}
-{{- end }}
-{{- return $v.Values }}
