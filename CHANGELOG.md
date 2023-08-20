@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1](https://github.com/hbstack/header/compare/v0.7.0...v0.7.1) (2023-08-20)
+
+
+### Bug Fixes 🐞
+
+* initialize the scrolling class ([a969b55](https://github.com/hbstack/header/commit/a969b55f12c5a65150b6c0129964c6166af04476))
+
 ## [0.7.0](https://github.com/hbstack/header/compare/v0.6.0...v0.7.0) (2023-08-20)
 
 
