@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/hbstack/header/compare/modules/banner/v0.2.0...modules/banner/v0.2.1) (2023-08-20)
+
+
+### Bug Fixes 🐞
+
+* **banner:** use the default background color for menus until the images were loaded completely ([#213](https://github.com/hbstack/header/issues/213)) ([60291e0](https://github.com/hbstack/header/commit/60291e03177608f6f843dbd70d4ddc744cc7166b))
+
 ## [0.2.0](https://github.com/hbstack/header/compare/modules/banner/v0.1.2...modules/banner/v0.2.0) (2023-08-19)
 
 
