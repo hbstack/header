@@ -29,6 +29,10 @@ import "js/bootstrap/src/offcanvas";
 
         let h = 0;
         const threshold = 20;
+        if (document.documentElement.scrollTop !== 0) {
+            header.classList.add('scrolling')
+        }
+
         window.addEventListener('scroll', () => {
             if (document.documentElement.scrollTop === 0) {
                 header.classList.remove('scrolling')
