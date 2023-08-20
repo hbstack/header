@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/hbstack/header/compare/modules/banner/v0.2.1...modules/banner/v0.2.2) (2023-08-20)
+
+
+### Bug Fixes 🐞
+
+* **banner:** use the page title as the alt ([752f5b4](https://github.com/hbstack/header/commit/752f5b42ab1954336b29ae47ce31c9b032cf518e))
+
 ## [0.2.1](https://github.com/hbstack/header/compare/modules/banner/v0.2.0...modules/banner/v0.2.1) (2023-08-20)
 
 
