@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/hbstack/header/compare/v0.6.0...v0.7.0) (2023-08-20)
+
+
+### Features ✨
+
+* append the scrolling class to .hb-header on scrolling ([#211](https://github.com/hbstack/header/issues/211)) ([8c18eff](https://github.com/hbstack/header/commit/8c18eff447c99bc05fdb627c4915a6a2a899fb5a))
+
 ## [0.6.0](https://github.com/hbstack/header/compare/v0.5.0...v0.6.0) (2023-08-17)
 
 
