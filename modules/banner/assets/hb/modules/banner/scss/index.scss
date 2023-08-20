@@ -1,7 +1,14 @@
-.hb-header {
-    height: 100vh;
+.hb-header-banner-img {
+    object-fit: cover;
+}
 
-    &[data-banner] {
+.hb-header-banner,
+.hb-header-banner-img {
+    height: 100vh;
+}
+
+.hb-header-banner {
+    &:not(.scrolling) {
         .hb-header-nav {
             background: transparent !important;
         }
@@ -20,13 +27,4 @@
             }
         }
     }
-}
-
-.hb-header-banner-img {
-    object-fit: cover;
-}
-
-.hb-header-banner,
-.hb-header-banner-img {
-    height: 100vh;
 }

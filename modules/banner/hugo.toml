@@ -1,8 +1,5 @@
 [[module.imports]]
 path = "github.com/hbstack/header"
 
-[params.hugopress.modules.hb-header-banner.attributes.hb-header]
-cacheable = false
-
 [params.hugopress.modules.hb-header-banner.hooks.hb-header-end]
 cacheable = false

@@ -19,6 +19,11 @@
       {{- end }}
     {{- end }}
   {{- end }}
+  <style>
+    .hb-header {
+      height: 100vh;
+    }
+  </style>
   <picture>
     {{- range $sources }}
       <source
@@ -26,7 +31,10 @@
         media="{{ .media }}"
         {{ with .type }}type="{{ . }}"{{ end }}/>
     {{- end }}
-    <img class="img-fluid hb-header-banner-img d-block w-100 position-absolute top-0" src="{{ $img }}">
+    <img 
+      class="img-fluid hb-header-banner-img d-block w-100 position-absolute top-0"
+      onload="document.querySelector('.hb-header').classList.add('hb-header-banner')"
+      src="{{ $img }}" />
   </picture>
   <div class="hb-header-banner col d-flex flex-column justify-content-center text-white z-1 position-absolute top-0 w-100">
     <div class="container">
