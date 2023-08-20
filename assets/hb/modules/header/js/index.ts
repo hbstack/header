@@ -31,8 +31,10 @@ import "js/bootstrap/src/offcanvas";
         const threshold = 20;
         window.addEventListener('scroll', () => {
             if (document.documentElement.scrollTop === 0) {
+                header.classList.remove('scrolling')
                 removeShadow()
             } else {
+                header.classList.add('scrolling')
                 shadow()
             }
             if (window.innerWidth < 576 && Math.abs(document.documentElement.scrollTop - h) > threshold) {
