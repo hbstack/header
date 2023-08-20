@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/hbstack/header/compare/themes/classic/v0.2.3...themes/classic/v0.2.4) (2023-08-20)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.7.0 ([b529cd4](https://github.com/hbstack/header/commit/b529cd426a434ec2ffea5ea167e475f96d650311))
+
 ## [0.2.3](https://github.com/hbstack/header/compare/themes/classic/v0.2.2...themes/classic/v0.2.3) (2023-08-18)
 
 
