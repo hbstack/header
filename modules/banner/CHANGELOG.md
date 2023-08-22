@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://github.com/hbstack/header/compare/modules/banner/v0.2.2...modules/banner/v0.3.0) (2023-08-22)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.7.1 ([54b8d9e](https://github.com/hbstack/header/commit/54b8d9e6a22edb28d814f93cc915d5de62f4be16))
+
+
+### Features ✨
+
+* **banner:** add video support ([#222](https://github.com/hbstack/header/issues/222)) ([2ee8ae0](https://github.com/hbstack/header/commit/2ee8ae0dca96f5ff275b6f609f7f762b30dc91a3))
+
 ## [0.2.2](https://github.com/hbstack/header/compare/modules/banner/v0.2.1...modules/banner/v0.2.2) (2023-08-20)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.5](https://github.com/hbstack/header/compare/themes/pills/v0.2.4...themes/pills/v0.2.5) (2023-08-22)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.7.1 ([54b8d9e](https://github.com/hbstack/header/commit/54b8d9e6a22edb28d814f93cc915d5de62f4be16))
+
 ## [0.2.4](https://github.com/hbstack/header/compare/themes/pills/v0.2.3...themes/pills/v0.2.4) (2023-08-20)
 
 
