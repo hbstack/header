@@ -1,9 +1,12 @@
-.hb-header-banner-img {
+.hb-header-banner-img,
+.hb-header-banner-video {
     object-fit: cover;
 }
 
 .hb-header-banner,
-.hb-header-banner-img {
+.hb-header-banner-frame,
+.hb-header-banner-img,
+.hb-header-banner-video {
     height: 100vh;
 }
 

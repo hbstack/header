@@ -9,7 +9,7 @@
         {{- $img = .src | relURL }}
       {{- end }}
     {{- end }}
-  {{- else }}
+  {{- else if .img }}
     {{- $img = relURL .img }}
     {{- with $.Resources.GetMatch .img }}
       {{- $img = .RelPermalink }}
@@ -24,19 +24,31 @@
       height: 100vh;
     }
   </style>
-  <picture>
-    {{- range $sources }}
-      <source
-        srcset="{{ .src }}"
-        media="{{ .media }}"
-        {{ with .type }}type="{{ . }}"{{ end }}/>
-    {{- end }}
-    <img 
-      class="img-fluid hb-header-banner-img d-block w-100 position-absolute top-0"
-      onload="document.querySelector('.hb-header').classList.add('hb-header-banner')"
-      alt="{{ $.Title }}"
-      src="{{ $img }}" />
-  </picture>
+  {{- if $img }}
+    <picture>
+      {{- range $sources }}
+        <source
+          srcset="{{ .src }}"
+          media="{{ .media }}"
+          {{ with .type }}type="{{ . }}"{{ end }}/>
+      {{- end }}
+      <img
+        class="img-fluid hb-header-banner-img d-block w-100 position-absolute top-0"
+        onload="document.querySelector('.hb-header').classList.add('hb-header-banner')"
+        alt="{{ $.Title }}"
+        src="{{ $img }}" />
+    </picture>
+  {{- end }}
+  {{- with .video }}
+  <video
+    class="hb-header-banner-video position-absolute top-0 w-100"
+    onloadstart="document.querySelector('.hb-header').classList.add('hb-header-banner')"
+    {{ if default true .muted }}muted{{ end }}
+    loop
+    autoplay>
+    <source src="{{ .src }}">
+  </video>
+  {{- end }}
   <div class="hb-header-banner col d-flex flex-column justify-content-center text-white z-1 position-absolute top-0 w-100">
     <div class="container">
       <div class="row">
