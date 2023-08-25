@@ -13,6 +13,7 @@
 .hb-header-banner {
     &:not(.scrolling) {
         .hb-header-nav {
+            --#{$prefix}navbar-color: #fff;
             --#{$prefix}navbar-brand-color: #fff;
 
             background: transparent !important;
