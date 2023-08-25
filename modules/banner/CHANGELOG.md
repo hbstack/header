@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.4.0](https://github.com/hbstack/header/compare/modules/banner/v0.3.0...modules/banner/v0.4.0) (2023-08-25)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.8.0 ([b7a9050](https://github.com/hbstack/header/commit/b7a9050e0117d3803d502c82ff1e7131e0b8a057))
+
+
+### Features ✨
+
+* **banner:** add the alignment parameter, start (default), center or end ([#238](https://github.com/hbstack/header/issues/238)) ([2b704e8](https://github.com/hbstack/header/commit/2b704e8f54f8cf25bf6c5b287a628d543a1f4465))
+* **banner:** add the color parameter ([#237](https://github.com/hbstack/header/issues/237)) ([218244d](https://github.com/hbstack/header/commit/218244df376425fcfa798c41bc1ffa85ba730d61))
+* **banner:** add the cols parameter to specify how many cols does the banner inner take ([#239](https://github.com/hbstack/header/issues/239)) ([24f447a](https://github.com/hbstack/header/commit/24f447a57b8018e3c9ceaa5032ade503731af551))
+* **banner:** add the hb.header.banner parameters ([#236](https://github.com/hbstack/header/issues/236)) ([852439b](https://github.com/hbstack/header/commit/852439b49b87d64d31f83ab6402d4f1734552ef5)), closes [#225](https://github.com/hbstack/header/issues/225)
+
+
+### Bug Fixes 🐞
+
+* **banner:** correct the brand color ([#231](https://github.com/hbstack/header/issues/231)) ([4e6b4bc](https://github.com/hbstack/header/commit/4e6b4bcf4f599b69a73958564a83f00037579af6)), closes [#223](https://github.com/hbstack/header/issues/223)
+* **banner:** correct the navbar color ([#234](https://github.com/hbstack/header/issues/234)) ([e4359db](https://github.com/hbstack/header/commit/e4359db05cbb2a7a28a2e9339d58255efc06662a))
+* **banner:** set z-index for non-sticky header navbar ([#233](https://github.com/hbstack/header/issues/233)) ([675a463](https://github.com/hbstack/header/commit/675a46344650b434383e13515c0dfc38b0040a83))
+
 ## [0.3.0](https://github.com/hbstack/header/compare/modules/banner/v0.2.2...modules/banner/v0.3.0) (2023-08-22)
 
 

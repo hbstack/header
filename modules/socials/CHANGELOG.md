@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.14](https://github.com/hbstack/header/compare/modules/socials/v0.1.13...modules/socials/v0.1.14) (2023-08-25)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.8.0 ([b7a9050](https://github.com/hbstack/header/commit/b7a9050e0117d3803d502c82ff1e7131e0b8a057))
+
 ## [0.1.13](https://github.com/hbstack/header/compare/modules/socials/v0.1.12...modules/socials/v0.1.13) (2023-08-22)
 
 
