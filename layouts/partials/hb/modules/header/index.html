@@ -3,6 +3,7 @@
   {{ partial "hugopress/functions/render-attributes" (dict "Name" "hb-header" "Page" .) | safeHTMLAttr }}>
   {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-begin" "Page" .) }}
   <nav class="hb-header-nav navbar navbar-expand-xxl">
+    {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-nav-before" "Page" .) }}
     <div
       class="{{ cond $params.full_width `container-fluid` `container-xxl` }}">
       {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-nav-begin" "Page" .) }}
@@ -58,6 +59,7 @@
         </div>
       </div>
     </div>
+    {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-nav-after" "Page" .) }}
   </nav>
   {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-end" "Page" .) }}
 </header>
