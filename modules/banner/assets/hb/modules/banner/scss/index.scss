@@ -16,6 +16,10 @@
             --#{$prefix}navbar-brand-color: #fff;
 
             background: transparent !important;
+
+            @if not $hb-header-sticky {
+                z-index: 1030;
+            }
         }
 
         .navbar-toggler {
