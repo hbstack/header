@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.1](https://github.com/hbstack/header/compare/v0.8.0...v0.8.1) (2023-08-25)
+
+
+### Bug Fixes 🐞
+
+* correct the margin-bottom with hb-top-offset CSS var ([7c222cb](https://github.com/hbstack/header/commit/7c222cb30cb2b104af00e8ee5f502d398c9dfcdb))
+
 ## [0.8.0](https://github.com/hbstack/header/compare/v0.7.1...v0.8.0) (2023-08-25)
 
 
