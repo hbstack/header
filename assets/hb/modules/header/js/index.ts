@@ -1,5 +1,6 @@
 import "js/bootstrap/src/dropdown";
 import "js/bootstrap/src/offcanvas";
+import params from "@params";
 
 (() => {
     document.addEventListener('DOMContentLoaded', () => {
@@ -25,6 +26,18 @@ import "js/bootstrap/src/offcanvas";
         const hide = () => {
             nav.style.opacity = '0';
             nav.style.zIndex = '0';
+        }
+
+        const topOffset = () => {
+            const v =  nav.clientHeight + parseInt(params.styles.hb_top_offset ?? 24)
+            document.body.style.setProperty(`--${params.styles.prefix}top-offset`, v + 'px')
+        }
+
+        if (params.header.sticky) {
+            topOffset()
+            window.addEventListener('resize', () => {
+                topOffset()
+            })
         }
 
         let h = 0;
