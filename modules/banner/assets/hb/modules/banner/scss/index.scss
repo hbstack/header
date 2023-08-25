@@ -11,10 +11,14 @@
 }
 
 .hb-header-banner {
+    --#{$prefix}header-banner-color: #fff;
+
+    color: var(--#{$prefix}header-banner-color);
+
     &:not(.scrolling) {
         .hb-header-nav {
-            --#{$prefix}navbar-color: #fff;
-            --#{$prefix}navbar-brand-color: #fff;
+            --#{$prefix}navbar-color: var(--#{$prefix}header-banner-color);
+            --#{$prefix}navbar-brand-color: var(--#{$prefix}header-banner-color);
 
             background: transparent !important;
 
@@ -24,12 +28,12 @@
         }
 
         .navbar-toggler {
-            color: #fff;
+            color: var(--#{$prefix}header-banner-color);
         }
 
         @include media-breakpoint-up(xxl) {
             .hb-header-nav {
-                --#{$prefix}navbar-color: #fff;
+                --#{$prefix}navbar-color: var(--#{$prefix}header-banner-color);
             }
 
             .vr {

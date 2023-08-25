@@ -24,6 +24,11 @@
     .hb-header {
       height: 100vh;
     }
+    {{ with .color }}
+    .hb-header-banner {
+      --{{ site.Params.hb.styles.prefix }}header-banner-color: {{ . }};
+    }
+    {{ end }}
   </style>
   {{- if $img }}
     <picture>
@@ -50,7 +55,8 @@
     <source src="{{ .src }}">
   </video>
   {{- end }}
-  <div class="hb-header-banner col d-flex flex-column justify-content-center text-white z-1 position-absolute top-0 w-100">
+  <div
+    class="hb-header-banner col d-flex flex-column justify-content-center z-1 position-absolute top-0 w-100">
     <div class="container">
       <div class="row">
         <div class="col col-lg-8">
