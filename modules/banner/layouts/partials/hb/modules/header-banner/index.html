@@ -1,4 +1,5 @@
-{{- with .Params.header.banner }}
+{{- $params := default site.Params.hb.header.banner .Params.header.banner }}
+{{- with $params }}
   {{- $sources := slice }}
   {{- $img := "" }}
   {{- if reflect.IsSlice .img }}
