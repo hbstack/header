@@ -55,15 +55,29 @@
     <source src="{{ .src }}">
   </video>
   {{- end }}
+  {{- $innerClasses := slice "hb-header-banner-inner" }}
   {{- $alignment := "text-start" }}
   {{- with .alignment }}
     {{- $alignment = printf "text-%s" . }}
+  {{- end }}
+  {{- $innerClasses = $innerClasses | append $alignment }}
+  {{- with .cols }}
+    {{- range split . " " }}
+      {{- $v := split . ":" }}
+      {{- if lt (len $v) 2 }}
+        {{- $innerClasses = $innerClasses | append (printf "col-%s" (index $v 0)) }}
+      {{- else }}
+        {{- $innerClasses = $innerClasses | append (printf "col-%s-%s" (index $v 0) (index $v 1)) }}
+      {{- end }}
+    {{- end }}
+  {{- else }}
+    {{- $innerClasses = $innerClasses | append "col-12" "col-lg-8" }}
   {{- end }}
   <div
     class="hb-header-banner col d-flex flex-column justify-content-center z-1 position-absolute top-0 w-100">
     <div class="container">
       <div class="row">
-        <div class="col col-lg-8 {{ $alignment }}">
+        <div class="{{ delimit $innerClasses ` ` }}">
           <h1 class="display-1">{{ default $.Title .title | markdownify }}</h1>
           <div class="lead">{{ default $.Description .description | markdownify }}</div>
         </div>
