@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.8.0](https://github.com/hbstack/header/compare/v0.7.1...v0.8.0) (2023-08-25)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/hb to v0.6.0 ([c6796be](https://github.com/hbstack/header/commit/c6796be42bc4df943792e6307a4214b628082d57))
+
+
+### Features ✨
+
+* add the hb-header-nav-before and hb-header-nav-after hooks ([#229](https://github.com/hbstack/header/issues/229)) ([05a7136](https://github.com/hbstack/header/commit/05a7136c795560c8f10145f052fa1d014b174ee9))
+
+
+### Bug Fixes 🐞
+
+* adjust the hb-top-offset on initializing and resizing ([#230](https://github.com/hbstack/header/issues/230)) ([8612e32](https://github.com/hbstack/header/commit/8612e32d9f5a55bcb0626d2c507dbefb6bbfa732))
+
 ## [0.7.1](https://github.com/hbstack/header/compare/v0.7.0...v0.7.1) (2023-08-20)
 
 
