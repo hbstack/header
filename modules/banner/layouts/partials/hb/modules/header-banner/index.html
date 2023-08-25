@@ -55,11 +55,15 @@
     <source src="{{ .src }}">
   </video>
   {{- end }}
+  {{- $alignment := "text-start" }}
+  {{- with .alignment }}
+    {{- $alignment = printf "text-%s" . }}
+  {{- end }}
   <div
     class="hb-header-banner col d-flex flex-column justify-content-center z-1 position-absolute top-0 w-100">
     <div class="container">
       <div class="row">
-        <div class="col col-lg-8">
+        <div class="col col-lg-8 {{ $alignment }}">
           <h1 class="display-1">{{ default $.Title .title | markdownify }}</h1>
           <div class="lead">{{ default $.Description .description | markdownify }}</div>
         </div>
