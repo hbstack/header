@@ -19,6 +19,7 @@
         .hb-header-nav {
             --#{$prefix}navbar-color: var(--#{$prefix}header-banner-color);
             --#{$prefix}navbar-brand-color: var(--#{$prefix}header-banner-color);
+            --#{$prefix}navbar-brand-hover-color: var(--#{$prefix}navbar-active-color);
 
             background: transparent !important;
 
