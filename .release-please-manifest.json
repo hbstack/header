@@ -1,6 +1,6 @@
 {
     ".": "0.8.1",
-    "modules/banner": "0.4.2",
+    "modules/banner": "0.4.3",
     "modules/docsearch": "0.1.13",
     "modules/language-picker": "0.1.12",
     "modules/search": "0.1.20",

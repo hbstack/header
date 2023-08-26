@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.3](https://github.com/hbstack/header/compare/modules/banner/v0.4.2...modules/banner/v0.4.3) (2023-08-26)
+
+
+### Bug Fixes 🐞
+
+* **banner:** correct the navbar brand color on hover ([996f09c](https://github.com/hbstack/header/commit/996f09c5ddaf170817efdd01cb39c2d2e3b4d4d8))
+
 ## [0.4.2](https://github.com/hbstack/header/compare/modules/banner/v0.4.1...modules/banner/v0.4.2) (2023-08-26)
 
 
