@@ -56,11 +56,11 @@
   </video>
   {{- end }}
   {{- $innerClasses := slice "hb-header-banner-inner" }}
-  {{- $alignment := "text-start" }}
+  {{- $alignment := "start" }}
   {{- with .alignment }}
-    {{- $alignment = printf "text-%s" . }}
+    {{- $alignment = . }}
   {{- end }}
-  {{- $innerClasses = $innerClasses | append $alignment }}
+  {{- $innerClasses = $innerClasses | append (printf "text-%s" $alignment) }}
   {{- with .cols }}
     {{- range split . " " }}
       {{- $v := split . ":" }}
@@ -76,7 +76,7 @@
   <div
     class="hb-header-banner col d-flex flex-column justify-content-center z-1 position-absolute top-0 w-100">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-{{ $alignment }}">
         <div class="{{ delimit $innerClasses ` ` }}">
           <h1 class="display-1">{{ default $.Title .title | markdownify }}</h1>
           <div class="lead">{{ default $.Description .description | markdownify }}</div>
