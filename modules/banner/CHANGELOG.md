@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/hbstack/header/compare/modules/banner/v0.4.1...modules/banner/v0.4.2) (2023-08-26)
+
+
+### Bug Fixes 🐞
+
+* **banner:** correct the alignment ([4f32b52](https://github.com/hbstack/header/commit/4f32b5240dae9b68a2abd8a8d70dc5db9ad37325))
+
 ## [0.4.1](https://github.com/hbstack/header/compare/modules/banner/v0.4.0...modules/banner/v0.4.1) (2023-08-25)
 
 
