@@ -3,7 +3,7 @@
     "modules/banner": "0.4.3",
     "modules/docsearch": "0.1.13",
     "modules/language-picker": "0.1.12",
-    "modules/search": "0.1.20",
+    "modules/search": "0.1.21",
     "modules/socials": "0.1.15",
     "modules/theme-toggle": "0.1.12",
     "themes/classic": "0.2.7",
