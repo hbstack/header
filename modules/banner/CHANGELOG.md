@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.4](https://github.com/hbstack/header/compare/modules/banner/v0.4.3...modules/banner/v0.4.4) (2023-08-27)
+
+
+### Performance Improvements ⚡️
+
+* **banner:** resize the image into multiple sizes to fit different screens ([#247](https://github.com/hbstack/header/issues/247)) ([45b6aee](https://github.com/hbstack/header/commit/45b6aee1756be8f2e5327105c999d635eec4cbdd))
+
+
+### Styles 🎨
+
+* **banner:** set the margin-bottom as 3rem ([bd8b1ae](https://github.com/hbstack/header/commit/bd8b1ae6f9404fb399b7289e3dc2be4086cbff29))
+
 ## [0.4.3](https://github.com/hbstack/header/compare/modules/banner/v0.4.2...modules/banner/v0.4.3) (2023-08-26)
 
 
