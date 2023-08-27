@@ -12,11 +12,31 @@
     {{- end }}
   {{- else if .img }}
     {{- $img = relURL .img }}
+    {{- $res := false }}
     {{- with $.Resources.GetMatch .img }}
+      {{- $res = . }}
       {{- $img = .RelPermalink }}
     {{- else }}
       {{- with resources.GetMatch .img }}
+        {{- $res = . }}
         {{- $img = .RelPermalink }}
+      {{- end }}
+    {{- end }}
+    {{- if and $res (ne $res.MediaType.SubType "svg") }}
+      {{- $format := cond (eq $res.MediaType.SubType "webp") "%dx" "%dx webp" }}
+      {{- $sizes := slice
+        (dict "width" 1400 "minWidth" 992)
+        (dict "width" 992 "minWidth" 768)
+        (dict "width" 768 "minWidth" 480)
+        (dict "width" 480 "minWidth" 320)
+      }}
+      {{- range $sizes }}
+        {{- $resized := $res.Resize (printf $format .width) }}
+        {{- $sources = $sources | append (dict
+          "src" $resized.RelPermalink
+          "media" (printf "(min-width: %dpx)" .minWidth)
+          "type" $resized.MediaType)
+        }}
       {{- end }}
     {{- end }}
   {{- end }}
