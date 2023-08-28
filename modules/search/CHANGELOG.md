@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.22](https://github.com/hbstack/header/compare/modules/search/v0.1.21...modules/search/v0.1.22) (2023-08-28)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hugomods/search to v0.4.5 ([9883a20](https://github.com/hbstack/header/commit/9883a20fbb6b841c3a330a0e8e6964dcb1a218ef))
+
 ## [0.1.21](https://github.com/hbstack/header/compare/modules/search/v0.1.20...modules/search/v0.1.21) (2023-08-26)
 
 
