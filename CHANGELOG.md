@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.2](https://github.com/hbstack/header/compare/v0.8.1...v0.8.2) (2023-08-29)
+
+
+### Bug Fixes 🐞
+
+* increase the top-offset when sticky ([762d9c2](https://github.com/hbstack/header/commit/762d9c2534410ffe4dc308ae63def3f68f1b1ffa))
+
 ## [0.8.1](https://github.com/hbstack/header/compare/v0.8.0...v0.8.1) (2023-08-25)
 
 
