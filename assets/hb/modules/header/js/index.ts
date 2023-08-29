@@ -29,7 +29,7 @@ import params from "@params";
         }
 
         const topOffset = () => {
-            const v =  nav.clientHeight + parseInt(params.styles.hb_top_offset ?? 24)
+            const v =  nav.clientHeight + 24
             document.body.style.setProperty(`--${params.styles.prefix}top-offset`, v + 'px')
         }
 
