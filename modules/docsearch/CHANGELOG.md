@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.15](https://github.com/hbstack/header/compare/modules/docsearch/v0.1.14...modules/docsearch/v0.1.15) (2023-09-02)
+
+
+### Bug Fixes 🐞
+
+* adjust to the breakpoint parameter ([ae19603](https://github.com/hbstack/header/commit/ae19603f2906fcd775781b99e2c675fe2b2b8eec))
+
 ## [0.1.14](https://github.com/hbstack/header/compare/modules/docsearch/v0.1.13...modules/docsearch/v0.1.14) (2023-09-02)
 
 

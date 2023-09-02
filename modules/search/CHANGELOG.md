@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.24](https://github.com/hbstack/header/compare/modules/search/v0.1.23...modules/search/v0.1.24) (2023-09-02)
+
+
+### Bug Fixes 🐞
+
+* adjust to the breakpoint parameter ([ae19603](https://github.com/hbstack/header/commit/ae19603f2906fcd775781b99e2c675fe2b2b8eec))
+
 ## [0.1.23](https://github.com/hbstack/header/compare/modules/search/v0.1.22...modules/search/v0.1.23) (2023-09-02)
 
 
