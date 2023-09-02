@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.14](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.1.13...modules/theme-toggle/v0.1.14) (2023-09-02)
+
+
+### Bug Fixes 🐞
+
+* adjust to the breakpoint parameter ([ae19603](https://github.com/hbstack/header/commit/ae19603f2906fcd775781b99e2c675fe2b2b8eec))
+
 ## [0.1.13](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.1.12...modules/theme-toggle/v0.1.13) (2023-09-02)
 
 

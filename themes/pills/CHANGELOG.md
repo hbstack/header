@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.9](https://github.com/hbstack/header/compare/themes/pills/v0.2.8...themes/pills/v0.2.9) (2023-09-02)
+
+
+### Bug Fixes 🐞
+
+* adjust to the breakpoint parameter ([ae19603](https://github.com/hbstack/header/commit/ae19603f2906fcd775781b99e2c675fe2b2b8eec))
+
 ## [0.2.8](https://github.com/hbstack/header/compare/themes/pills/v0.2.7...themes/pills/v0.2.8) (2023-09-02)
 
 

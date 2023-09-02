@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/hbstack/header/compare/modules/banner/v0.5.0...modules/banner/v0.5.1) (2023-09-02)
+
+
+### Bug Fixes 🐞
+
+* adjust to the breakpoint parameter ([ae19603](https://github.com/hbstack/header/commit/ae19603f2906fcd775781b99e2c675fe2b2b8eec))
+
 ## [0.5.0](https://github.com/hbstack/header/compare/modules/banner/v0.4.4...modules/banner/v0.5.0) (2023-09-02)
 
 
