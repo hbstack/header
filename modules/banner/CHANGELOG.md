@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.0](https://github.com/hbstack/header/compare/modules/banner/v0.4.4...modules/banner/v0.5.0) (2023-09-02)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.8.2 ([767375e](https://github.com/hbstack/header/commit/767375ee345119df904c7016be5bc8280b647fcd))
+
+
+### Features ✨
+
+* **banner:** add Video.js support for HLS and MPEG-DASH videos ([#259](https://github.com/hbstack/header/issues/259)) ([4de7cfe](https://github.com/hbstack/header/commit/4de7cfe4cda6f7ee5267d96aabd9bddb97ee3390))
+* **banner:** hide the title and description when setting it as false ([#260](https://github.com/hbstack/header/issues/260)) ([13910ac](https://github.com/hbstack/header/commit/13910ac1963b5458bde62540bd627545bb1c66e5))
+
 ## [0.4.4](https://github.com/hbstack/header/compare/modules/banner/v0.4.3...modules/banner/v0.4.4) (2023-08-27)
 
 
