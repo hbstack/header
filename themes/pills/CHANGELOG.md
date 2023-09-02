@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.10](https://github.com/hbstack/header/compare/themes/pills/v0.2.9...themes/pills/v0.2.10) (2023-09-02)
+
+
+### Bug Fixes 🐞
+
+* **themes-pills:** correct the active color for social links and brand ([#264](https://github.com/hbstack/header/issues/264)) ([3e95aa6](https://github.com/hbstack/header/commit/3e95aa68b8e9eeca393db92e19ad7e8d357d2f1c))
+
 ## [0.2.9](https://github.com/hbstack/header/compare/themes/pills/v0.2.8...themes/pills/v0.2.9) (2023-09-02)
 
 
