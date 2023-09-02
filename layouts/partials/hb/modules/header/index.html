@@ -1,8 +1,9 @@
 {{- $params := $.Site.Params.hb.header }}
+{{- $breakpoint := partialCached "hb/modules/header/functions/breakpoint" . }}
 <header class="hb-header"
   {{ partial "hugopress/functions/render-attributes" (dict "Name" "hb-header" "Page" .) | safeHTMLAttr }}>
   {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-begin" "Page" .) }}
-  <nav class="hb-header-nav navbar navbar-expand-xxl">
+  <nav class="hb-header-nav navbar navbar-expand-{{ $breakpoint }}">
     {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-nav-before" "Page" .) }}
     <div
       class="{{ cond $params.full_width `container-fluid` `container-xxl` }}">
@@ -22,7 +23,7 @@
         {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-togglers-end" "Page" .) }}
       </div>
       <div
-        class="offcanvas offcanvas-xxl offcanvas-end"
+        class="offcanvas offcanvas-{{ $breakpoint }} offcanvas-end"
         tabindex="-1"
         id="hb-header-content"
         aria-labelledby="hb-header-content-label">
@@ -49,8 +50,8 @@
           {{/* Panel begin. */}}
           <ul class="hb-header-panel navbar-nav flex-row flex-wrap">
             {{- if partial "hugopress/functions/has-modules" "hb-header-panel" }}
-              <li class="nav-item py-2 py-xxl-1 col-12 col-xxl-auto">
-                <hr class="d-xxl-none my-2 text-body-50" />
+              <li class="nav-item py-2 py-{{ $breakpoint }}-1 col-12 col-{{ $breakpoint }}-auto">
+                <hr class="d-{{ $breakpoint }}-none my-2 text-body-50" />
               </li>
             {{- end }}
             {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-panel" "Page" .) }}

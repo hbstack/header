@@ -21,7 +21,7 @@ $hb-header-menu-margin-x: 0.125rem;
 }
 
 .hb-header-menus {
-  @include media-breakpoint-up(xxl) {
+  @include media-breakpoint-up($hb-header-breakpoint) {
     .hb-header-menu {
       margin: 0 #{$hb-header-menu-margin-x};
       padding-left: 0;
