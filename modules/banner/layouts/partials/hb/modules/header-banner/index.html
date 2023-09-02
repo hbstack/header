@@ -66,14 +66,7 @@
     </picture>
   {{- end }}
   {{- with .video }}
-  <video
-    class="hb-header-banner-video position-absolute top-0 w-100"
-    onloadstart="document.querySelector('.hb-header').classList.add('hb-header-banner')"
-    {{ if default true .muted }}muted{{ end }}
-    loop
-    autoplay>
-    <source src="{{ .src }}">
-  </video>
+    {{ partial "hb/modules/header-banner/video" . }}
   {{- end }}
   {{- $innerClasses := slice "hb-header-banner-inner" }}
   {{- $alignment := "start" }}
