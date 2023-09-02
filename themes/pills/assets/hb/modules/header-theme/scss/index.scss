@@ -1,3 +1,11 @@
+.hb-header {
+  .navbar {
+    --#{$prefix}navbar-active-color: var(--#{$prefix}primary);
+    --#{$prefix}navbar-hover-color: var(--#{$prefix}header-navbar-active-color);
+    --#{$prefix}navbar-brand-hover-color: var(--#{$prefix}header-navbar-active-color);
+  }
+}
+
 .hb-header-nav {
   @extend .bg-body;
 }
