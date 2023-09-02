@@ -10,7 +10,7 @@ $hb-header-caret-width: 0.35em;
   }
 
   .nav-link {
-    @include media-breakpoint-up(xxl) {
+    @include media-breakpoint-up($hb-header-breakpoint) {
       &.active {
         --#{$prefix}body-color: var(--#{$prefix}body-color);
 

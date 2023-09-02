@@ -7,7 +7,7 @@
 }
 
 .hb-header-menu {
-  @include media-breakpoint-down(xxl) {
+  @include media-breakpoint-down($hb-header-breakpoint) {
     padding: 0 0.5rem;
   }
 
@@ -24,7 +24,7 @@
   }
 }
 
-@include media-breakpoint-down(xxl) {
+@include media-breakpoint-down($hb-header-breakpoint) {
   .hb-header-panel {
     padding: 0 0.25rem;
   }

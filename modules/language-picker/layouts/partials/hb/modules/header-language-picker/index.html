@@ -1,14 +1,15 @@
+{{- $breakpoint := partialCached "hb/modules/header/functions/breakpoint" . }}
 {{- if gt (len .Sites) 1 }}
-  <li class="language-picker nav-item dropdown col-6 col-xxl-auto d-flex flex-column justify-content-center">
+  <li class="language-picker nav-item dropdown col-6 col-{{ $breakpoint }}-auto d-flex flex-column justify-content-center">
     <a
-      class="btn btn-link nav-link py-2 px-0 px-xxl-2 d-flex justify-content-start justify-content-xxl-center align-items-center"
+      class="btn btn-link nav-link py-2 px-0 px-{{ $breakpoint }}-2 d-flex justify-content-start justify-content-{{ $breakpoint }}-center align-items-center"
       href="#"
       role="button"
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
       {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" "globe" "className" "my-1 language-picker-icon") }}
-      <span class="d-xxl-none ms-1">{{- .Language.LanguageName -}}</span>
+      <span class="d-{{ $breakpoint }}-none ms-1">{{- .Language.LanguageName -}}</span>
     </a>
 
     <ul class="language-picker-menu dropdown-menu dropdown-menu-end">
