@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.9.0](https://github.com/hbstack/header/compare/v0.8.2...v0.9.0) (2023-09-02)
+
+
+### Features ✨
+
+* add the breakpoint parameter that used for collapsing/expanding ([#262](https://github.com/hbstack/header/issues/262)) ([1fb877b](https://github.com/hbstack/header/commit/1fb877b070bd2d2ed5896ccfc454838266f4e15c))
+
+
+### Bug Fixes 🐞
+
+* calculate scroll-padding-top with top-offset CSS var ([52952f9](https://github.com/hbstack/header/commit/52952f9c38f93df26309cd3cb91eafdd29550cc2))
+
 ## [0.8.2](https://github.com/hbstack/header/compare/v0.8.1...v0.8.2) (2023-08-29)
 
 
