@@ -9,6 +9,7 @@ path = "github.com/hbstack/hb"
 path = "github.com/hugomods/icons/vendors/bootstrap"
 
 [params.hb.header]
+breakpoint = "lg"
 sticky = true
 full_width = true
 # brand = ""
