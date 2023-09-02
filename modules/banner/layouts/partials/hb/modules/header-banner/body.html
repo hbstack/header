@@ -1,0 +1,33 @@
+{{- $innerClasses := slice "hb-header-banner-inner" }}
+{{- $alignment := "start" }}
+{{- with .alignment }}
+  {{- $alignment = . }}
+{{- end }}
+{{- $innerClasses = $innerClasses | append (printf "text-%s" $alignment) }}
+{{- with .cols }}
+  {{- range split . " " }}
+    {{- $v := split . ":" }}
+    {{- if lt (len $v) 2 }}
+      {{- $innerClasses = $innerClasses | append (printf "col-%s" (index $v 0)) }}
+    {{- else }}
+      {{- $innerClasses = $innerClasses | append (printf "col-%s-%s" (index $v 0) (index $v 1)) }}
+    {{- end }}
+  {{- end }}
+{{- else }}
+  {{- $innerClasses = $innerClasses | append "col-12" "col-lg-8" }}
+{{- end }}
+<div
+  class="hb-header-banner col d-flex flex-column justify-content-center z-1 position-absolute top-0 w-100">
+  <div class="container">
+    <div class="row justify-content-{{ $alignment }}">
+      <div class="{{ delimit $innerClasses ` ` }}">
+        {{- if ne .title false }}
+          <h1 class="display-1">{{ default page.Title .title | markdownify }}</h1>
+        {{- end }}
+        {{- if ne .description false }}
+          <div class="lead">{{ default page.Description .description | markdownify }}</div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</div>
