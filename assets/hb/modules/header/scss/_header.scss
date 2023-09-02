@@ -1,5 +1,4 @@
 $hb-header-sticky: true !default;
-$hb-scroll-padding-top: 68px !default;
 $hb-header-menus-alignment: "center" !default;
 $hb-header-logo-bg: null !default;
 
@@ -13,7 +12,7 @@ $hb-header-logo-bg: null !default;
 
 @if $hb-header-sticky {
     html {
-        scroll-padding-top: $hb-scroll-padding-top;
+        scroll-padding-top: var(--#{$prefix}top-offset);
     }
 }
 
