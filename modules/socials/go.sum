@@ -5,6 +5,7 @@ github.com/hbstack/header v0.9.0 h1:lhFJYaaOSuuQ7/vavg9pULZ/po2JcoZrAiISh9Iqw70=
 github.com/hbstack/header v0.9.0/go.mod h1:ihpMPmzro0155ZHtd3t95C1R5NN61JUZ/0Hng3GpiGo=
 github.com/hbstack/socials v0.3.0 h1:NZnkOZ28H+ToYuM5gjCzVwBjGrG4l8PLQDf+tBIbsCg=
 github.com/hbstack/socials v0.3.0/go.mod h1:lc7XsL6iBSZqi8k3WImGqy4v6vMlZmlv+pbLWCbe4GE=
+github.com/hbstack/socials v0.4.0/go.mod h1:G6kI6asbxorXM2lXZgAdqWb2BvNX2CNJP4Ek6x8wwRs=
 github.com/hugomods/base v0.1.0 h1:3o9Y85BvXHjkYzZfswM/EtthQ8GOYKN8aXHkIWqu3/8=
 github.com/hugomods/base v0.1.0/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/hugopress v0.2.1 h1:coYEPHUNLuTxKrVWVIPgs0lbZ6yrqxdWjgSriNFuBVo=
