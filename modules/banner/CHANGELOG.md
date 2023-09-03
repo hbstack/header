@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.2](https://github.com/hbstack/header/compare/modules/banner/v0.5.1...modules/banner/v0.5.2) (2023-09-03)
+
+
+### Bug Fixes 🐞
+
+* **banner:** correct the menus and panel text color on small screens ([2a26f35](https://github.com/hbstack/header/commit/2a26f35062426015ee67fe93cdca54dc3e317c4f))
+
 ## [0.5.1](https://github.com/hbstack/header/compare/modules/banner/v0.5.0...modules/banner/v0.5.1) (2023-09-02)
 
 
