@@ -32,6 +32,13 @@
 .hb-header-banner {
     --#{$prefix}header-banner-color: #fff;
 
+    @include media-breakpoint-down($hb-header-breakpoint) {
+        .hb-header-menus,
+        .hb-header-panel {
+            --#{$prefix}navbar-color: var(--#{$prefix}color-body);
+        }
+    }
+
     color: var(--#{$prefix}header-banner-color);
     margin-bottom: 3rem;
 
