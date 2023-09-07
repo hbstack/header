@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.3](https://github.com/hbstack/header/compare/modules/banner/v0.5.2...modules/banner/v0.5.3) (2023-09-07)
+
+
+### Bug Fixes 🐞
+
+* **banner:** correct the video poster checking on Windows ([#274](https://github.com/hbstack/header/issues/274)) ([c25a311](https://github.com/hbstack/header/commit/c25a3115dc61ac85412ac02d198a966a5786852a))
+
 ## [0.5.2](https://github.com/hbstack/header/compare/modules/banner/v0.5.1...modules/banner/v0.5.2) (2023-09-03)
 
 
