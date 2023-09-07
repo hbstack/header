@@ -1,9 +1,12 @@
 {{- $poster := .poster }}
-{{- with resources.GetMatch $poster }}
-  {{- $poster = .RelPermalink }}
-{{- else }}
-  {{- if $poster }}
-    {{- $poster = relURL $poster }}
+{{- $posterURL := urls.Parse $poster }}
+{{- if not $posterURL.Scheme }}
+  {{- with resources.GetMatch $poster }}
+    {{- $poster = .RelPermalink }}
+  {{- else }}
+    {{- if $poster }}
+      {{- $poster = relURL $poster }}
+    {{- end }}
   {{- end }}
 {{- end }}
 <video
