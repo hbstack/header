@@ -10,5 +10,5 @@ require (
 	github.com/hugomods/hugopress v0.2.1 // indirect
 	github.com/hugomods/icons v0.6.0 // indirect
 	github.com/hugomods/icons/vendors/simple-icons v1.0.13 // indirect
-	github.com/twbs/icons v1.10.5 // indirect
+	github.com/twbs/icons v1.11.0 // indirect
 )
