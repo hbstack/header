@@ -11,5 +11,5 @@ require (
 	github.com/hugomods/icons v0.6.0 // indirect
 	github.com/hugomods/search v0.4.5 // indirect
 	github.com/krisk/Fuse v6.6.2+incompatible // indirect
-	github.com/twbs/icons v1.10.5 // indirect
+	github.com/twbs/icons v1.11.0 // indirect
 )
