@@ -84,3 +84,14 @@ $hb-header-logo-bg: null !default;
         background: $hb-header-logo-bg;
     }
 }
+
+@include media-breakpoint-up($hb-header-breakpoint) {
+    .hb-header-submenus {
+      column-count: 2;
+    }
+
+    .hb-header-submenu {
+      max-width: 35vw;
+      overflow: hidden;
+    }
+}
