@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.21](https://github.com/hbstack/header/compare/modules/socials/v0.1.20...modules/socials/v0.1.21) (2023-09-24)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/gohugoio/hugo-mod-bootstrap-scss/v5 to v5.20300.20200 ([d8d1e33](https://github.com/hbstack/header/commit/d8d1e3398c9832a47e9bcbb44c8737f0e1eb9295))
+* **deps:** update module github.com/hbstack/socials to v0.6.0 ([f3183e7](https://github.com/hbstack/header/commit/f3183e72aacde446a5109a1412e4271b8d4180d8))
+* **deps:** update module github.com/hugomods/icons/vendors/simple-icons to v1.0.14 ([9996f22](https://github.com/hbstack/header/commit/9996f221e35935f5a47109f248deca1b4e2ece14))
+* **deps:** update module github.com/twbs/icons to v1.11.0 ([33072cf](https://github.com/hbstack/header/commit/33072cf245580d826587ba19898bbbad66a14784))
+* **deps:** update module github.com/twbs/icons to v1.11.1 ([5bc6541](https://github.com/hbstack/header/commit/5bc65412346965369643bee7ca787129c0023515))
+
 ## [0.1.20](https://github.com/hbstack/header/compare/modules/socials/v0.1.19...modules/socials/v0.1.20) (2023-09-12)
 
 
