@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.25](https://github.com/hbstack/header/compare/modules/search/v0.1.24...modules/search/v0.1.25) (2023-09-24)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/gohugoio/hugo-mod-bootstrap-scss/v5 to v5.20300.20200 ([d8d1e33](https://github.com/hbstack/header/commit/d8d1e3398c9832a47e9bcbb44c8737f0e1eb9295))
+* **deps:** update module github.com/twbs/icons to v1.11.0 ([33072cf](https://github.com/hbstack/header/commit/33072cf245580d826587ba19898bbbad66a14784))
+* **deps:** update module github.com/twbs/icons to v1.11.1 ([5bc6541](https://github.com/hbstack/header/commit/5bc65412346965369643bee7ca787129c0023515))
+
 ## [0.1.24](https://github.com/hbstack/header/compare/modules/search/v0.1.23...modules/search/v0.1.24) (2023-09-02)
 
 
