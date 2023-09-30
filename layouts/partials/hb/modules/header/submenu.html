@@ -12,7 +12,8 @@
 {{- end }}
 {{- $target = default $target .Menu.Params.target }}
 {{- $rel = default $rel .Menu.Params.rel }}
-<li>
+<li
+  {{ if eq .Total 1 }}class="column-span-all"{{ end }}>
   {{- if $menu.Params.divider }}
     <hr class="dropdown-divider" />
   {{- else }}
