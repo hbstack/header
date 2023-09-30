@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.10.1](https://github.com/hbstack/header/compare/v0.10.0...v0.10.1) (2023-09-30)
+
+
+### Styles 🎨
+
+* dropdown menu header takes full width ([#301](https://github.com/hbstack/header/issues/301)) ([1c12319](https://github.com/hbstack/header/commit/1c123193a1a0ad74a3cb984eedbc7dc35ea89e4d)), closes [#299](https://github.com/hbstack/header/issues/299)
+* dropdown menu takes full width when there is only one menu ([#302](https://github.com/hbstack/header/issues/302)) ([473d3cb](https://github.com/hbstack/header/commit/473d3cbfd2106be0a8c6ab5eed421e0ed862acf6)), closes [#300](https://github.com/hbstack/header/issues/300)
+
 ## [0.10.0](https://github.com/hbstack/header/compare/v0.9.0...v0.10.0) (2023-09-24)
 
 

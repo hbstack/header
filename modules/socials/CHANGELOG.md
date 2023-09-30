@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.22](https://github.com/hbstack/header/compare/modules/socials/v0.1.21...modules/socials/v0.1.22) (2023-09-30)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.10.0 ([11d8590](https://github.com/hbstack/header/commit/11d859036926a0b5b95edca01580a9f1dea0ad5b))
+* **deps:** update module github.com/hugomods/icons/vendors/simple-icons to v1.0.15 ([3ca8887](https://github.com/hbstack/header/commit/3ca8887df1c4b5e4e77061fefee5feea59d9c156))
+
 ## [0.1.21](https://github.com/hbstack/header/compare/modules/socials/v0.1.20...modules/socials/v0.1.21) (2023-09-24)
 
 
