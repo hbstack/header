@@ -42,7 +42,7 @@
     }
 
     color: var(--#{$prefix}header-banner-color);
-    margin-bottom: 3rem;
+    margin-bottom: 3rem !important;
 
     &:not(.scrolling) {
         .hb-header-nav {
