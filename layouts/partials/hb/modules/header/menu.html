@@ -69,12 +69,12 @@
       aria-labelledby="{{ $menuID }}"
       data-bs-popper="none">
       {{- with $menu.Params.header }}
-        <li class="colum-span-all">
+        <li class="column-span-all">
           <h6 class="dropdown-header">{{ . }}</h6>
         </li>
       {{- end }}
-      {{- range $menu.Children }}
-        {{- $submenuCtx := dict "Menu" . "Page" $page }}
+      {{- range $i, $child := $menu.Children }}
+        {{- $submenuCtx := dict "Menu" $child "Page" $page "Index" $i "Total" (len $menu.Children) }}
         {{- partial "hb/modules/header/submenu" $submenuCtx }}
       {{- end }}
     </ul>
