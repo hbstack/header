@@ -2,3 +2,6 @@ classes = [
     "offcanvas-backdrop", # Required by Offcanvas.
     "shadow-sm",
 ]
+attributes = [
+    "data-columns"
+]
