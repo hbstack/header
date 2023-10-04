@@ -64,9 +64,12 @@
     {{- else if ge .Index 6 }}
       {{- $alignment = " dropdown-menu-end" }}
     {{- end }}
+    {{- $total := len $menu.Children }}
+    {{- $columns := default (cond (ge $total 6) 2 1) $menu.Params.columns }}
     <ul
-      class="hb-header-submenus dropdown-menu{{ $alignment }} "
+      class="hb-header-submenus dropdown-menu{{ $alignment }}"
       aria-labelledby="{{ $menuID }}"
+      {{ if gt $columns 1 }}data-columns="{{ $columns }}"{{ end }}
       data-bs-popper="none">
       {{- with $menu.Params.header }}
         <li class="column-span-all">
@@ -74,7 +77,7 @@
         </li>
       {{- end }}
       {{- range $i, $child := $menu.Children }}
-        {{- $submenuCtx := dict "Menu" $child "Page" $page "Index" $i "Total" (len $menu.Children) }}
+        {{- $submenuCtx := dict "Menu" $child "Page" $page "Index" $i "Total" $total }}
         {{- partial "hb/modules/header/submenu" $submenuCtx }}
       {{- end }}
     </ul>
