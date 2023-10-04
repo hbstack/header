@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.11.0](https://github.com/hbstack/header/compare/v0.10.1...v0.11.0) (2023-10-04)
+
+
+### Features ✨
+
+* add the columns parameter for dropdown menus, up to 2 ([#313](https://github.com/hbstack/header/issues/313)) ([14b9cf4](https://github.com/hbstack/header/commit/14b9cf463a83da0a47aaa65cd95dc495931596f8))
+* use the page description for dropdown menu if set ([#312](https://github.com/hbstack/header/issues/312)) ([e487abd](https://github.com/hbstack/header/commit/e487abd036f0534033615562081b8ab6b6f3815d))
+
 ## [0.10.1](https://github.com/hbstack/header/compare/v0.10.0...v0.10.1) (2023-09-30)
 
 
