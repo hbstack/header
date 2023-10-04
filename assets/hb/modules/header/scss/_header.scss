@@ -87,12 +87,14 @@ $hb-header-logo-bg: null !default;
 
 @include media-breakpoint-up($hb-header-breakpoint) {
     .hb-header-submenus {
-      column-count: 2;
-    }
+        &[data-columns="2"] {
+          column-count: 2;
 
-    .hb-header-submenu {
-      max-width: 35vw;
-      overflow: hidden;
+          .hb-header-submenu {
+            max-width: 35vw;
+            overflow: hidden;
+          }
+        }
     }
 }
 
