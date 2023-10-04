@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.1](https://github.com/hbstack/header/compare/v0.11.0...v0.11.1) (2023-10-04)
+
+
+### Bug Fixes 🐞
+
+* add the data-columns to PurgeCSS safelist ([6616c22](https://github.com/hbstack/header/commit/6616c22ff8cdd1583efc302cb75f171d48678684))
+
 ## [0.11.0](https://github.com/hbstack/header/compare/v0.10.1...v0.11.0) (2023-10-04)
 
 

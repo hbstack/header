@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.18](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.1.17...modules/theme-toggle/v0.1.18) (2023-10-04)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.11.0 ([2c932d4](https://github.com/hbstack/header/commit/2c932d4000fa9c690aa223a0ee595083c608f9bf))
+
 ## [0.1.17](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.1.16...modules/theme-toggle/v0.1.17) (2023-10-04)
 
 
