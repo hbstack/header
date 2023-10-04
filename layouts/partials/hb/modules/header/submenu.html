@@ -12,6 +12,10 @@
 {{- end }}
 {{- $target = default $target .Menu.Params.target }}
 {{- $rel = default $rel .Menu.Params.rel }}
+{{- $description := $menu.Params.description }}
+{{- if not $description }}
+  {{- with $menu.Page }}{{ $description = .Description }}{{ end }}
+{{- end }}
 <li
   {{ if eq .Total 1 }}class="column-span-all"{{ end }}>
   {{- if $menu.Params.divider }}
@@ -31,10 +35,10 @@
       {{- end }}
       <div class="dropdown-item-content">
         <div
-          class="dropdown-item-title{{ cond (isset $menu.Params `description`) ` mb-1` `` }}">
+          class="dropdown-item-title{{ cond (not $description) `` ` mb-1` }}">
           {{- $menu.Name -}}
         </div>
-        {{- with $menu.Params.description }}
+        {{- with $description }}
           <p class="dropdown-item-desc mb-0 text-wrap">{{- . -}}</p>
         {{- end }}
       </div>
