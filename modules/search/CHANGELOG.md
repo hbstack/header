@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.28](https://github.com/hbstack/header/compare/modules/search/v0.1.27...modules/search/v0.1.28) (2023-10-04)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.11.0 ([2c932d4](https://github.com/hbstack/header/commit/2c932d4000fa9c690aa223a0ee595083c608f9bf))
+
 ## [0.1.27](https://github.com/hbstack/header/compare/modules/search/v0.1.26...modules/search/v0.1.27) (2023-10-04)
 
 
