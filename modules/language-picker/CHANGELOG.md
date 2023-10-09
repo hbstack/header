@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.19](https://github.com/hbstack/header/compare/modules/language-picker/v0.1.18...modules/language-picker/v0.1.19) (2023-10-09)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.11.1 ([9d0d17e](https://github.com/hbstack/header/commit/9d0d17e0a4e503b02f572b094a5c4c60023dd1cb))
+
 ## [0.1.18](https://github.com/hbstack/header/compare/modules/language-picker/v0.1.17...modules/language-picker/v0.1.18) (2023-10-04)
 
 

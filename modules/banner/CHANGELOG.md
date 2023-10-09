@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.8](https://github.com/hbstack/header/compare/modules/banner/v0.5.7...modules/banner/v0.5.8) (2023-10-09)
+
+
+### Continuous Integration
+
+* **deps:** update module github.com/hbstack/header to v0.11.1 ([9d0d17e](https://github.com/hbstack/header/commit/9d0d17e0a4e503b02f572b094a5c4c60023dd1cb))
+
 ## [0.5.7](https://github.com/hbstack/header/compare/modules/banner/v0.5.6...modules/banner/v0.5.7) (2023-10-04)
 
 
