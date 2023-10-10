@@ -1,14 +1,11 @@
 {{/* Indicate whether the menu is the current page. */}}
-{{- $v := false }}
+{{- $v := or (.Page.IsMenuCurrent "main" .Menu) (.Page.HasMenuCurrent "main" .Menu) }}
 {{- if ne .Menu.URL "" }}
-  {{- $v = .Page.IsMenuCurrent "main" .Menu }}
-  {{- $hasMenuCurrent := .Page.HasMenuCurrent "main" .Menu }}
   {{- $homeURL := strings.TrimSuffix "/" site.Home.Permalink }}
   {{- $menuURL := strings.TrimSuffix "/" (absURL .Menu.URL) }}
   {{- $pageURL := strings.TrimSuffix "/" .Page.Permalink }}
   {{- $v = or
     $v
-    $hasMenuCurrent
     (eq $menuURL $pageURL)
     (and (ne $menuURL $homeURL) (hasPrefix $pageURL $menuURL))
   }}
