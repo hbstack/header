@@ -7,5 +7,6 @@
     "modules/socials": "0.1.25",
     "modules/theme-toggle": "0.1.19",
     "themes/classic": "0.2.14",
-    "themes/pills": "0.2.15"
+    "themes/pills": "0.2.15",
+    "themes/tabs": "0.0.1"
 }

@@ -47,6 +47,9 @@
         },
         "themes/pills": {
             "component": "themes/pills"
+        },
+        "themes/tabs": {
+            "component": "themes/tabs"
         }
     }
 }
