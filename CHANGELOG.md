@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.2](https://github.com/hbstack/header/compare/v0.11.1...v0.11.2) (2023-10-10)
+
+
+### Bug Fixes 🐞
+
+* active the parent menu if it's children are active ([#321](https://github.com/hbstack/header/issues/321)) ([165f665](https://github.com/hbstack/header/commit/165f66514afbe1fe72964646f5c60ceed67da272))
+
 ## [0.11.1](https://github.com/hbstack/header/compare/v0.11.0...v0.11.1) (2023-10-04)
 
 
