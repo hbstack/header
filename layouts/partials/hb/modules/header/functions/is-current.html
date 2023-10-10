@@ -2,11 +2,13 @@
 {{- $v := false }}
 {{- if ne .Menu.URL "" }}
   {{- $v = .Page.IsMenuCurrent "main" .Menu }}
+  {{- $hasMenuCurrent := .Page.HasMenuCurrent "main" .Menu }}
   {{- $homeURL := strings.TrimSuffix "/" site.Home.Permalink }}
   {{- $menuURL := strings.TrimSuffix "/" (absURL .Menu.URL) }}
   {{- $pageURL := strings.TrimSuffix "/" .Page.Permalink }}
   {{- $v = or
-    $v 
+    $v
+    $hasMenuCurrent
     (eq $menuURL $pageURL)
     (and (ne $menuURL $homeURL) (hasPrefix $pageURL $menuURL))
   }}
