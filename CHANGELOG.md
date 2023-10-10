@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.3](https://github.com/hbstack/header/compare/v0.11.2...v0.11.3) (2023-10-10)
+
+
+### Bug Fixes 🐞
+
+* correct the active parent menu when it's URL is empty ([4d6cfe5](https://github.com/hbstack/header/commit/4d6cfe57d802bb1a87aff6eca5b3bc813d626eb8))
+
 ## [0.11.2](https://github.com/hbstack/header/compare/v0.11.1...v0.11.2) (2023-10-10)
 
 
