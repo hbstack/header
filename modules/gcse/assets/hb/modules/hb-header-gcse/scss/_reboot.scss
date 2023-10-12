@@ -1,0 +1,33 @@
+/* stylelint-disable */
+
+.gsc-control-wrapper-cse {
+  table {
+    --hb-table-hover-bg: transparent !important;
+
+    margin: 0;
+
+    td {
+      padding: 0;
+    }
+
+    tr,
+    td {
+      border: none;
+    }
+  }
+}
+
+.gsc-above-wrapper-area,
+.gsc-positioningWrapper {
+  border-color: var(--#{$prefix}border-color) !important;
+}
+
+.gsc-control-cse,
+.gsc-result {
+  background-color: var(--#{$prefix}body-bg) !important;
+  border-color: var(--#{$prefix}border-color) !important;
+  border: none !important;
+  color: var(--#{$prefix}body-color) !important;
+}
+
+/* stylelint-enable */

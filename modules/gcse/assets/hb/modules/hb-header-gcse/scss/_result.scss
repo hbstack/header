@@ -1,0 +1,30 @@
+/* stylelint-disable */
+
+.gs-image-box {
+  margin-right: .5rem !important;
+}
+
+.gs-snippet {
+  color: var(--#{$prefix}body-color) !important;
+}
+
+.gsc-cursor-page {
+  background-color: transparent !important;
+}
+
+.gsc-adBlock {
+  .styleable-rootcontainer {
+    background-color: transparent !important;
+  }
+}
+
+.gsc-tabsArea {
+  border-color: var(--#{$prefix}border-color) !important;
+}
+
+.gsc-tabHeader {
+  background-color: var(--#{$prefix}body-bg) !important;
+  color: var(--#{$prefix}body-color) !important;
+}
+
+/* stylelint-enable */

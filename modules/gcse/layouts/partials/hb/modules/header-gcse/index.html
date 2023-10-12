@@ -1,0 +1,32 @@
+{{- $layout := partialCached "hb/modules/header-gcse/functions/layout" . }}
+{{- $icon := partial "icons/icon" (dict
+  "vendor" "bootstrap"
+  "name" "search"
+  "className" "gcse-search-icon"
+  "width" "0.875em"
+  "height" "0.875em")
+}}
+{{- if eq $layout "offcanvas" }}
+  <a
+    class="btn-gcse-search border-0 bg-transparent px-2 d-flex align-items-center"
+    type="button"
+    data-bs-toggle="offcanvas"
+    href="#offcanvas-gces"
+    aria-controls="offcanvas-gces">
+    {{ $icon }}
+  </a>
+{{- else }}
+  {{- $url := default (printf "https://cse.google.com/cse?cx=%s" site.Params.hb.header.gcse.id) site.Params.hb.header.gcse.url }}
+  {{- range slice "gcse" "gcse-standalone" }}
+    {{- with where site.Pages "Layout" . }}
+      {{- with index . 0 }}{{ $url = .RelPermalink }}{{ end }}
+      {{- break }}
+    {{- end }}
+  {{- end }}
+  <a
+    class="btn-gcse-search border-0 bg-transparent px-2 d-flex align-items-center"
+    target="_blank"
+    href="{{ $url }}">
+    {{ $icon }}
+  </a>
+{{- end }}
