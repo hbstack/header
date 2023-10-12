@@ -1,0 +1,21 @@
+{{- $layout := partialCached "hb/modules/header-gcse/functions/layout" . }}
+{{- if eq $layout "offcanvas" }}
+  <div
+    class="offcanvas offcanvas-end offcanvas-gcse"
+    tabindex="-1"
+    id="offcanvas-gces"
+    aria-labelledby="offcanvas-gces-label">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title" id="offcanvas-gces-label">Search</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-1">
+      <div class="gcse-search"></div>
+    </div>
+  </div>
+{{- end }}
+{{ partialCached "hb/modules/header-gcse/assets/js" . }}
