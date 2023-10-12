@@ -30,6 +30,9 @@
         "modules/docsearch": {
             "component": "modules/docsearch"
         },
+        "modules/gcse": {
+            "component": "modules/gcse"
+        },
         "modules/language-picker": {
             "component": "modules/language-picker"
         },
