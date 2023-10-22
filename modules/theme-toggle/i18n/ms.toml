@@ -1,0 +1,11 @@
+[theme_auto]
+other = "Auto"
+
+[theme_dark]
+other = "Gelap"
+
+[theme_light]
+other = "Terang"
+
+[theme_title]
+other = "Tema"
