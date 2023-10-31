@@ -4,6 +4,7 @@
     "modules/docsearch": "0.1.23",
     "modules/gcse": "0.1.0",
     "modules/language-picker": "0.1.22",
+    "modules/news": "0.0.1",
     "modules/search": "0.1.32",
     "modules/socials": "0.1.28",
     "modules/theme-toggle": "0.2.1",

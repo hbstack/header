@@ -36,6 +36,9 @@
         "modules/language-picker": {
             "component": "modules/language-picker"
         },
+        "modules/news": {
+            "component": "modules/news"
+        },
         "modules/search": {
             "component": "modules/search"
         },
