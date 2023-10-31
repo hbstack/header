@@ -1,0 +1,36 @@
+{{- $breakpoint := partialCached "hb/modules/header/functions/breakpoint" . }}
+{{- $sections := default (slice "news") site.Params.hb.header.news.sections }}
+{{- $limit := default 5 site.Params.hb.header.news.limit }}
+{{- $news := where site.RegularPages "Section" "in" $sections }}
+{{- $news = first $limit $news }}
+{{- $dateFormat := default ":date_full" site.Params.hb.header.news.date_format }}
+{{- with $news }}
+  <li class="header-news nav-item dropdown col-6 col-{{ $breakpoint }}-auto d-flex flex-column justify-content-center">
+    <a
+      class="btn btn-link header-news-toggle nav-link py-2 px-0 px-{{ $breakpoint }}-2 d-flex justify-content-start justify-content-{{ $breakpoint }}-center align-items-center position-relative"
+      href="#"
+      role="button"
+      data-bs-toggle="dropdown"
+      title="{{ i18n `news` }}"
+      aria-expanded="false">
+      {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" "bell" "className" "my-1 header-news-icon") }}
+      <span class="position-absolute top-0 end-0 mt-2 me-2 p-1 bg-danger border border-light rounded-circle header-news-count d-none">
+        <span class="visually-hidden">{{- len $news -}}</span>
+      </span>
+    </a>
+
+    <ul class="header-news-items dropdown-menu dropdown-menu-end">
+      {{- range . }}
+        <li>
+          <a
+            class="header-news-item dropdown-item d-flex flex-column"
+            data-date="{{ .Date.Unix }}"
+            href="{{ .RelPermalink }}">
+            <span class="header-news-title text-wrap mb-1 fw-bold">{{ .Title -}}</span>
+            <small class="header-news-date">{{- .Date | time.Format $dateFormat }}</small>
+          </a>
+        </li>
+      {{- end }}
+    </ul>
+  </li>
+{{- end }}
