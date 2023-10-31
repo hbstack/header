@@ -1,13 +1,13 @@
 {
-    ".": "0.12.0",
-    "modules/banner": "0.5.10",
-    "modules/docsearch": "0.1.22",
+    ".": "0.12.1",
+    "modules/banner": "0.5.11",
+    "modules/docsearch": "0.1.23",
     "modules/gcse": "0.1.0",
-    "modules/language-picker": "0.1.21",
-    "modules/search": "0.1.31",
-    "modules/socials": "0.1.27",
-    "modules/theme-toggle": "0.2.0",
-    "themes/classic": "0.2.16",
-    "themes/pills": "0.2.17",
+    "modules/language-picker": "0.1.22",
+    "modules/search": "0.1.32",
+    "modules/socials": "0.1.28",
+    "modules/theme-toggle": "0.2.1",
+    "themes/classic": "0.2.17",
+    "themes/pills": "0.2.18",
     "themes/tabs": "0.1.0"
 }

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.1](https://github.com/hbstack/header/compare/v0.12.0...v0.12.1) (2023-10-31)
+
+
+### Bug Fixes 🐞
+
+* **deps:** update dependency stylelint-scss to v5.3.0 ([11bad38](https://github.com/hbstack/header/commit/11bad38eaa74b09b147b2e78f4f37e3a72ab0f22))
+
 ## [0.12.0](https://github.com/hbstack/header/compare/v0.11.3...v0.12.0) (2023-10-12)
 
 
