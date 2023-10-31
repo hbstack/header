@@ -17,7 +17,7 @@
         <li>
           <a
             class="language-picker-item dropdown-item{{ cond (eq .Language.Lang $.Language.Lang) ` active` `` }}"
-            href="{{ .LanguagePrefix | absURL }}"
+            href="{{ .Home.Permalink }}"
           >
             {{- default .Language.Lang .Language.LanguageName -}}
           </a>
