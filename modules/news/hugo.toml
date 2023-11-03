@@ -8,5 +8,5 @@ weight = 10
 sections = ["news"]
 limit = 5
 date_format = ":date_full"
-icon_name = "bell" # Use anohter Bootstrap icon, e.g. megaphone.
+icon_name = "bell-fill" # Use anohter Bootstrap icon, e.g. megaphone.
 icon_vendor = "bootstrap" # Use icons vendor other than Bootstrap.
