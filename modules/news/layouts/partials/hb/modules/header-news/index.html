@@ -13,7 +13,11 @@
       data-bs-toggle="dropdown"
       title="{{ i18n `news` }}"
       aria-expanded="false">
-      {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" "bell" "className" "my-1 header-news-icon") }}
+      {{ partial "icons/icon" (dict
+        "vendor" (default "bootstrap" site.Params.hb.header.news.icon_vendor)
+        "name" (default "bell" site.Params.hb.header.news.icon_name)
+        "className" "my-1 header-news-icon")
+      }}
       <span class="position-absolute top-0 end-0 mt-2 me-2 p-1 bg-danger border border-light rounded-circle header-news-count d-none">
         <span class="visually-hidden">{{- len $news -}}</span>
       </span>
