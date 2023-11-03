@@ -2,6 +2,7 @@
 path = "github.com/hbstack/header"
 
 [params.hugopress.modules.hb-header-news.hooks.hb-header-panel]
+weight = 10
 
 [params.hb.header.news]
 sections = ["news"]

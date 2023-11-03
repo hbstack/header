@@ -5,7 +5,7 @@
 {{- $news = first $limit $news }}
 {{- $dateFormat := default ":date_full" site.Params.hb.header.news.date_format }}
 {{- with $news }}
-  <li class="header-news nav-item dropdown col-6 col-{{ $breakpoint }}-auto d-flex flex-column justify-content-center">
+  <li class="header-news nav-item dropdown col-12 col-{{ $breakpoint }}-auto d-flex flex-column justify-content-center">
     <a
       class="btn btn-link header-news-toggle nav-link py-2 px-0 px-{{ $breakpoint }}-2 d-flex justify-content-start justify-content-{{ $breakpoint }}-center align-items-center position-relative"
       href="#"
@@ -17,6 +17,7 @@
       <span class="position-absolute top-0 end-0 mt-2 me-2 p-1 bg-danger border border-light rounded-circle header-news-count d-none">
         <span class="visually-hidden">{{- len $news -}}</span>
       </span>
+      <span class="d-{{ $breakpoint }}-none ms-1">{{ i18n "news" }}</span>
     </a>
 
     <ul class="header-news-items dropdown-menu dropdown-menu-end">
