@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.2.1...modules/theme-toggle/v0.3.0) (2023-11-04)
+
+
+### Features ✨
+
+* **i18n:** add french translations for the theme-toggle ([#367](https://github.com/hbstack/header/issues/367)) ([e224637](https://github.com/hbstack/header/commit/e224637a8398ae8bd2eaf6d6129e6899fb0181f5))
+
 ## [0.2.1](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.2.0...modules/theme-toggle/v0.2.1) (2023-10-31)
 
 
