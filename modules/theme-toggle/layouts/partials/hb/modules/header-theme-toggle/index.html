@@ -11,6 +11,7 @@
     role="button"
     data-bs-toggle="dropdown"
     aria-expanded="false"
+    title="{{ i18n `theme_title` }}"
   >
     {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" "circle-half" "className" "my-1 theme-toggle-icon") }}
     <span class="d-{{ $breakpoint }}-none ms-1">{{ i18n "theme_title" }}</span>
