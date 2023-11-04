@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.3.0...modules/theme-toggle/v0.3.1) (2023-11-04)
+
+
+### Bug Fixes 🐞
+
+* add missing tooltip on the theme-toggle button ([#369](https://github.com/hbstack/header/issues/369)) ([d4d2fb7](https://github.com/hbstack/header/commit/d4d2fb7b48a0390c212c1e693ef529df5ad02f79))
+
 ## [0.3.0](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.2.1...modules/theme-toggle/v0.3.0) (2023-11-04)
 
 
