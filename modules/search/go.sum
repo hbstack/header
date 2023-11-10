@@ -29,6 +29,7 @@ github.com/hugomods/search v0.4.5/go.mod h1:xdMNL0R06eMDyl8LVoFNp19lnFSNMFT+oje8
 github.com/hugomods/search v0.5.0/go.mod h1:FURp5HBUm8JiuJajLk9sZ1Z1QUSJATboYEp1sFi46a4=
 github.com/hugomods/search v0.6.0/go.mod h1:FURp5HBUm8JiuJajLk9sZ1Z1QUSJATboYEp1sFi46a4=
 github.com/hugomods/search v0.7.0/go.mod h1:FURp5HBUm8JiuJajLk9sZ1Z1QUSJATboYEp1sFi46a4=
+github.com/hugomods/search v0.8.1/go.mod h1:FURp5HBUm8JiuJajLk9sZ1Z1QUSJATboYEp1sFi46a4=
 github.com/krisk/Fuse v6.6.2+incompatible h1:laigOpZFs/xUi9zGjVu5t19bcvzRVufoXCnPSgQZmYI=
 github.com/krisk/Fuse v6.6.2+incompatible/go.mod h1:3moWv8rDjwoKic9nwiPLgZjldkbdTAbtzJHCu/Vsj4A=
 github.com/krisk/Fuse v7.0.0+incompatible/go.mod h1:3moWv8rDjwoKic9nwiPLgZjldkbdTAbtzJHCu/Vsj4A=
