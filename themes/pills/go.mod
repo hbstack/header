@@ -8,5 +8,5 @@ require (
 	github.com/hugomods/base v0.4.0 // indirect
 	github.com/hugomods/hugopress v0.2.2 // indirect
 	github.com/hugomods/icons v0.6.0 // indirect
-	github.com/twbs/icons v1.11.1 // indirect
+	github.com/twbs/icons v1.11.2 // indirect
 )
