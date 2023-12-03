@@ -1,9 +1,9 @@
 {
-    ".": "0.12.1",
+    ".": "0.12.2",
     "modules/banner": "0.5.11",
     "modules/docsearch": "0.1.23",
     "modules/gcse": "0.1.0",
-    "modules/language-picker": "0.1.22",
+    "modules/language-picker": "0.1.23",
     "modules/news": "0.2.0",
     "modules/search": "0.1.32",
     "modules/socials": "0.1.28",
