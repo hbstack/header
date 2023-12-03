@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.33](https://github.com/hbstack/header/compare/modules/search/v0.1.32...modules/search/v0.1.33) (2023-12-03)
+
+
+### Bug Fixes 🐞
+
+* **search:** set the id attribute for input ([e3790a5](https://github.com/hbstack/header/commit/e3790a55312fa4bcabe35a1293a43ed2d9d28bb6))
+
 ## [0.1.32](https://github.com/hbstack/header/compare/modules/search/v0.1.31...modules/search/v0.1.32) (2023-10-31)
 
 
