@@ -7,7 +7,7 @@
       role="button"
       data-bs-toggle="dropdown"
       aria-expanded="false"
-    >
+      title="Language picker">
       {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" "globe" "className" "my-1 language-picker-icon") }}
       <span class="d-{{ $breakpoint }}-none ms-1">{{- .Language.LanguageName -}}</span>
     </a>
