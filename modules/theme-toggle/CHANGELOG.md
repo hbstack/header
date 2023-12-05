@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.3.1...modules/theme-toggle/v0.4.0) (2023-12-05)
+
+
+### Features ✨
+
+* **theme-toggle:** add switch style and set it to default ([#399](https://github.com/hbstack/header/issues/399)) ([d8ab9ea](https://github.com/hbstack/header/commit/d8ab9ea61e7c66f5b637c57a8cdb4bf2b8e5411f))
+
 ## [0.3.1](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.3.0...modules/theme-toggle/v0.3.1) (2023-11-04)
 
 
