@@ -4,30 +4,32 @@
   "light" (dict "icon" "brightness-high")
 }}
 {{- $breakpoint := partialCached "hb/modules/header/functions/breakpoint" . }}
+{{- $style := default "switch" site.Params.hb.header.theme_toggle.style }}
 <li class="theme-toggle nav-item dropdown col-6 col-{{ $breakpoint }}-auto d-flex flex-column justify-content-center">
   <a
-    class="btn btn-link nav-link py-2 px-0 px-{{ $breakpoint }}-2 d-flex justify-content-start justify-content-{{ $breakpoint }}-center align-items-center"
+    class="btn btn-link btn-theme-toggle nav-link py-2 px-0 px-{{ $breakpoint }}-2 d-flex justify-content-start justify-content-{{ $breakpoint }}-center align-items-center"
     href="#"
     role="button"
-    data-bs-toggle="dropdown"
+    {{ if eq $style "dropdown" }}data-bs-toggle="dropdown"{{ end }}
+    data-style="{{ $style }}"
     aria-expanded="false"
-    title="{{ i18n `theme_title` }}"
-  >
+    title="{{ i18n `theme_title` }}">
     {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" "circle-half" "className" "my-1 theme-toggle-icon") }}
-    <span class="d-{{ $breakpoint }}-none ms-1">{{ i18n "theme_title" }}</span>
+    <span class="d-{{ $breakpoint }}-none ms-1 theme-name">{{ i18n "theme_title" }}</span>
   </a>
 
   <ul class="theme-toggle-menu dropdown-menu dropdown-menu-end">
     {{- range $name, $color := $colors }}
+      {{- $themeName := printf "theme_%s" $name | i18n }}
       <li>
         <button
           class="theme-toggle-item dropdown-item d-flex align-items-center justify-content-center"
-          data-bs-theme-value="{{ $name }}"
-        >
+          data-bs-theme-name="{{ $themeName }}"
+          data-bs-theme-value="{{ $name }}">
           <span class="theme-toggle-item-icon me-1 d-flex align-items-center">
             {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" $color.icon "className" "my-1") }}
           </span>
-          {{ printf "theme_%s" $name | i18n }}
+          {{ $themeName }}
         </button>
       </li>
     {{- end }}
