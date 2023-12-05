@@ -1,3 +1,7 @@
 .theme-toggle-menu {
     --#{$prefix}dropdown-min-width: 4rem;
 }
+
+body {
+    transition: background .5s, color .5s;
+}
