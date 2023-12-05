@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.3](https://github.com/hbstack/header/compare/v0.12.2...v0.12.3) (2023-12-05)
+
+
+### Styles 🎨
+
+* change header nav transition to .5s ([9d2956b](https://github.com/hbstack/header/commit/9d2956b379696deb33cee3896905dbda22389dbb))
+
 ## [0.12.2](https://github.com/hbstack/header/compare/v0.12.1...v0.12.2) (2023-12-03)
 
 
