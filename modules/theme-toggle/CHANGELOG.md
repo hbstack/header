@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.4.1...modules/theme-toggle/v0.4.2) (2023-12-06)
+
+
+### Bug Fixes 🐞
+
+* **theme-toggle:** replace &lt;a&gt; with <button> ([#404](https://github.com/hbstack/header/issues/404)) ([ec5e494](https://github.com/hbstack/header/commit/ec5e49406ab6bd03c7384fdcafabf515270e0a14)), closes [#403](https://github.com/hbstack/header/issues/403)
+
 ## [0.4.1](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.4.0...modules/theme-toggle/v0.4.1) (2023-12-05)
 
 
