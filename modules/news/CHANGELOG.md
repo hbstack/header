@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/hbstack/header/compare/modules/news/v0.2.0...modules/news/v0.2.1) (2023-12-08)
+
+
+### Styles 🎨
+
+* **news:** change the margin-right of badge to me-1 ([2845ecc](https://github.com/hbstack/header/commit/2845ecccaec12a87bfead5ac41543e55b230f504))
+
 ## [0.2.0](https://github.com/hbstack/header/compare/modules/news/v0.1.0...modules/news/v0.2.0) (2023-11-03)
 
 
