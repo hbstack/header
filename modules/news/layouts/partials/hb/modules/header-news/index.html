@@ -18,7 +18,7 @@
         "name" (default "bell-fill" site.Params.hb.header.news.icon_name)
         "className" "my-1 header-news-icon")
       }}
-      <span class="position-absolute top-0 end-0 mt-2 me-2 p-1 bg-danger border border-light rounded-circle header-news-count d-none">
+      <span class="position-absolute top-0 end-0 mt-2 me-1 p-1 bg-danger border border-light rounded-circle header-news-count d-none">
         <span class="visually-hidden">{{- len $news -}}</span>
       </span>
       <span class="d-{{ $breakpoint }}-none ms-1">{{ i18n "news" }}</span>
