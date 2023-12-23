@@ -46,6 +46,16 @@ import params from "@params";
             header.classList.add('scrolling')
         }
 
+        const isMobile = (): boolean => {
+            return window.innerWidth < 576
+        }
+
+        window.addEventListener('resize', () => {
+            if (!isMobile()) {
+                show()
+            }
+        })
+
         window.addEventListener('scroll', () => {
             if (document.documentElement.scrollTop === 0) {
                 header.classList.remove('scrolling')
@@ -54,7 +64,7 @@ import params from "@params";
                 header.classList.add('scrolling')
                 shadow()
             }
-            if (window.innerWidth < 576 && Math.abs(document.documentElement.scrollTop - h) > threshold) {
+            if (isMobile() && Math.abs(document.documentElement.scrollTop - h) > threshold) {
                 document.documentElement.scrollTop > h ? hide() : show();
                 h = document.documentElement.scrollTop;
             }
