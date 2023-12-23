@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.12.4](https://github.com/hbstack/header/compare/v0.12.3...v0.12.4) (2023-12-23)
+
+
+### Bug Fixes 🐞
+
+* **deps:** update dependency stylelint-scss to v6 ([5769dba](https://github.com/hbstack/header/commit/5769dba86eaf2de90d9e6d702963087a4ca0bb1f))
+* show the hidden header in the case of resizing to large screen from small screen ([#423](https://github.com/hbstack/header/issues/423)) ([1e741b0](https://github.com/hbstack/header/commit/1e741b0dd919af4f114a80392a82b63d3c99094b))
+
 ## [0.12.3](https://github.com/hbstack/header/compare/v0.12.2...v0.12.3) (2023-12-05)
 
 
