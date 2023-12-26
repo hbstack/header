@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.5](https://github.com/hbstack/header/compare/v0.12.4...v0.12.5) (2023-12-26)
+
+
+### Styles 🎨
+
+* remove transition ([25f45e5](https://github.com/hbstack/header/commit/25f45e5b0720ffd95d2ca3c3c912c9a8430ef750))
+
 ## [0.12.4](https://github.com/hbstack/header/compare/v0.12.3...v0.12.4) (2023-12-23)
 
 
