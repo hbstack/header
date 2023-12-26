@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.3](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.4.2...modules/theme-toggle/v0.4.3) (2023-12-26)
+
+
+### Styles 🎨
+
+* remove transition ([25f45e5](https://github.com/hbstack/header/commit/25f45e5b0720ffd95d2ca3c3c912c9a8430ef750))
+
 ## [0.4.2](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.4.1...modules/theme-toggle/v0.4.2) (2023-12-06)
 
 
