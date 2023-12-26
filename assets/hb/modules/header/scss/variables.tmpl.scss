@@ -4,3 +4,4 @@ $hb-header-menus-alignment: '{{ default "" $params.menus_alignment }}';
 $hb-header-logo-bg: {{ default "null" $params.logo_bg }};
 $hb-top-offset: if($hb-header-sticky, 7.75rem, 24px);
 $hb-header-breakpoint: '{{ partialCached "hb/modules/header/functions/breakpoint" . }}';
+$hb-header-theme: '{{ default "" $params.theme }}';

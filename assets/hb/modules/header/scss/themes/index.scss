@@ -1,0 +1,10 @@
+@mixin hb-header-theme-mixin($name) {
+  @if eq $name == $hb-header-theme {
+    @content;
+  }
+}
+
+@import "default";
+@import "classic";
+@import "pills";
+@import "tabs";
