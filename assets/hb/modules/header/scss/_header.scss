@@ -37,8 +37,6 @@ $hb-header-logo-bg: null !default;
 }
 
 .hb-header-nav {
-    transition: .5s;
-
     @if $hb-header-sticky {
         @extend .fixed-top;
     }
