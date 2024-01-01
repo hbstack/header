@@ -1,12 +1,23 @@
 {{- $data := newScratch }}
 {{- if default "github" .service }}
-  {{- with getJSON (printf "https://api.github.com/users/%s" .name) }}
+  {{- $opts := dict "Authorization" (printf "Bearer %s" (getenv "GITHUB_TOKEN")) }}
+  {{- with getJSON (printf "https://api.github.com/users/%s" .name) $opts }}
     {{- $data.Set "URL" .html_url }}
     {{- $data.Set "Name" .name }}
     {{- $data.Set "Repos" .public_repos }}
     {{- $data.Set "Followers" .followers }}
     {{- $data.Set "AvatarURL" (printf "%s&s=32" .avatar_url) }}
   {{- end }}
+  {{/* Get stars. */}}
+  {{- $stars := 0 }}
+  {{- with getJSON (printf "https://api.github.com/users/%s/repos?per_page=100" .name) $opts }}
+    {{- range . }}
+      {{- with getJSON .url $opts }}
+        {{- $stars = add $stars .stargazers_count }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+  {{- $data.Set "Stars" $stars }}
 {{- else }}
   {{- warnf "[github.com/hbstack/header/modules/git-org] unsupported service: %s" .service }}
 {{- end }}

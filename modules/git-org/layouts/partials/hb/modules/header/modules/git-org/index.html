@@ -15,9 +15,13 @@
             {{- partial "icons/icon" (dict "vendor" "bs" "name" "people" "width" "1em" "height" "1em") -}}
             <span>{{- partial "hb/modules/header/modules/git-org/functions/humanize" .Followers -}}</span>
           </div>
-          <div class="hb-header-git-org-forks">
+          <div class="hb-header-git-org-forks me-1">
             {{- partial "icons/icon" (dict "vendor" "bs" "name" "git" "width" "1em" "height" "1em") -}}
             <span>{{- partial "hb/modules/header/modules/git-org/functions/humanize" .Repos -}}</span>
+          </div>
+          <div class="hb-header-git-repo-stars">
+            {{- partial "icons/icon" (dict "vendor" "bs" "name" "star" "width" "1em" "height" "1em") -}}
+            <span>{{- partial "hb/modules/header/modules/git-org/functions/humanize" .Stars -}}</span>
           </div>
         </div>
       </div>
