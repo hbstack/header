@@ -13,11 +13,11 @@
         <div class="hb-header-git-org-meta d-flex flex-row justify-content-around w-100">
           <div class="hb-header-git-org-followers me-1">
             {{- partial "icons/icon" (dict "vendor" "bs" "name" "people" "width" "1em" "height" "1em") -}}
-            <span>{{- partial "hb/modules/header/modules/git-repo/functions/humanize" .Followers -}}</span>
+            <span>{{- partial "hb/modules/header/modules/git-org/functions/humanize" .Followers -}}</span>
           </div>
           <div class="hb-header-git-org-forks">
             {{- partial "icons/icon" (dict "vendor" "bs" "name" "git" "width" "1em" "height" "1em") -}}
-            <span>{{- partial "hb/modules/header/modules/git-repo/functions/humanize" .Repos -}}</span>
+            <span>{{- partial "hb/modules/header/modules/git-org/functions/humanize" .Repos -}}</span>
           </div>
         </div>
       </div>

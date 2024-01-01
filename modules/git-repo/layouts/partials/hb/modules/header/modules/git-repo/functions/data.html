@@ -10,6 +10,6 @@
     {{- $data.Set "Tag" .tag_name }}
   {{- end }}
 {{- else }}
-  {{- warnf "[github.com/hbstack/header/modules/repo] unsupported service: %s" .service }}
+  {{- warnf "[github.com/hbstack/header/modules/git-repo] unsupported service: %s" .service }}
 {{- end }}
 {{- return $data.Values }}

@@ -8,6 +8,6 @@
     {{- $data.Set "AvatarURL" (printf "%s&s=32" .avatar_url) }}
   {{- end }}
 {{- else }}
-  {{- warnf "[github.com/hbstack/header/modules/repo] unsupported service: %s" .service }}
+  {{- warnf "[github.com/hbstack/header/modules/git-org] unsupported service: %s" .service }}
 {{- end }}
 {{- return $data.Values }}
