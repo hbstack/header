@@ -1,0 +1,13 @@
+{{- $data := newScratch }}
+{{- if default "github" .service }}
+  {{- with getJSON (printf "https://api.github.com/users/%s" .name) }}
+    {{- $data.Set "URL" .html_url }}
+    {{- $data.Set "Name" .name }}
+    {{- $data.Set "Repos" .public_repos }}
+    {{- $data.Set "Followers" .followers }}
+    {{- $data.Set "AvatarURL" (printf "%s&s=32" .avatar_url) }}
+  {{- end }}
+{{- else }}
+  {{- warnf "[github.com/hbstack/header/modules/repo] unsupported service: %s" .service }}
+{{- end }}
+{{- return $data.Values }}
