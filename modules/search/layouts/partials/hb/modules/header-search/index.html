@@ -1,20 +1,22 @@
 {{- $breakpoint := partialCached "hb/modules/header/functions/breakpoint" . }}
-<div class="search-modal-toggle hb-header-search-form position-relative d-flex ms-{{ $breakpoint }}-1">
-  <button
-    type="button"
-    class="hb-header-search-icon border-0 bg-transparent px-2"
-    aria-label="Toggle search">
-    {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" "search") }}
-  </button>
-  <input
-    class="form-control rounded-5 d-none d-lg-block ms-{{ $breakpoint }}-1"
-    id="hb-header-search-input"
-    placeholder="{{ i18n `search` }}" />
-  {{- with index site.Params.search "shortcut_search" }}
-    <span class="hb-header-search-keys position-absolute d-none d-lg-block">
-      {{- range . }}
-        <kbd>{{ replace . "Control" "CTRL" | title }}</kbd>
-      {{- end }}
-    </span>
-  {{- end }}
+<div class="search-modal-toggle hb-header-search-form d-flex align-items-center ms-{{ $breakpoint }}-1">
+  <div class="hb-header-search-input-container position-relative">
+    <button
+      type="button"
+      class="hb-header-search-icon border-0 bg-transparent px-2"
+      aria-label="Toggle search">
+      {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" "search") }}
+    </button>
+    <input
+      class="form-control rounded-5 d-none d-lg-block ms-{{ $breakpoint }}-1"
+      id="hb-header-search-input"
+      placeholder="{{ i18n `search` }}" />
+    {{- with index site.Params.search "shortcut_search" }}
+      <span class="hb-header-search-keys position-absolute d-none d-lg-block">
+        {{- range . }}
+          <kbd>{{ replace . "Control" "CTRL" | title }}</kbd>
+        {{- end }}
+      </span>
+    {{- end }}
+  </div>
 </div>
