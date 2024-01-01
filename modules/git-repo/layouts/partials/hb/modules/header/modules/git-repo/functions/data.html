@@ -1,12 +1,16 @@
 {{- $data := newScratch }}
 {{- if default "github" .service }}
-  {{- with getJSON (printf "https://api.github.com/repos/%s/%s" .owner .name) }}
+  {{- $opts := dict }}
+  {{- with getenv "GITHUB_TOKEN" }}
+    {{- $opts := dict "Authorization" (printf "Bearer %s" .) }}
+  {{- end }}
+  {{- with getJSON (printf "https://api.github.com/repos/%s/%s" .owner .name) $opts }}
     {{- $data.Set "Title" .full_name }}
     {{- $data.Set "URL" .html_url }}
     {{- $data.Set "Stars" .stargazers_count }}
     {{- $data.Set "Forks" .forks_count }}
   {{- end }}
-  {{- with getJSON (printf "https://api.github.com/repos/%s/%s/releases/latest" .owner .name) }}
+  {{- with getJSON (printf "https://api.github.com/repos/%s/%s/releases/latest" .owner .name) $opts }}
     {{- $data.Set "Tag" .tag_name }}
   {{- end }}
 {{- else }}
