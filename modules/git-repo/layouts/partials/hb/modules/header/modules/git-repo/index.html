@@ -1,0 +1,30 @@
+{{- $breakpoint := partialCached "hb/modules/header/functions/breakpoint" . }}
+{{- with site.Params.hb.header.git_repo }}
+  {{- with partialCached "hb/modules/header/modules/git-repo/functions/data" . . }}
+    <a
+      class="d-none d-{{ $breakpoint }}-flex align-items-center nav-item hb-header-git-repo text-decoration-none ms-{{ $breakpoint }}-2"
+      href="{{ .URL }}"
+      target="_blank"
+      rel="external"
+      title="{{ .Title }}">
+      {{- partial "icons/icon" (dict "vendor" "bs" "name" "git" "width" "1.75em" "height" "1.75em" "className" "flex-shrink-0 me-1") -}}
+      <div class="d-flex flex-column align-items-center flex-grow-1">
+        <div class="hb-header-git-repo-title">{{- .Title -}}</div>
+        <div class="hb-header-git-repo-meta d-flex flex-row">
+          <div class="hb-header-git-repo-tag me-1">
+            {{- partial "icons/icon" (dict "vendor" "bs" "name" "tag" "width" "1em" "height" "1em") -}}
+            <span>{{- .Tag -}}</span>
+          </div>
+          <div class="hb-header-git-repo-stars me-1">
+            {{- partial "icons/icon" (dict "vendor" "bs" "name" "star" "width" "1em" "height" "1em") -}}
+            <span>{{- partial "hb/modules/header/modules/git-repo/functions/humanize" .Stars -}}</span>
+          </div>
+          <div class="hb-header-git-repo-forks">
+            {{- partial "icons/icon" (dict "vendor" "bs" "name" "git" "width" "1em" "height" "1em") -}}
+            <span>{{- partial "hb/modules/header/modules/git-repo/functions/humanize" .Forks -}}</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  {{- end }}
+{{- end -}}

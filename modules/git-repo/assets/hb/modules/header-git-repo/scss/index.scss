@@ -1,0 +1,17 @@
+.hb-header-git-repo {
+  color: var(--#{$prefix}navbar-color);
+
+  &:hover {
+    color: var(--#{$prefix}navbar-active-color);
+  }
+}
+
+.hb-header-git-repo-meta {
+  font-size: .85rem;
+
+  > * {
+    svg {
+      margin-right: .125rem;
+    }
+  }
+}
