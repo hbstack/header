@@ -33,6 +33,12 @@
         "modules/gcse": {
             "component": "modules/gcse"
         },
+        "modules/git-org": {
+            "component": "modules/git-org"
+        },
+        "modules/git-repo": {
+            "component": "modules/git-repo"
+        },
         "modules/language-picker": {
             "component": "modules/language-picker"
         },
