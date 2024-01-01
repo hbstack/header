@@ -7,7 +7,7 @@
     "modules/git-repo": "0.0.1",
     "modules/language-picker": "0.1.23",
     "modules/news": "0.2.1",
-    "modules/search": "0.1.33",
+    "modules/search": "0.1.34",
     "modules/socials": "0.1.28",
     "modules/theme-toggle": "0.4.3",
     "themes/classic": "0.2.17",
