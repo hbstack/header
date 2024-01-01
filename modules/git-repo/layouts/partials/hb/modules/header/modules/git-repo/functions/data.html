@@ -1,0 +1,15 @@
+{{- $data := newScratch }}
+{{- if default "github" .service }}
+  {{- with getJSON (printf "https://api.github.com/repos/%s/%s" .owner .name) }}
+    {{- $data.Set "Title" .full_name }}
+    {{- $data.Set "URL" .html_url }}
+    {{- $data.Set "Stars" .stargazers_count }}
+    {{- $data.Set "Forks" .forks_count }}
+  {{- end }}
+  {{- with getJSON (printf "https://api.github.com/repos/%s/%s/releases/latest" .owner .name) }}
+    {{- $data.Set "Tag" .tag_name }}
+  {{- end }}
+{{- else }}
+  {{- warnf "[github.com/hbstack/header/modules/repo] unsupported service: %s" .service }}
+{{- end }}
+{{- return $data.Values }}
