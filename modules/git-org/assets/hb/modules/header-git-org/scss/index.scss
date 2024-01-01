@@ -1,0 +1,22 @@
+.hb-header-git-org {
+  color: var(--#{$prefix}navbar-color);
+
+  &:hover {
+    color: var(--#{$prefix}navbar-active-color);
+  }
+}
+
+.hb-header-git-org-meta {
+  font-size: .85rem;
+
+  > * {
+    svg {
+      margin-right: .125rem;
+    }
+  }
+}
+
+.hb-header-git-org-img {
+  width: 32px;
+  height: 32px;
+}

@@ -1,0 +1,5 @@
+[[module.imports]]
+path = "github.com/hbstack/header"
+
+[params.hugopress.modules.hb-header-git-org.hooks.hb-header-togglers-end]
+cacheable = true
