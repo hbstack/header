@@ -1,5 +1,6 @@
 {{- $data := newScratch }}
-{{- if default "github" .service }}
+{{- $service := default "github" .service }}
+{{- if eq $service "github" }}
   {{- $opts := dict }}
   {{- with getenv "GITHUB_TOKEN" }}
     {{- $opts := dict "Authorization" (printf "Bearer %s" .) }}
