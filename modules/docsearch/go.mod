@@ -9,5 +9,5 @@ require (
 	github.com/hugomods/docsearch v0.1.0 // indirect
 	github.com/hugomods/hugopress v0.2.3 // indirect
 	github.com/hugomods/icons v0.6.0 // indirect
-	github.com/twbs/icons v1.11.2 // indirect
+	github.com/twbs/icons v1.11.3 // indirect
 )
