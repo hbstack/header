@@ -5,7 +5,7 @@
 }}
 {{- $breakpoint := partialCached "hb/modules/header/functions/breakpoint" . }}
 {{- $style := default "switch" site.Params.hb.header.theme_toggle.style }}
-<li class="theme-toggle nav-item dropdown col-6 col-{{ $breakpoint }}-auto d-flex flex-column justify-content-start">
+<li class="theme-toggle nav-item dropdown col-6 col-{{ $breakpoint }}-auto d-flex flex-column justify-content-start justify-content-{{ $breakpoint }}-center">
   <button
     class="btn btn-link btn-theme-toggle nav-link py-2 px-0 px-{{ $breakpoint }}-2 d-flex justify-content-start justify-content-{{ $breakpoint }}-center align-items-center"
     {{ if eq $style "dropdown" }}data-bs-toggle="dropdown"{{ end }}
