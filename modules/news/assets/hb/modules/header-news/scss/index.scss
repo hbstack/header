@@ -1,3 +1,7 @@
 .header-news-items {
   --#{$prefix}dropdown-min-width: 20rem;
 }
+
+.header-news-toggle {
+  color: var(--#{$prefix}navbar-color);
+}
