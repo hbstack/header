@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.6](https://github.com/hbstack/header/compare/v0.12.5...v0.12.6) (2024-01-05)
+
+
+### Styles 🎨
+
+* change padding of offcanvas toggle ([2c1d5e9](https://github.com/hbstack/header/commit/2c1d5e91eb79435cc96358606d84ca7732ed9e67))
+
 ## [0.12.5](https://github.com/hbstack/header/compare/v0.12.4...v0.12.5) (2023-12-26)
 
 
