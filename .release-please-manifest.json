@@ -1,5 +1,5 @@
 {
-    ".": "0.12.5",
+    ".": "0.12.6",
     "modules/banner": "0.5.11",
     "modules/docsearch": "0.1.23",
     "modules/gcse": "0.1.0",
@@ -7,7 +7,7 @@
     "modules/git-repo": "0.2.0",
     "modules/language-picker": "0.1.24",
     "modules/news": "0.2.2",
-    "modules/search": "0.1.34",
+    "modules/search": "0.1.35",
     "modules/socials": "0.1.28",
     "modules/theme-toggle": "0.4.4",
     "themes/classic": "0.2.17",

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.35](https://github.com/hbstack/header/compare/modules/search/v0.1.34...modules/search/v0.1.35) (2024-01-05)
+
+
+### Styles 🎨
+
+* **search:** align the search icon to middle on small screen ([36776fe](https://github.com/hbstack/header/commit/36776fe9961adff51665c86c409790be10cd88ca))
+
 ## [0.1.34](https://github.com/hbstack/header/compare/modules/search/v0.1.33...modules/search/v0.1.34) (2024-01-01)
 
 
