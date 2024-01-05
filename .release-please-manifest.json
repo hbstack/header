@@ -6,7 +6,7 @@
     "modules/git-org": "0.2.0",
     "modules/git-repo": "0.2.0",
     "modules/language-picker": "0.1.24",
-    "modules/news": "0.2.1",
+    "modules/news": "0.2.2",
     "modules/search": "0.1.34",
     "modules/socials": "0.1.28",
     "modules/theme-toggle": "0.4.4",
