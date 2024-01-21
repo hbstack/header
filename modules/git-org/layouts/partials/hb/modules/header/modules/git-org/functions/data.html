@@ -2,7 +2,8 @@
 {{- $service := default "github" .service }}
 {{- if eq $service "github" }}
   {{- $opts := dict }}
-  {{- with getenv "GITHUB_TOKEN" }}
+  {{- $ghToken := getenv "GITHUB_TOKEN" }}
+  {{- with $ghToken }}
     {{- $opts := dict "Authorization" (printf "Bearer %s" .) }}
   {{- end }}
   {{- with getJSON (printf "https://api.github.com/users/%s" .name) $opts }}
@@ -15,10 +16,38 @@
   {{/* Get stars. */}}
   {{- $stars := 0 }}
   {{- with getJSON (printf "https://api.github.com/users/%s/repos?per_page=100" .name) $opts }}
+    {{- $repos := slice }}
     {{- range . }}
-      {{- with getJSON .url $opts }}
-        {{- $stars = add $stars .stargazers_count }}
+      {{- $repos = $repos | append (printf "repo:%s" .full_name) }}
+    {{- end }}
+    {{- $graphqlAPI := "https://api.github.com/graphql" }}
+    {{- $graphBody := dict "query" (printf `{
+      search(type: REPOSITORY, query: "%s", first: 100) {
+        nodes {
+          ... on Repository {
+            stargazerCount
+          }
+        }
+      }
+    }` (delimit $repos " ")) }}
+    {{- $graphqlOpts := newScratch }}
+    {{- $graphqlOpts.Set "method" "post" }}
+    {{- $graphqlOpts.Set "body" (jsonify $graphBody) }}
+    {{- $graphqlOpts.SetInMap "headers" "Content-Type" "application/json" }}
+    {{- with $ghToken }}
+      {{- $graphqlOpts.SetInMap "headers" "Authorization" (printf "Bearer %s" .) }}
+    {{- end }}
+    {{- with resources.GetRemote $graphqlAPI $graphqlOpts.Values }}
+      {{- with .Err }}
+        {{- errorf "[github.com/hbstack/header/modules/git-org] failed to get remote resource: %s" . }}
+      {{- else }}
+        {{- $content := .Content | transform.Unmarshal }}
+        {{- range default slice $content.data.search.nodes }}
+          {{- $stars = add $stars .stargazerCount }}
+        {{- end }}
       {{- end }}
+    {{- else }}
+      {{ errorf "[github.com/hbstack/header/modules/git-org] failed to get remote resource: %s" $graphqlAPI }}
     {{- end }}
   {{- end }}
   {{- $data.Set "Stars" $stars }}
