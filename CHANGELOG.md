@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.12.7](https://github.com/hbstack/header/compare/v0.12.6...v0.12.7) (2024-01-24)
+
+
+### Bug Fixes 🐞
+
+* **deps:** update dependency stylelint-scss to v6.1.0 ([6005ef5](https://github.com/hbstack/header/commit/6005ef52c7251ea3b50b11b26a394f14cd282df4))
+* dropdown menu overflows ([f439d71](https://github.com/hbstack/header/commit/f439d71f7445b1302cae28802ba3724989c19cc1)), closes [#468](https://github.com/hbstack/header/issues/468)
+
 ## [0.12.6](https://github.com/hbstack/header/compare/v0.12.5...v0.12.6) (2024-01-05)
 
 
