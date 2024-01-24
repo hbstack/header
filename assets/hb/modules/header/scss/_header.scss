@@ -32,6 +32,7 @@ $hb-header-logo-bg: null !default;
 
         @include media-breakpoint-down($hb-header-breakpoint) {
             max-width: 280px;
+            width: auto;
         }
     }
 }
