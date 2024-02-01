@@ -3,7 +3,7 @@
     "modules/banner": "0.5.11",
     "modules/docsearch": "0.1.23",
     "modules/gcse": "0.1.0",
-    "modules/git-org": "0.2.1",
+    "modules/git-org": "0.2.2",
     "modules/git-repo": "0.2.0",
     "modules/language-picker": "0.1.24",
     "modules/news": "0.2.2",

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/hbstack/header/compare/modules/git-org/v0.2.1...modules/git-org/v0.2.2) (2024-02-01)
+
+
+### Bug Fixes 🐞
+
+* **git-org:** skip stars calculating when GITHUB_TOKEN is not set ([#474](https://github.com/hbstack/header/issues/474)) ([46c103e](https://github.com/hbstack/header/commit/46c103ef5bd02c72700b04037a99e9545ff1575f))
+
 ## [0.2.1](https://github.com/hbstack/header/compare/modules/git-org/v0.2.0...modules/git-org/v0.2.1) (2024-01-21)
 
 
