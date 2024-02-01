@@ -36,18 +36,20 @@
     {{- $graphqlOpts.SetInMap "headers" "Content-Type" "application/json" }}
     {{- with $ghToken }}
       {{- $graphqlOpts.SetInMap "headers" "Authorization" (printf "Bearer %s" .) }}
-    {{- end }}
-    {{- with resources.GetRemote $graphqlAPI $graphqlOpts.Values }}
-      {{- with .Err }}
-        {{- errorf "[github.com/hbstack/header/modules/git-org] failed to get remote resource: %s" . }}
-      {{- else }}
-        {{- $content := .Content | transform.Unmarshal }}
-        {{- range default slice $content.data.search.nodes }}
-          {{- $stars = add $stars .stargazerCount }}
+      {{- with resources.GetRemote $graphqlAPI $graphqlOpts.Values }}
+        {{- with .Err }}
+          {{- errorf "[github.com/hbstack/header/modules/git-org] failed to get remote resource: %s" . }}
+        {{- else }}
+          {{- $content := .Content | transform.Unmarshal }}
+          {{- range default slice $content.data.search.nodes }}
+            {{- $stars = add $stars .stargazerCount }}
+          {{- end }}
         {{- end }}
+      {{- else }}
+        {{- errorf "[github.com/hbstack/header/modules/git-org] failed to get remote resource: %s" $graphqlAPI }}
       {{- end }}
     {{- else }}
-      {{ errorf "[github.com/hbstack/header/modules/git-org] failed to get remote resource: %s" $graphqlAPI }}
+      {{- warnf "[github.com/hbstack/header/modules/git-org] skip stars calculating since GITHUB_TOKEN is not set." }}
     {{- end }}
   {{- end }}
   {{- $data.Set "Stars" $stars }}
