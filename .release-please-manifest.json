@@ -1,5 +1,5 @@
 {
-    ".": "0.12.7",
+    ".": "0.13.0",
     "modules/banner": "0.5.11",
     "modules/docsearch": "0.1.23",
     "modules/gcse": "0.1.0",
