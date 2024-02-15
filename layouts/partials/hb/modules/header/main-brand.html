@@ -1,0 +1,25 @@
+{{- $breakpoint := partialCached "hb/modules/header/functions/breakpoint" . }}
+{{- with site.Params.hb.header.main_brand }}
+  {{- $hideTitle := default false .hide_title }}
+  <a
+    class="navbar-brand navbar-brand-main d-none d-{{ $breakpoint }}-flex align-items-center me-0"
+    title="{{ .title }}"
+    target="_blank"
+    href="{{ default `#` .url }}">
+    {{- with .logo }}
+      {{- with resources.Get . }}
+        {{- $logo := partial "hb/functions/image-resize" (dict "Image" . "Size" "x64") }}
+        <img
+          src="{{ $logo.Permalink }}"
+          alt="Logo"
+          width="{{ $logo.Width }}"
+          height="{{ $logo.Height }}"
+          class="hb-header-logo hb-header-main-brand-logo d-inline-block align-text-top{{ cond $hideTitle `` ` me-2` }}" />
+      {{- end }}
+    {{- end }}
+    {{- if not $hideTitle }}
+      {{- .title -}}
+    {{- end }}
+  </a>
+  <hr class="vr h-100 mx-2 d-none d-{{ $breakpoint }}-flex" />
+{{- end }}

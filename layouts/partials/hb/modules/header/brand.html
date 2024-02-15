@@ -1,3 +1,4 @@
+{{ partialCached "hb/modules/header/main-brand" . }}
 {{- $logo := partialCached "hb/modules/header/logo" . }}
 {{- $brand := partialCached "hb/modules/header/functions/brand" . }}
 {{- if or $logo $brand }}
