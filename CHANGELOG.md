@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.13.0](https://github.com/hbstack/header/compare/v0.12.7...v0.13.0) (2024-02-15)
+
+
+### Features ✨
+
+* add support for main brand ([#490](https://github.com/hbstack/header/issues/490)) ([4257a56](https://github.com/hbstack/header/commit/4257a562cd76f66e5af918d8c3928a67c4dedd1f))
+* allow hiding logo by setting hb.header.logo parameter as `false` ([#492](https://github.com/hbstack/header/issues/492)) ([2767b95](https://github.com/hbstack/header/commit/2767b95e57146fc4f4cea0cebd407eb7bcc5af67))
+
 ## [0.12.7](https://github.com/hbstack/header/compare/v0.12.6...v0.12.7) (2024-01-24)
 
 
