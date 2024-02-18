@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.14.0](https://github.com/hbstack/header/compare/v0.13.0...v0.14.0) (2024-02-18)
+
+
+### Features ✨
+
+* use Bootstrap icons as the default vendor for menu icons ([52bb585](https://github.com/hbstack/header/commit/52bb585cff69189c05639bfea6f9b31f7879b473))
+
 ## [0.13.0](https://github.com/hbstack/header/compare/v0.12.7...v0.13.0) (2024-02-15)
 
 
