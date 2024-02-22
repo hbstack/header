@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.14.1](https://github.com/hbstack/header/compare/v0.14.0...v0.14.1) (2024-02-22)
+
+
+### Bug Fixes 🐞
+
+* calculate margin-bottom as early as possible to eliminate CLS issue ([#509](https://github.com/hbstack/header/issues/509)) ([70168f0](https://github.com/hbstack/header/commit/70168f08df9d43c5ec7d5e909bdbf56752a3942b)), closes [#502](https://github.com/hbstack/header/issues/502)
+
 ## [0.14.0](https://github.com/hbstack/header/compare/v0.13.0...v0.14.0) (2024-02-18)
 
 
