@@ -1,0 +1,12 @@
+{{- $opts := dict
+  "targetPath" "js/header-init.js"
+  "params" (dict
+    "prefix" (default "hb" site.Params.hb.styles.prefix)
+    "sticky" (default "hb" site.Params.hb.header.sticky))
+  "minify" hugo.IsProduction
+}}
+{{- $js := resources.Get "hb/modules/header/js/init.ts" | js.Build $opts }}
+{{- if hugo.IsProduction }}
+  {{- $js = $js | fingerprint }}
+{{- end }}
+<script src="{{ $js.RelPermalink }}"></script>
