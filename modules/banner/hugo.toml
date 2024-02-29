@@ -6,3 +6,6 @@ path = "github.com/hugomods/video-js"
 
 [params.hugopress.modules.hb-header-banner.hooks.hb-header-end]
 cacheable = false
+
+[params.hb.header.banner]
+transparentize_navbar_bg = true

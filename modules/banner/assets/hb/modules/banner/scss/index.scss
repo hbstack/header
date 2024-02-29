@@ -46,11 +46,13 @@
 
     &:not(.scrolling) {
         .hb-header-nav {
-            --#{$prefix}navbar-color: var(--#{$prefix}header-banner-color);
-            --#{$prefix}navbar-brand-color: var(--#{$prefix}header-banner-color);
-            --#{$prefix}navbar-brand-hover-color: var(--#{$prefix}navbar-active-color);
+            @if $hb-header-banner-transparentize-navbar-bg {
+                --#{$prefix}navbar-color: var(--#{$prefix}header-banner-color);
+                --#{$prefix}navbar-brand-color: var(--#{$prefix}header-banner-color);
+                --#{$prefix}navbar-brand-hover-color: var(--#{$prefix}navbar-active-color);
 
-            background: transparent !important;
+                background: transparent !important;
+            }
 
             @if not $hb-header-sticky {
                 z-index: 1030;
@@ -62,12 +64,14 @@
         }
 
         @include media-breakpoint-up($hb-header-breakpoint) {
-            .hb-header-nav {
-                --#{$prefix}navbar-color: var(--#{$prefix}header-banner-color);
-            }
+            @if $hb-header-banner-transparentize-navbar-bg {
+                .hb-header-nav {
+                    --#{$prefix}navbar-color: var(--#{$prefix}header-banner-color);
+                }
 
-            .vr {
-                color: #fff !important;
+                .vr {
+                    color: #fff !important;
+                }
             }
         }
     }
