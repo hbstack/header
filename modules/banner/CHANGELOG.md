@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/hbstack/header/compare/modules/banner/v0.6.0...modules/banner/v0.6.1) (2024-02-29)
+
+
+### Bug Fixes 🐞
+
+* **banner:** do not show banner if no image or video specified ([8501a2c](https://github.com/hbstack/header/commit/8501a2c6ad13385975d27cb02022bdc3002bb930))
+
 ## [0.6.0](https://github.com/hbstack/header/compare/modules/banner/v0.5.11...modules/banner/v0.6.0) (2024-02-29)
 
 
