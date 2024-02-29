@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/hbstack/header/compare/modules/banner/v0.5.11...modules/banner/v0.6.0) (2024-02-29)
+
+
+### Features ✨
+
+* **banner:** add the transparentize_navbar_bg parameter, when false do not transparentize the navbar background ([#519](https://github.com/hbstack/header/issues/519)) ([de01754](https://github.com/hbstack/header/commit/de017542998a2c92bb8d3b5c408652432fc9909a))
+
 ## [0.5.11](https://github.com/hbstack/header/compare/modules/banner/v0.5.10...modules/banner/v0.5.11) (2023-10-31)
 
 
