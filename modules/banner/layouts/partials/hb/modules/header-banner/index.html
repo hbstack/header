@@ -1,8 +1,8 @@
 {{- $params := default site.Params.hb.header.banner .Params.header.banner }}
-{{- with $params }}
+{{- if or $params.img $params.video }}
   {{- $sources := slice }}
   {{- $img := "" }}
-  {{- if reflect.IsSlice .img }}
+  {{- if reflect.IsSlice $params.img }}
     {{- range .img }}
       {{- if .media }}
         {{- $sources = $sources | append . }}
@@ -10,14 +10,14 @@
         {{- $img = .src | relURL }}
       {{- end }}
     {{- end }}
-  {{- else if .img }}
-    {{- $img = relURL .img }}
+  {{- else if $params.img }}
+    {{- $img = relURL $params.img }}
     {{- $res := false }}
-    {{- with $.Resources.GetMatch .img }}
+    {{- with $.Resources.GetMatch $params.img }}
       {{- $res = . }}
       {{- $img = .RelPermalink }}
     {{- else }}
-      {{- with resources.GetMatch .img }}
+      {{- with resources.GetMatch $params.img }}
         {{- $res = . }}
         {{- $img = .RelPermalink }}
       {{- end }}
@@ -44,7 +44,7 @@
     .hb-header {
       height: 100vh;
     }
-    {{ with .color }}
+    {{ with $params.color }}
     .hb-header-banner {
       --{{ site.Params.hb.styles.prefix }}header-banner-color: {{ . }};
     }
@@ -65,13 +65,13 @@
         src="{{ $img }}" />
     </picture>
   {{- end }}
-  {{- with .video }}
+  {{- with $params.video }}
     {{ partial "hb/modules/header-banner/video" . }}
   {{- end }}
   {{- if not (and
-    (eq .title false)
-    (eq .description false))
+    (eq $params.title false)
+    (eq $params.description false))
   }}
-    {{ partial "hb/modules/header-banner/body" . }}
+    {{ partial "hb/modules/header-banner/body" $params }}
   {{- end }}
 {{- end }}
