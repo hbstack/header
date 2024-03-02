@@ -13,7 +13,11 @@
         <div class="hb-header-git-repo-meta d-flex flex-row">
           <div class="hb-header-git-repo-tag me-1">
             {{- partial "icons/icon" (dict "vendor" "bs" "name" "tag" "width" "1em" "height" "1em") -}}
-            <span>{{- .Tag -}}</span>
+            {{- $tag := .Tag }}
+            {{- if gt (len $tag) 18 }}
+              {{- $tag = substr $tag (sub (len $tag) 15) | printf "...%s" }}
+            {{- end }}
+            <span title="{{ .Tag }}">{{- $tag  -}}</span>
           </div>
           <div class="hb-header-git-repo-stars me-1">
             {{- partial "icons/icon" (dict "vendor" "bs" "name" "star" "width" "1em" "height" "1em") -}}
