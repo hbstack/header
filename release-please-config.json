@@ -24,6 +24,9 @@
                 "themes"
             ]
         },
+        "modules/apps": {
+            "component": "modules/apps"
+        },
         "modules/banner": {
             "component": "modules/banner"
         },
