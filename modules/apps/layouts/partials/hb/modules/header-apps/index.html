@@ -19,10 +19,11 @@
         {{- $external := partial "base/functions/is-url-external" .URL }}
         <li>
             <a
-              class="hb-header-app dropdown-item d-flex flex-column justify-content-start align-items-center rounded"
+              class="hb-header-app dropdown-item d-flex flex-column justify-content-center align-items-center rounded h-100"
+              title="{{ .Name }}"
               {{ if $external }}target="_blank" rel="external"{{ end }}
               href="{{ .URL }}">
-              {{ partial "icons/icon" (merge (dict "vendor" "bootstrap" "className" "hb-header-app-icon" "size" "2em") .Params.icon) }}
+              {{ partial "icons/icon" (merge (dict "vendor" "bootstrap" "name" "box" "className" "hb-header-app-icon" "size" "2em") (default dict .Params.icon)) }}
               <span class="hb-header-app-name text-center text-truncate mt-2">{{- .Name -}}</span>
             </a>
         </li>
