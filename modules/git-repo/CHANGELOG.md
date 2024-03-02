@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/hbstack/header/compare/modules/git-repo/v0.2.0...modules/git-repo/v0.2.1) (2024-03-02)
+
+
+### Styles 🎨
+
+* **git-repo:** truncate the overlong tags ([c97a81d](https://github.com/hbstack/header/commit/c97a81d22a57fc659cd79e95302d75fc92150cd2))
+
 ## [0.2.0](https://github.com/hbstack/header/compare/modules/git-repo/v0.1.1...modules/git-repo/v0.2.0) (2024-01-01)
 
 
