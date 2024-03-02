@@ -1,0 +1,18 @@
+.hb-header-apps-menu {
+    padding: 5px;
+    width: 330px;
+    gap: 8px;
+
+    &.show {
+        display: flex;
+    }
+}
+
+.hb-header-app {
+    padding: 10px 5px;
+    width: 100px;
+}
+
+.hb-header-app-name {
+    width: inherit;
+}

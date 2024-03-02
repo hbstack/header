@@ -1,0 +1,32 @@
+{{- $breakpoint := partialCached "hb/modules/header/functions/breakpoint" . }}
+{{- $menus := site.Menus.apps }}
+{{- with $menus }}
+  <li class="hb-header-apps nav-item dropdown col-6 col-{{ $breakpoint }}-auto d-flex flex-column justify-content-start justify-content-{{ $breakpoint }}-center">
+    {{- $title := i18n "applications" | default "Applications" }}
+    <a
+      class="btn btn-link nav-link py-2 px-0 px-{{ $breakpoint }}-2 d-flex justify-content-start justify-content-{{ $breakpoint }}-center align-items-center"
+      href="#"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+      title="{{ $title }}">
+      {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" "grid-3x3-gap-fill" "className" "my-1 hb-header-apps-icon") }}
+      <span class="d-{{ $breakpoint }}-none ms-1">{{ $title }}</span>
+    </a>
+
+    <ul class="hb-header-apps-menu dropdown-menu dropdown-menu-end flex-wrap">
+      {{- range $menus }}
+        {{- $external := partial "base/functions/is-url-external" .URL }}
+        <li>
+            <a
+              class="hb-header-app dropdown-item d-flex flex-column justify-content-start align-items-center rounded"
+              {{ if $external }}target="_blank" rel="external"{{ end }}
+              href="{{ .URL }}">
+              {{ partial "icons/icon" (merge (dict "vendor" "bootstrap" "className" "hb-header-app-icon" "size" "2em") .Params.icon) }}
+              <span class="hb-header-app-name text-center text-truncate mt-2">{{- .Name -}}</span>
+            </a>
+        </li>
+      {{- end }}
+    </ul>
+  </li>
+{{- end }}
