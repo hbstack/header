@@ -1,1 +1,2 @@
 $hb-header-banner-transparentize-navbar-bg: {{ default true site.Params.hb.header.banner.transparentize_navbar_bg }};
+$hb-header-banner-navbar-opacity: {{ default 0.8 site.Params.hb.header.banner.navbar_opacity }};

@@ -9,3 +9,4 @@ cacheable = false
 
 [params.hb.header.banner]
 transparentize_navbar_bg = true
+navbar_opacity = 0.8
