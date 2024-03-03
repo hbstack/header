@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/hbstack/header/compare/modules/banner/v0.6.1...modules/banner/v0.7.0) (2024-03-03)
+
+
+### Features ✨
+
+* **banner:** add the hb.header.banner.navbar_opacity parameter ([#528](https://github.com/hbstack/header/issues/528)) ([42b52b1](https://github.com/hbstack/header/commit/42b52b12fca99492289fb489f610e6bf34f52806))
+
 ## [0.6.1](https://github.com/hbstack/header/compare/modules/banner/v0.6.0...modules/banner/v0.6.1) (2024-02-29)
 
 
