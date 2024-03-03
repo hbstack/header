@@ -52,6 +52,10 @@
                 --#{$prefix}navbar-brand-hover-color: var(--#{$prefix}navbar-active-color);
 
                 background: transparent !important;
+            } @else {
+                @if $hb-header-banner-navbar-opacity != 1 {
+                    --#{$prefix}bg-opacity: #{$hb-header-banner-navbar-opacity};
+                }
             }
 
             @if not $hb-header-sticky {
