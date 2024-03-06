@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.14.2](https://github.com/hbstack/header/compare/v0.14.1...v0.14.2) (2024-03-06)
+
+
+### Bug Fixes 🐞
+
+* **deps:** update dependency stylelint-scss to v6.2.0 ([d85d008](https://github.com/hbstack/header/commit/d85d008130c8ebc97ad18f8dd7220581f2d61e95))
+* **deps:** update dependency stylelint-scss to v6.2.1 ([51dc117](https://github.com/hbstack/header/commit/51dc117a86d69976036cc7e1b300614db896f9ab))
+
+
+### Styles 🎨
+
+* change brands separator height and margin ([#536](https://github.com/hbstack/header/issues/536)) ([d8bda17](https://github.com/hbstack/header/commit/d8bda17af0796dc7c7b6669249307863bd650446))
+* tweak brands separator margin ([00517ac](https://github.com/hbstack/header/commit/00517acb16d9004473d683bcb20780c62b49142c))
+
 ## [0.14.1](https://github.com/hbstack/header/compare/v0.14.0...v0.14.1) (2024-02-22)
 
 
