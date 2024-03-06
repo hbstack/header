@@ -1,5 +1,5 @@
 {
-    ".": "0.14.1",
+    ".": "0.14.2",
     "modules/apps": "0.1.1",
     "modules/banner": "0.7.0",
     "modules/docsearch": "0.1.23",
