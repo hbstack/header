@@ -1,6 +1,6 @@
 {
     ".": "0.14.2",
-    "modules/apps": "0.1.1",
+    "modules/apps": "0.1.2",
     "modules/banner": "0.7.0",
     "modules/docsearch": "0.1.23",
     "modules/gcse": "0.1.0",
