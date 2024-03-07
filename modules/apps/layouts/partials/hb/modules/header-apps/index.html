@@ -23,7 +23,17 @@
               title="{{ .Name }}"
               {{ if $external }}target="_blank" rel="external"{{ end }}
               href="{{ .URL }}">
-              {{ partial "icons/icon" (merge (dict "vendor" "bootstrap" "name" "box" "className" "hb-header-app-icon" "size" "2em") (default dict .Params.icon)) }}
+              {{- $iconClass := "hb-header-app-icon rounded p-2 bg-body-secondary bg-gradient" }}
+              {{- with .Params.icon }}
+                {{- with .className }}
+                  {{- $iconClass = printf "%s %s" $iconClass . }}
+                {{- end }}
+              {{- end }}
+              {{ partial "icons/icon" (merge
+                (dict "vendor" "bootstrap" "name" "box" "size" "2.75em")
+                (default dict .Params.icon)
+                (dict "className" $iconClass))
+              }}
               <span class="hb-header-app-name text-center text-truncate mt-2">{{- .Name -}}</span>
             </a>
         </li>
