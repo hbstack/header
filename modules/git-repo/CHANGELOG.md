@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/hbstack/header/compare/modules/git-repo/v0.2.1...modules/git-repo/v0.2.2) (2024-03-09)
+
+
+### Styles 🎨
+
+* **git-repo:** tweak tag icon ([b717989](https://github.com/hbstack/header/commit/b717989544858195244646684e8b07355748021a))
+
 ## [0.2.1](https://github.com/hbstack/header/compare/modules/git-repo/v0.2.0...modules/git-repo/v0.2.1) (2024-03-02)
 
 
