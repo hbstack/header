@@ -3,3 +3,6 @@ path = "github.com/hbstack/header"
 
 [params.hugopress.modules.hb-header-git-repo.hooks.hb-header-togglers-end]
 cacheable = true
+
+[params.hb.header.git_repo]
+tag_length = 8

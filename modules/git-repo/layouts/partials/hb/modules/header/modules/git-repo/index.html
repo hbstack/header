@@ -1,6 +1,7 @@
 {{- $breakpoint := partialCached "hb/modules/header/functions/breakpoint" . }}
-{{- with site.Params.hb.header.git_repo }}
-  {{- with partialCached "hb/modules/header/modules/git-repo/functions/data" . . }}
+{{- $params := site.Params.hb.header.git_repo }}
+{{- if isset $params "name" }}
+  {{- with partialCached "hb/modules/header/modules/git-repo/functions/data" $params $params }}
     <a
       class="d-none d-{{ $breakpoint }}-flex align-items-center nav-item hb-header-git-repo text-decoration-none ms-{{ $breakpoint }}-2"
       href="{{ .URL }}"
@@ -15,8 +16,9 @@
             <div class="hb-header-git-repo-tag me-1">
               {{- partial "icons/icon" (dict "vendor" "bs" "name" "tag" "width" "1em" "height" "1em") -}}
               {{- $tag := . }}
-              {{- if gt (len $tag) 18 }}
-                {{- $tag = substr $tag (sub (len $tag) 15) | printf "...%s" }}
+              {{- $tagLen := default 8 $params.tag_length }}
+              {{- if gt (len $tag) $tagLen }}
+                {{- $tag = substr $tag (sub (len $tag) $tagLen) | printf "...%s" }}
               {{- end }}
               <span title="{{ . }}">{{- $tag  -}}</span>
             </div>
