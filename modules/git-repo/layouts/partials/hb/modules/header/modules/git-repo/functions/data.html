@@ -11,8 +11,10 @@
     {{- $data.Set "Stars" .stargazers_count }}
     {{- $data.Set "Forks" .forks_count }}
   {{- end }}
-  {{- with getJSON (printf "https://api.github.com/repos/%s/%s/releases/latest" .owner .name) $opts }}
-    {{- $data.Set "Tag" .tag_name }}
+  {{- if default true site.Params.hb.header.git_repo.tag }}
+    {{- with getJSON (printf "https://api.github.com/repos/%s/%s/releases/latest" .owner .name) $opts }}
+      {{- $data.Set "Tag" .tag_name }}
+    {{- end }}
   {{- end }}
 {{- else }}
   {{- warnf "[github.com/hbstack/header/modules/git-repo] unsupported service: %s" .service }}
