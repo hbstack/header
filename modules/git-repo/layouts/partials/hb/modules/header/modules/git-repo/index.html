@@ -23,6 +23,12 @@
               <span title="{{ . }}">{{- $tag  -}}</span>
             </div>
           {{- end }}
+          {{- with .DockerPulls }}
+            <div class="hb-header-git-repo-docker-pulls me-1">
+              {{- partial "icons/icon" (dict "vendor" "bs" "name" "download" "width" "1em" "height" "1em") -}}
+              <span>{{- partial "hb/modules/header/modules/git-repo/functions/humanize" . -}}</span>
+            </div>
+          {{- end }}
           <div class="hb-header-git-repo-stars me-1">
             {{- partial "icons/icon" (dict "vendor" "bs" "name" "star" "width" "1em" "height" "1em") -}}
             <span>{{- partial "hb/modules/header/modules/git-repo/functions/humanize" .Stars -}}</span>

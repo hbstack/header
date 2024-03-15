@@ -1,5 +1,6 @@
 {{- $data := newScratch }}
 {{- $service := default "github" .service }}
+{{- $params := default dict site.Params.hb.header.git_repo }}
 {{- if eq $service "github" }}
   {{- $opts := dict }}
   {{- with getenv "GITHUB_TOKEN" }}
@@ -11,9 +12,14 @@
     {{- $data.Set "Stars" .stargazers_count }}
     {{- $data.Set "Forks" .forks_count }}
   {{- end }}
-  {{- if default true site.Params.hb.header.git_repo.tag }}
+  {{- if default true $params.tag }}
     {{- with getJSON (printf "https://api.github.com/repos/%s/%s/releases/latest" .owner .name) $opts }}
       {{- $data.Set "Tag" .tag_name }}
+    {{- end }}
+  {{- end }}
+  {{- with $params.docker }}
+    {{- with getJSON (printf "https://hub.docker.com/v2/repositories/%s/%s" .namespace .name) $opts }}
+      {{- $data.Set "DockerPulls" .pull_count }}
     {{- end }}
   {{- end }}
 {{- else }}
