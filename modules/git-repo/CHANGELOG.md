@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/hbstack/header/compare/modules/git-repo/v0.3.0...modules/git-repo/v0.4.0) (2024-03-15)
+
+
+### Features ✨
+
+* **git-repo:** allow showing docker pulls count ([#553](https://github.com/hbstack/header/issues/553)) ([f3e19fc](https://github.com/hbstack/header/commit/f3e19fcfe1e74b67a6585f93ff099fb01713ed25))
+
 ## [0.3.0](https://github.com/hbstack/header/compare/modules/git-repo/v0.2.2...modules/git-repo/v0.3.0) (2024-03-12)
 
 
