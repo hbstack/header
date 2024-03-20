@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.14.3](https://github.com/hbstack/header/compare/v0.14.2...v0.14.3) (2024-03-20)
+
+
+### Bug Fixes 🐞
+
+* wrap dropdown menu header on small screen ([441b4b5](https://github.com/hbstack/header/commit/441b4b5a9506c577fe1b5d54a9735c63866210ef))
+
 ## [0.14.2](https://github.com/hbstack/header/compare/v0.14.1...v0.14.2) (2024-03-06)
 
 
