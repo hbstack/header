@@ -97,6 +97,13 @@ $hb-header-logo-bg: null !default;
     }
 }
 
+
+@include media-breakpoint-down($hb-header-breakpoint) {
+    .dropdown-header {
+        text-wrap: wrap;
+    }
+}
+
 .column-span-all {
     column-span: all;
 }
