@@ -1,23 +1,29 @@
 {{- $data := newScratch }}
 {{- $service := default "github" .service }}
 {{- if eq $service "github" }}
-  {{- $opts := dict }}
+  {{- $opts := newScratch }}
   {{- $ghToken := getenv "GITHUB_TOKEN" }}
   {{- with $ghToken }}
-    {{- $opts := dict "Authorization" (printf "Bearer %s" .) }}
+    {{- $opts.SetInMap "headers" "Authorization" (printf "Bearer %s" .) }}
   {{- end }}
-  {{- with getJSON (printf "https://api.github.com/users/%s" .name) $opts }}
-    {{- $data.Set "URL" .html_url }}
-    {{- $data.Set "Name" .name }}
-    {{- $data.Set "Repos" .public_repos }}
-    {{- $data.Set "Followers" .followers }}
-    {{- $data.Set "AvatarURL" (printf "%s&s=32" .avatar_url) }}
+  {{- with resources.GetRemote (printf "https://api.github.com/users/%s" .name) $opts.Values }}
+    {{- with .Err }}
+      {{- errorf "[git-org] unable to fetch org information from GitHub: %s." . }}
+    {{- else }}
+      {{- $org := .Content | transform.Unmarshal }}
+      {{- $data.Set "URL" $org.html_url }}
+      {{- $data.Set "Name" $org.name }}
+      {{- $data.Set "Repos" $org.public_repos }}
+      {{- $data.Set "Followers" $org.followers }}
+      {{- $data.Set "AvatarURL" (printf "%s&s=32" $org.avatar_url) }}
+    {{- end }}
   {{- end }}
   {{/* Get stars. */}}
   {{- $stars := 0 }}
-  {{- with getJSON (printf "https://api.github.com/users/%s/repos?per_page=100" .name) $opts }}
+  {{- with resources.GetRemote (printf "https://api.github.com/users/%s/repos?per_page=100" .name) $opts.Values }}
     {{- $repos := slice }}
-    {{- range . }}
+    {{- $reposResponse := .Content | transform.Unmarshal }}
+    {{- range $reposResponse }}
       {{- $repos = $repos | append (printf "repo:%s" .full_name) }}
     {{- end }}
     {{- $graphqlAPI := "https://api.github.com/graphql" }}
