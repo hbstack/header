@@ -1,4 +1,4 @@
-{{- if gt . 1e5 -}}
+{{- if gt . 1e6 -}}
   {{- printf "%.1fm" (div . 1e6) -}}
 {{- else if gt . 1e3 -}}
   {{- printf "%.1fk" (div . 1e3) -}}
