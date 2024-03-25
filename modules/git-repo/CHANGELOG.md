@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.4.1](https://github.com/hbstack/header/compare/modules/git-repo/v0.4.0...modules/git-repo/v0.4.1) (2024-03-25)
+
+
+### Bug Fixes 🐞
+
+* **git-org:** correct the humanize function for `m` unit. ([93fe92a](https://github.com/hbstack/header/commit/93fe92ad9e69d974e13b621a1e6422fd38045647))
+* **git-org:** replace `getJSON` with `resources.getRemote`. ([93fe92a](https://github.com/hbstack/header/commit/93fe92ad9e69d974e13b621a1e6422fd38045647))
+* **git-repo:** correct the humanize function for "m" unit. ([#564](https://github.com/hbstack/header/issues/564)) ([93fe92a](https://github.com/hbstack/header/commit/93fe92ad9e69d974e13b621a1e6422fd38045647))
+* **git-repo:** replace `getJSON` with `resources.getRemote`. ([93fe92a](https://github.com/hbstack/header/commit/93fe92ad9e69d974e13b621a1e6422fd38045647))
+
 ## [0.4.0](https://github.com/hbstack/header/compare/modules/git-repo/v0.3.0...modules/git-repo/v0.4.0) (2024-03-15)
 
 
