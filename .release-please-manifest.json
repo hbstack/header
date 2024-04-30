@@ -9,7 +9,7 @@
     "modules/language-picker": "0.1.24",
     "modules/news": "0.2.2",
     "modules/search": "0.1.35",
-    "modules/socials": "0.1.28",
+    "modules/socials": "0.2.0",
     "modules/theme-toggle": "0.4.4",
     "themes/classic": "0.2.17",
     "themes/pills": "0.2.18",

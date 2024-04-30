@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/hbstack/header/compare/modules/socials/v0.1.28...modules/socials/v0.2.0) (2024-04-30)
+
+
+### Features ✨
+
+* **socials:** accepts params in type `array` ([#583](https://github.com/hbstack/header/issues/583)) ([a74e4a9](https://github.com/hbstack/header/commit/a74e4a949b5a45f65a4eb75943e49ceffa0bcf45)), closes [#582](https://github.com/hbstack/header/issues/582)
+
 ## [0.1.28](https://github.com/hbstack/header/compare/modules/socials/v0.1.27...modules/socials/v0.1.28) (2023-10-31)
 
 
