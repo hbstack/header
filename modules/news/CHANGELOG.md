@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/hbstack/header/compare/modules/news/v0.2.2...modules/news/v0.3.0) (2024-05-28)
+
+
+### Features ✨
+
+* **i18n:** add Vietnamese translations ([1a12c5c](https://github.com/hbstack/header/commit/1a12c5c6aa2e385b4b3e18cbea4e1c74a67690b4))
+
 ## [0.2.2](https://github.com/hbstack/header/compare/modules/news/v0.2.1...modules/news/v0.2.2) (2024-01-05)
 
 
