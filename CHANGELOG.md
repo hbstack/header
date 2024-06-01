@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.14.4](https://github.com/hbstack/header/compare/v0.14.3...v0.14.4) (2024-06-01)
+
+
+### Performance Improvements ⚡️
+
+* cache partials ([#600](https://github.com/hbstack/header/issues/600)) ([0deb126](https://github.com/hbstack/header/commit/0deb12621949aef402fd41c7bf75aa8603b8c7f9)), closes [#599](https://github.com/hbstack/header/issues/599)
+* use JavaScript to determind current active menu ([0deb126](https://github.com/hbstack/header/commit/0deb12621949aef402fd41c7bf75aa8603b8c7f9))
+
 ## [0.14.3](https://github.com/hbstack/header/compare/v0.14.2...v0.14.3) (2024-03-20)
 
 
