@@ -5,3 +5,4 @@ path = "github.com/hbstack/header"
 path = "github.com/hbstack/search"
 
 [params.hugopress.modules.hb-header-search.hooks.hb-header-togglers-begin]
+cacheable = true

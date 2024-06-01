@@ -5,5 +5,7 @@ path = "github.com/hbstack/header"
 style = "switch"
 
 [params.hugopress.modules.hb-header-theme-toggle.attributes.document]
+cacheable = true
 
 [params.hugopress.modules.hb-header-theme-toggle.hooks.hb-header-panel]
+cacheable = true

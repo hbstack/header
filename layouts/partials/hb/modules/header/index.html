@@ -43,7 +43,7 @@
             {{- $page := . }}
             {{- range $i, $menu := .Site.Menus.main -}}
               {{- $menuCtx := dict "Menu" $menu "Page" $page "Index" $i }}
-              {{- partial "hb/modules/header/menu" $menuCtx }}
+              {{- partialCached "hb/modules/header/menu" $menuCtx $menu $page $i }}
             {{- end -}}
           </ul>
           {{/* Menus end. */}}
@@ -64,4 +64,4 @@
   </nav>
   {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-end" "Page" .) }}
 </header>
-{{ partial "hb/modules/header/init.html" . }}
+{{ partialCached "hb/modules/header/init.html" . }}
