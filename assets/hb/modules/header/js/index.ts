@@ -9,6 +9,16 @@ import "js/bootstrap/src/offcanvas";
             return;
         }
 
+        const menus = nav.querySelectorAll(`a[href="${window.location.href}"], a[href="${window.location.pathname}"]`)
+        menus.forEach(menu => {
+            menu.classList.add('active')
+            menu.setAttribute('aria-current', 'page')
+            menu.parentElement?.classList.add('active')
+            const parent = menu.closest('.hb-header-menu')
+            parent?.classList.add('active')
+            parent?.querySelector('.nav-link:first-child')?.classList.add('active')
+        })
+
         const shadow = () => {
             nav.classList.add('shadow-sm')
         }

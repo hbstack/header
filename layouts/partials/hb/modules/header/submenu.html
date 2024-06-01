@@ -2,7 +2,7 @@
 {{- $baseURL := site.BaseURL }}
 {{- $menu := .Menu }}
 {{- $url := $menu.URL | absURL }}
-{{- $active := partial "hb/modules/header/functions/is-current" (dict "Page" .Page "Menu" .Menu) }}
+{{- $active := false }}
 {{- $isExternal := not (hasPrefix $url $baseURL) }}
 {{- $target := "" }}
 {{- $rel := "" }}

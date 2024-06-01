@@ -3,7 +3,7 @@
 {{- $menu := .Menu }}
 {{- $baseURL := site.BaseURL }}
 {{- $url := $menu.URL | absURL -}}
-{{- $current := partial "hb/modules/header/functions/is-current" (dict "Page" .Page "Menu" .Menu) }}
+{{- $current := false }}
 {{- $isExternal := not (hasPrefix $url $baseURL) }}
 {{- $target := "" }}
 {{- $rel := "" }}
@@ -78,7 +78,7 @@
       {{- end }}
       {{- range $i, $child := $menu.Children }}
         {{- $submenuCtx := dict "Menu" $child "Page" $page "Index" $i "Total" $total }}
-        {{- partial "hb/modules/header/submenu" $submenuCtx }}
+        {{- partialCached "hb/modules/header/submenu" $submenuCtx $submenuCtx }}
       {{- end }}
     </ul>
   </li>
