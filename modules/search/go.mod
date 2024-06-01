@@ -7,7 +7,7 @@ require (
 	github.com/hbstack/header v0.14.3 // indirect
 	github.com/hbstack/search v0.2.1 // indirect
 	github.com/hugomods/base v0.7.0 // indirect
-	github.com/hugomods/hugopress v0.2.3 // indirect
+	github.com/hugomods/hugopress v0.4.0 // indirect
 	github.com/hugomods/icons v0.6.3 // indirect
 	github.com/hugomods/search v0.14.0 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
