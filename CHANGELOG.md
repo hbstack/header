@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.14.5](https://github.com/hbstack/header/compare/v0.14.4...v0.14.5) (2024-06-02)
+
+
+### Performance Improvements ⚡️
+
+* cache hugopress/functions/has-modules partial ([#603](https://github.com/hbstack/header/issues/603)) ([2ebfced](https://github.com/hbstack/header/commit/2ebfced5c60d98b8b44b8b638151f317e735df8c))
+* cache things as much as possible ([2ebfced](https://github.com/hbstack/header/commit/2ebfced5c60d98b8b44b8b638151f317e735df8c))
+
 ## [0.14.4](https://github.com/hbstack/header/compare/v0.14.3...v0.14.4) (2024-06-01)
 
 
