@@ -49,7 +49,7 @@
           {{/* Menus end. */}}
           {{/* Panel begin. */}}
           <ul class="hb-header-panel navbar-nav flex-row flex-wrap">
-            {{- if partial "hugopress/functions/has-modules" "hb-header-panel" }}
+            {{- if partialCached "hugopress/functions/has-modules" "hb-header-panel" "hb-header-panel" }}
               <li class="nav-item py-2 py-{{ $breakpoint }}-1 col-12 col-{{ $breakpoint }}-auto">
                 <hr class="d-{{ $breakpoint }}-none my-2 text-body-50" />
               </li>
