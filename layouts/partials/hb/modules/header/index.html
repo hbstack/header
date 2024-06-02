@@ -11,15 +11,7 @@
       {{- partialCached "hb/modules/header/brand" . }}
       <div class="d-flex order-5">
         {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-togglers-begin" "Page" .) }}
-        <button
-          class="navbar-toggler border-0 shadow-none px-2"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#hb-header-content"
-          aria-controls="hb-header-content"
-          aria-label="Toggle navigation">
-          {{- partial "icons/icon" (dict "vendor" "bootstrap" "name" "three-dots" "height" "1.25em" "width" "1.25em") }}
-        </button>
+        {{ partialCached "hb/modules/header/toggler" . }}
         {{ partial "hugopress/functions/render-hooks" (dict "Name" "hb-header-togglers-end" "Page" .) }}
       </div>
       <div
@@ -39,17 +31,11 @@
         </div>
         <div class="offcanvas-body">
           {{/* Menus begin. */}}
-          <ul class="hb-header-menus navbar-nav flex-row flex-wrap">
-            {{- $page := . }}
-            {{- range $i, $menu := .Site.Menus.main -}}
-              {{- $menuCtx := dict "Menu" $menu "Page" $page "Index" $i }}
-              {{- partialCached "hb/modules/header/menu" $menuCtx $menu $page $i }}
-            {{- end -}}
-          </ul>
+          {{- partialCached "hb/modules/header/menus" . }}
           {{/* Menus end. */}}
           {{/* Panel begin. */}}
           <ul class="hb-header-panel navbar-nav flex-row flex-wrap">
-            {{- if partial "hugopress/functions/has-modules" "hb-header-panel" }}
+            {{- if partialCached "hugopress/functions/has-modules" "hb-header-panel" "hb-header-panel" }}
               <li class="nav-item py-2 py-{{ $breakpoint }}-1 col-12 col-{{ $breakpoint }}-auto">
                 <hr class="d-{{ $breakpoint }}-none my-2 text-body-50" />
               </li>

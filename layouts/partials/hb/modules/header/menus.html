@@ -1,0 +1,7 @@
+<ul class="hb-header-menus navbar-nav flex-row flex-wrap">
+  {{- $page := . }}
+  {{- range $i, $menu := site.Menus.main -}}
+    {{- $menuCtx := dict "Menu" $menu "Page" $page "Index" $i }}
+    {{- partialCached "hb/modules/header/menu" $menuCtx $menu $page $i }}
+  {{- end -}}
+</ul>
