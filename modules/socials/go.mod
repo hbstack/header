@@ -9,6 +9,6 @@ require (
 	github.com/hugomods/base v0.7.0 // indirect
 	github.com/hugomods/hugopress v0.4.0 // indirect
 	github.com/hugomods/icons v0.6.4 // indirect
-	github.com/hugomods/icons/vendors/simple-icons v1.0.40 // indirect
+	github.com/hugomods/icons/vendors/simple-icons v1.0.41 // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )
