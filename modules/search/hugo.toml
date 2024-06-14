@@ -6,3 +6,4 @@ path = "github.com/hbstack/search"
 
 [params.hugopress.modules.hb-header-search.hooks.hb-header-togglers-begin]
 cacheable = true
+partial = "hb/modules/header-search/index"

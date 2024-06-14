@@ -6,3 +6,4 @@ path = "github.com/hugomods/icons/vendors/bootstrap"
 
 [params.hugopress.modules.hb-header-apps.hooks.hb-header-panel]
 cacheable = true
+partial = "hb/modules/header-apps/index"

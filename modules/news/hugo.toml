@@ -2,6 +2,8 @@
 path = "github.com/hbstack/header"
 
 [params.hugopress.modules.hb-header-news.hooks.hb-header-togglers-begin]
+cacheable = true
+partial = "hb/modules/header-news/index"
 
 [params.hb.header.news]
 sections = ["news"]

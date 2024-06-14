@@ -6,6 +6,7 @@ cacheable = true
 
 [params.hugopress.modules.hb-header-gcse.hooks.hb-header-togglers-begin]
 cacheable = true
+partial = "hb/modules/header-gcse/index"
 
 [params.hb.header.gcse]
 id = ""
