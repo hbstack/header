@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.2](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.5.1...modules/theme-toggle/v0.5.2) (2024-06-15)
+
+
+### Performance Improvements ⚡️
+
+* **hugopress:** include partials directly ([#614](https://github.com/hbstack/header/issues/614)) ([9465fb6](https://github.com/hbstack/header/commit/9465fb634f2711058b664659dccb9ce42ef3ad00))
+
 ## [0.5.1](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.5.0...modules/theme-toggle/v0.5.1) (2024-06-01)
 
 
