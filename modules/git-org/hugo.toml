@@ -3,3 +3,4 @@ path = "github.com/hbstack/header"
 
 [params.hugopress.modules.hb-header-git-org.hooks.hb-header-togglers-end]
 cacheable = true
+partial = "hb/modules/header/modules/git-org/index"

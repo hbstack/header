@@ -9,3 +9,4 @@ cacheable = true
 
 [params.hugopress.modules.hb-header-theme-toggle.hooks.hb-header-panel]
 cacheable = true
+partial = "hb/modules/header-theme-toggle/index"

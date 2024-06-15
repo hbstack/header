@@ -3,3 +3,4 @@ path = "github.com/hbstack/header"
 
 [params.hugopress.modules.hb-header-language-picker.hooks.hb-header-panel]
 cacheable = true
+partial = "hb/modules/header-language-picker/index"
