@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/hbstack/header/compare/modules/git-repo/v0.4.1...modules/git-repo/v0.4.2) (2024-06-15)
+
+
+### Performance Improvements ⚡️
+
+* **hugopress:** include partials directly ([#614](https://github.com/hbstack/header/issues/614)) ([9465fb6](https://github.com/hbstack/header/commit/9465fb634f2711058b664659dccb9ce42ef3ad00))
+
 ## [0.4.1](https://github.com/hbstack/header/compare/modules/git-repo/v0.4.0...modules/git-repo/v0.4.1) (2024-03-25)
 
 

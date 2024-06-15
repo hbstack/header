@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/hbstack/header/compare/modules/apps/v0.2.0...modules/apps/v0.2.1) (2024-06-15)
+
+
+### Performance Improvements ⚡️
+
+* **hugopress:** include partials directly ([#614](https://github.com/hbstack/header/issues/614)) ([9465fb6](https://github.com/hbstack/header/commit/9465fb634f2711058b664659dccb9ce42ef3ad00))
+
 ## [0.2.0](https://github.com/hbstack/header/compare/modules/apps/v0.1.2...modules/apps/v0.2.0) (2024-05-28)
 
 

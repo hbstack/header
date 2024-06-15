@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.37](https://github.com/hbstack/header/compare/modules/search/v0.1.36...modules/search/v0.1.37) (2024-06-15)
+
+
+### Performance Improvements ⚡️
+
+* **hugopress:** include partials directly ([#614](https://github.com/hbstack/header/issues/614)) ([9465fb6](https://github.com/hbstack/header/commit/9465fb634f2711058b664659dccb9ce42ef3ad00))
+
 ## [0.1.36](https://github.com/hbstack/header/compare/modules/search/v0.1.35...modules/search/v0.1.36) (2024-06-01)
 
 
