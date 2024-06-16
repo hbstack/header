@@ -6,6 +6,7 @@ github.com/hbstack/header v0.14.5/go.mod h1:W7eolpYJctsTD8GVFEj09Ogbqqy8OAqcxBEb
 github.com/hugomods/base v0.7.0 h1:KEZ1HrZdkx1Yt8BKE750a+zJOusLz9iefU2clqw6duc=
 github.com/hugomods/base v0.7.0/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/base v0.7.1/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
+github.com/hugomods/base v0.7.2/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/docsearch v0.1.1 h1:AWeoN1RkcSTxsAtA6BAZgmpHYB/9i7hw5kUhQ/ZnM+o=
 github.com/hugomods/docsearch v0.1.1/go.mod h1:vevXNQ1mFdKq7tt6owqcg+Y2BB3slumVKINV0SwgyCs=
 github.com/hugomods/hugopress v0.4.1 h1:0wfSqY8+SehXLkBo0BSf2uMsBfnFBYOQJSmU72958+s=
