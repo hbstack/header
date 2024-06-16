@@ -8,6 +8,7 @@ github.com/hbstack/search v0.2.2/go.mod h1:sVNCCvokrCfydqCNF/q7kcAd+U73a7Y/0P+v8
 github.com/hugomods/base v0.7.0 h1:KEZ1HrZdkx1Yt8BKE750a+zJOusLz9iefU2clqw6duc=
 github.com/hugomods/base v0.7.0/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/base v0.7.1/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
+github.com/hugomods/base v0.7.2/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/hugopress v0.4.1 h1:0wfSqY8+SehXLkBo0BSf2uMsBfnFBYOQJSmU72958+s=
 github.com/hugomods/hugopress v0.4.1/go.mod h1:CRYvr60xOkZOf4Atkuj+uEj2EH5pjJ39Ws3aJAkoMkA=
 github.com/hugomods/hugopress v0.5.0/go.mod h1:CRYvr60xOkZOf4Atkuj+uEj2EH5pjJ39Ws3aJAkoMkA=
