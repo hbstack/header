@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.14.6](https://github.com/hbstack/header/compare/v0.14.5...v0.14.6) (2024-06-17)
+
+
+### Bug Fixes 🐞
+
+* detect menus state on detailed pages ([#623](https://github.com/hbstack/header/issues/623)) ([f723ec1](https://github.com/hbstack/header/commit/f723ec14aea362c70b5576c2b90752fef6917bd2))
+
 ## [0.14.5](https://github.com/hbstack/header/compare/v0.14.4...v0.14.5) (2024-06-02)
 
 
