@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/hbstack/header/compare/modules/socials/v0.2.1...modules/socials/v0.2.2) (2024-06-29)
+
+
+### Styles 🎨
+
+* **socials:** add gaps between social links on small screen ([#627](https://github.com/hbstack/header/issues/627)) ([c8fe82a](https://github.com/hbstack/header/commit/c8fe82aea2b1cc704c06e427985419aafa717037))
+
 ## [0.2.1](https://github.com/hbstack/header/compare/modules/socials/v0.2.0...modules/socials/v0.2.1) (2024-06-15)
 
 
