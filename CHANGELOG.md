@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.15.0](https://github.com/hbstack/header/compare/v0.14.6...v0.15.0) (2024-08-14)
+
+
+### Features ✨
+
+* add the divider parameter for menu entry ([#646](https://github.com/hbstack/header/issues/646)) ([991c214](https://github.com/hbstack/header/commit/991c2142d569aa441022b87478876da1d5a81fd4))
+
+
+### Bug Fixes 🐞
+
+* **deps:** update dependency stylelint-scss to v6.4.1 ([419d59f](https://github.com/hbstack/header/commit/419d59f8372c4e854135f187023cfc97a3dd69df))
+* **deps:** update dependency stylelint-scss to v6.5.0 ([b683dcc](https://github.com/hbstack/header/commit/b683dcce1995ad45bd3ba31618f93e3bc1209904))
+
 ## [0.14.6](https://github.com/hbstack/header/compare/v0.14.5...v0.14.6) (2024-06-17)
 
 
