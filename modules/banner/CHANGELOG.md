@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.2](https://github.com/hbstack/header/compare/modules/banner/v0.7.1...modules/banner/v0.7.2) (2024-08-22)
+
+
+### Bug Fixes 🐞
+
+* Dart Sass warning ([7bdc101](https://github.com/hbstack/header/commit/7bdc1013d5be38284628d99b4b54c49e13f35d04))
+
 ## [0.7.1](https://github.com/hbstack/header/compare/modules/banner/v0.7.0...modules/banner/v0.7.1) (2024-06-15)
 
 
