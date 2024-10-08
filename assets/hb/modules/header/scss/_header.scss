@@ -84,6 +84,16 @@ $hb-header-logo-bg: null !default;
     }
 }
 
+.hb-header-submenu {
+    color: inherit;
+}
+
+.dropdown-item-child {
+    &.active {
+        @extend .text-bg-light;
+    }
+}
+
 @include media-breakpoint-up($hb-header-breakpoint) {
     .hb-header-submenus {
         &.show {
