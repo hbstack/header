@@ -19,7 +19,11 @@ import "js/bootstrap/src/offcanvas";
         }
 
         const isMenuParent = (parent) => {
-            const href = parent.getAttribute('href') ?? ''
+            const href = parent.getAttribute('href')
+            if (!href) {
+                return false
+            }
+
             return window.location.href.indexOf(href) !== -1 || window.location.pathname.indexOf(href) !== -1
         }
 
