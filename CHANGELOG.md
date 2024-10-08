@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.16.0](https://github.com/hbstack/header/compare/v0.15.1...v0.16.0) (2024-10-08)
+
+
+### Features ✨
+
+* add support for third-level menus ([#695](https://github.com/hbstack/header/issues/695)) ([826fea8](https://github.com/hbstack/header/commit/826fea84a76445e86c512612fa4df75e066fbf0c))
+
+
+### Bug Fixes 🐞
+
+* **menu:** submenus alignments ([9ac3464](https://github.com/hbstack/header/commit/9ac3464a8577b85cc9c2fa60f3effab837211063))
+* **menu:** submenus overflow ([#692](https://github.com/hbstack/header/issues/692)) ([9ac3464](https://github.com/hbstack/header/commit/9ac3464a8577b85cc9c2fa60f3effab837211063))
+
 ## [0.15.1](https://github.com/hbstack/header/compare/v0.15.0...v0.15.1) (2024-10-08)
 
 
