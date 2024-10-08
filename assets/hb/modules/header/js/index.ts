@@ -13,6 +13,10 @@ import "js/bootstrap/src/offcanvas";
             menu.classList.add('active')
             menu.setAttribute('aria-current', 'page')
             menu.parentElement?.classList.add('active')
+            // active the 2nd level menu if current activated menu is 3rd level menu.
+            if (menu.classList.contains('dropdown-item-child')) {
+                menu.closest('.dropdown-item')?.classList.add('active')
+            }
             const parent = menu.closest('.hb-header-menu')
             parent?.classList.add('active')
             parent?.querySelector('.nav-link:first-child')?.classList.add('active')
