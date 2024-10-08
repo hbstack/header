@@ -22,7 +22,7 @@
     <hr class="dropdown-divider" />
   {{- else }}
     <a
-      class="hb-header-submenu dropdown-item d-flex align-items-center{{ cond $active ` active` `` }}"
+      class="hb-header-submenu dropdown-item d-flex h-100{{ cond $active ` active` `` }}"
       href="{{ $url }}"
       {{ with $target }}target="{{ . }}"{{ end }}
       {{ with $rel }}rel="{{ . }}"{{ end }}>
@@ -39,7 +39,7 @@
           {{- $menu.Name -}}
         </div>
         {{- with $description }}
-          <p class="dropdown-item-desc mb-0 text-wrap">{{- . -}}</p>
+          <p class="dropdown-item-desc mb-0 text-truncate">{{- . -}}</p>
         {{- end }}
       </div>
       {{- $menu.Post -}}

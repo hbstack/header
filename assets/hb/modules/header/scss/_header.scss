@@ -86,17 +86,26 @@ $hb-header-logo-bg: null !default;
 
 @include media-breakpoint-up($hb-header-breakpoint) {
     .hb-header-submenus {
-        &[data-columns="2"] {
-          column-count: 2;
+        &.show {
+          display: grid;
+          max-height: 80vh;
+          overflow: auto;
+        }
 
-          .hb-header-submenu {
-            max-width: 35vw;
-            overflow: hidden;
-          }
+        @for $cols from 2 through 2 {
+            &[data-columns="#{$cols}"] {
+                grid-template-columns: repeat($cols, 1fr);
+
+                .hb-header-submenu {
+                    .dropdown-item-desc {
+                        max-width: calc(70vw / $cols);
+                        overflow: hidden;
+                    }
+                }
+              }
         }
     }
 }
-
 
 @include media-breakpoint-down($hb-header-breakpoint) {
     .dropdown-header {
