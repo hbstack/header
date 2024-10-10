@@ -39,7 +39,7 @@ import "js/bootstrap/src/offcanvas";
         } else {
             let foundParent = false
             const submenus = Array.from(document.querySelectorAll('a.hb-header-submenu'))
-            // find parent menu from second-level menus.
+            // find parent menu from second-level and third-level menus.
             for (let menu of submenus) {
                 if (isMenuParent(menu)) {
                     activeMenu(menu)
