@@ -24,7 +24,7 @@
       class="dropdown-item d-flex flex-column">
       <a
         class="hb-header-submenu d-flex text-decoration-none"
-        href="{{ $url }}"
+        href="{{ cond (eq $menu.URL ``) `#` $url }}"
         {{ with $target }}target="{{ . }}"{{ end }}
         {{ with $rel }}rel="{{ . }}"{{ end }}>
         {{- $menu.Pre -}}
