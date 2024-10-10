@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.1](https://github.com/hbstack/header/compare/v0.16.0...v0.16.1) (2024-10-10)
+
+
+### Bug Fixes 🐞
+
+* **menu:** set href as `#` if URL is empty for second-level menus ([8794710](https://github.com/hbstack/header/commit/8794710204b88e7b8d6cd625095f8ddd6058849a))
+
 ## [0.16.0](https://github.com/hbstack/header/compare/v0.15.1...v0.16.0) (2024-10-08)
 
 
