@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.2](https://github.com/hbstack/header/compare/v0.16.1...v0.16.2) (2024-10-11)
+
+
+### Bug Fixes 🐞
+
+* third-level menus overflow ([#702](https://github.com/hbstack/header/issues/702)) ([dbd1bd6](https://github.com/hbstack/header/commit/dbd1bd644a896db0aa8ca0ada455066967a5a74b))
+
 ## [0.16.1](https://github.com/hbstack/header/compare/v0.16.0...v0.16.1) (2024-10-10)
 
 
