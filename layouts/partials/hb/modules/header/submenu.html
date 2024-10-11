@@ -46,7 +46,7 @@
         {{- $menu.Post -}}
       </a>
       {{- with $menu.Children }}
-        <div class="dropdown-item-children mt-2">
+        <div class="dropdown-item-children d-flex flex-wrap gap-1 mt-2">
           {{- range . }}
             {{- $childTarget := "" }}
             {{- $childRel := "" }}
