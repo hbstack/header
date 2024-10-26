@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.38](https://github.com/hbstack/header/compare/modules/search/v0.1.37...modules/search/v0.1.38) (2024-10-26)
+
+
+### Bug Fixes 🐞
+
+* **search:** disable autocomplete ([fcb63e2](https://github.com/hbstack/header/commit/fcb63e24807acaf26f52ad0a29333b8f7ef7160a))
+
 ## [0.1.37](https://github.com/hbstack/header/compare/modules/search/v0.1.36...modules/search/v0.1.37) (2024-06-15)
 
 
