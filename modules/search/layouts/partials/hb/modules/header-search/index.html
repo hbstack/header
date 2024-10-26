@@ -10,6 +10,7 @@
     <input
       class="form-control rounded-5 d-none d-lg-block ms-{{ $breakpoint }}-1"
       id="hb-header-search-input"
+      autocomplete="off"
       placeholder="{{ i18n `search` }}" />
     {{- with index site.Params.search "shortcut_search" }}
       <span class="hb-header-search-keys position-absolute d-none d-lg-block">
