@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.4](https://github.com/hbstack/header/compare/v0.16.3...v0.16.4) (2024-11-05)
+
+
+### Bug Fixes 🐞
+
+* avoid changing non-menu links state ([#730](https://github.com/hbstack/header/issues/730)) ([5a42f8f](https://github.com/hbstack/header/commit/5a42f8f4553c10a1e3dc9df844e5a9ea6338848e))
+
 ## [0.16.3](https://github.com/hbstack/header/compare/v0.16.2...v0.16.3) (2024-10-26)
 
 
