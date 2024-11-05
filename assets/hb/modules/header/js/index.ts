@@ -31,7 +31,7 @@ import "js/bootstrap/src/offcanvas";
             return window.location.href.indexOf(href) !== -1 || window.location.pathname.indexOf(href) !== -1
         }
 
-        const menus = nav.querySelectorAll(`a[href="${window.location.href}"], a[href="${window.location.pathname}"]`)
+        const menus = nav.querySelectorAll(`.hb-header-menus a[href="${window.location.href}"],.hb-header-menus a[href="${window.location.pathname}"]`)
         if (menus.length > 0) {
             menus.forEach(menu => {
                 activeMenu(menu)
