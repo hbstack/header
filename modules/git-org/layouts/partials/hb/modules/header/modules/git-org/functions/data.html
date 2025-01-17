@@ -6,10 +6,10 @@
   {{- with $ghToken }}
     {{- $opts.SetInMap "headers" "Authorization" (printf "Bearer %s" .) }}
   {{- end }}
-  {{- with resources.GetRemote (printf "https://api.github.com/users/%s" .name) $opts.Values }}
+  {{- with try (resources.GetRemote (printf "https://api.github.com/users/%s" .name) $opts.Values) }}
     {{- with .Err }}
       {{- errorf "[git-org] unable to fetch org information from GitHub: %s." . }}
-    {{- else }}
+    {{- else with .Value }}
       {{- $org := .Content | transform.Unmarshal }}
       {{- $data.Set "URL" $org.html_url }}
       {{- $data.Set "Name" $org.name }}
@@ -20,42 +20,46 @@
   {{- end }}
   {{/* Get stars. */}}
   {{- $stars := 0 }}
-  {{- with resources.GetRemote (printf "https://api.github.com/users/%s/repos?per_page=100" .name) $opts.Values }}
-    {{- $repos := slice }}
-    {{- $reposResponse := .Content | transform.Unmarshal }}
-    {{- range $reposResponse }}
-      {{- $repos = $repos | append (printf "repo:%s" .full_name) }}
-    {{- end }}
-    {{- $graphqlAPI := "https://api.github.com/graphql" }}
-    {{- $graphBody := dict "query" (printf `{
-      search(type: REPOSITORY, query: "%s", first: 100) {
-        nodes {
-          ... on Repository {
-            stargazerCount
+  {{- with try (resources.GetRemote (printf "https://api.github.com/users/%s/repos?per_page=100" .name) $opts.Values) }}
+    {{- with .Err }}
+      {{- warnf "[github.com/hbstack/header/modules/git-org] failed to calculate stars: %s" . }}
+    {{- else with .Value }}
+      {{- $repos := slice }}
+      {{- $reposResponse := .Content | transform.Unmarshal }}
+      {{- range $reposResponse }}
+        {{- $repos = $repos | append (printf "repo:%s" .full_name) }}
+      {{- end }}
+      {{- $graphqlAPI := "https://api.github.com/graphql" }}
+      {{- $graphBody := dict "query" (printf `{
+        search(type: REPOSITORY, query: "%s", first: 100) {
+          nodes {
+            ... on Repository {
+              stargazerCount
+            }
           }
         }
-      }
-    }` (delimit $repos " ")) }}
-    {{- $graphqlOpts := newScratch }}
-    {{- $graphqlOpts.Set "method" "post" }}
-    {{- $graphqlOpts.Set "body" (jsonify $graphBody) }}
-    {{- $graphqlOpts.SetInMap "headers" "Content-Type" "application/json" }}
-    {{- with $ghToken }}
-      {{- $graphqlOpts.SetInMap "headers" "Authorization" (printf "Bearer %s" .) }}
-      {{- with resources.GetRemote $graphqlAPI $graphqlOpts.Values }}
-        {{- with .Err }}
-          {{- errorf "[github.com/hbstack/header/modules/git-org] failed to get remote resource: %s" . }}
-        {{- else }}
-          {{- $content := .Content | transform.Unmarshal }}
-          {{- range default slice $content.data.search.nodes }}
-            {{- $stars = add $stars .stargazerCount }}
+      }` (delimit $repos " ")) }}
+      {{- $graphqlOpts := newScratch }}
+      {{- $graphqlOpts.Set "method" "post" }}
+      {{- $graphqlOpts.Set "body" (jsonify $graphBody) }}
+      {{- $graphqlOpts.SetInMap "headers" "Content-Type" "application/json" }}
+      {{- with $ghToken }}
+        {{- $graphqlOpts.SetInMap "headers" "Authorization" (printf "Bearer %s" .) }}
+        {{- with try (resources.GetRemote $graphqlAPI $graphqlOpts.Values) }}
+          {{- with .Err }}
+            {{- errorf "[github.com/hbstack/header/modules/git-org] failed to get remote resource: %s" . }}
+          {{- else with .Value }}
+            {{- $content := .Content | transform.Unmarshal }}
+            {{- range default slice $content.data.search.nodes }}
+              {{- $stars = add $stars .stargazerCount }}
+            {{- end }}
           {{- end }}
+        {{- else }}
+          {{- errorf "[github.com/hbstack/header/modules/git-org] failed to get remote resource: %s" $graphqlAPI }}
         {{- end }}
       {{- else }}
-        {{- errorf "[github.com/hbstack/header/modules/git-org] failed to get remote resource: %s" $graphqlAPI }}
+        {{- warnf "[github.com/hbstack/header/modules/git-org] skip stars calculating since GITHUB_TOKEN is not set." }}
       {{- end }}
-    {{- else }}
-      {{- warnf "[github.com/hbstack/header/modules/git-org] skip stars calculating since GITHUB_TOKEN is not set." }}
     {{- end }}
   {{- end }}
   {{- $data.Set "Stars" $stars }}
