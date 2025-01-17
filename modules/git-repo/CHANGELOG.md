@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.3](https://github.com/hbstack/header/compare/modules/git-repo/v0.4.2...modules/git-repo/v0.4.3) (2025-01-17)
+
+
+### Bug Fixes 🐞
+
+* **git-repo:** handle resources.GetRemote errors with the try expression ([#770](https://github.com/hbstack/header/issues/770)) ([a9b785e](https://github.com/hbstack/header/commit/a9b785e51516ba5832157847f0139b540b0c6399))
+
 ## [0.4.2](https://github.com/hbstack/header/compare/modules/git-repo/v0.4.1...modules/git-repo/v0.4.2) (2024-06-15)
 
 
