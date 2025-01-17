@@ -6,10 +6,10 @@
   {{- with getenv "GITHUB_TOKEN" }}
     {{- $opts.SetInMap "headers" "Authorization" (printf "Bearer %s" .) }}
   {{- end }}
-  {{- with resources.GetRemote (printf "https://api.github.com/repos/%s/%s" .owner .name) $opts.Values }}
+  {{- with try (resources.GetRemote (printf "https://api.github.com/repos/%s/%s" .owner .name) $opts.Values) }}
     {{- with .Err }}
       {{- errorf "[git-repo] unable to fetch repo information from GitHub: %s." . }}
-    {{- else }}
+    {{- else with .Value }}
       {{- $repo := .Content | transform.Unmarshal }}
       {{- $data.Set "Title" $repo.full_name }}
       {{- $data.Set "URL" $repo.html_url }}
@@ -18,20 +18,20 @@
     {{- end }}
   {{- end }}
   {{- if default true $params.tag }}
-    {{- with resources.GetRemote (printf "https://api.github.com/repos/%s/%s/releases/latest" .owner .name) $opts.Values }}
+    {{- with try (resources.GetRemote (printf "https://api.github.com/repos/%s/%s/releases/latest" .owner .name) $opts.Values) }}
       {{- with .Err }}
         {{- errorf "[git-repo] unable to fetch latest release from GitHub: %s." . }}
-      {{- else }}
+      {{- else with .Value }}
         {{- $release := .Content | transform.Unmarshal }}
         {{- $data.Set "Tag" $release.tag_name }}
       {{- end }}
     {{- end }}
   {{- end }}
   {{- with $params.docker }}
-    {{- with resources.GetRemote (printf "https://hub.docker.com/v2/repositories/%s/%s" .namespace .name) }}
+    {{- with try (resources.GetRemote (printf "https://hub.docker.com/v2/repositories/%s/%s" .namespace .name)) }}
       {{- with .Err }}
         {{- errorf "[git-repo] unable to fetch stats from DockerHub: %s." . }}
-      {{- else }}
+      {{- else with .Value }}
         {{- $dockerHubData := .Content | transform.Unmarshal }}
         {{- $data.Set "DockerPulls" $dockerHubData.pull_count }}
       {{- end }}
