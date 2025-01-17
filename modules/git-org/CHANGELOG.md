@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.5](https://github.com/hbstack/header/compare/modules/git-org/v0.2.4...modules/git-org/v0.2.5) (2025-01-17)
+
+
+### Bug Fixes 🐞
+
+* handle resources.GetRemote errors with the try expression ([#769](https://github.com/hbstack/header/issues/769)) ([c4c9d5d](https://github.com/hbstack/header/commit/c4c9d5de7f415d1410863a281790c1b593a29220))
+
 ## [0.2.4](https://github.com/hbstack/header/compare/modules/git-org/v0.2.3...modules/git-org/v0.2.4) (2024-06-15)
 
 
