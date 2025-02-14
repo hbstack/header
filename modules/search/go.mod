@@ -3,7 +3,7 @@ module github.com/hbstack/header/modules/search
 go 1.18
 
 require (
-	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 // indirect
+	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 // indirect
 	github.com/hbstack/header v0.16.5 // indirect
 	github.com/hbstack/search v0.2.2 // indirect
 	github.com/hugomods/base v0.7.2 // indirect
