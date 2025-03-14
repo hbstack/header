@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/hbstack/header/compare/modules/language-picker/v0.1.26...modules/language-picker/v0.2.0) (2025-03-14)
+
+
+### Features ✨
+
+* **language-picker:** use translation page if exists for current page ([#799](https://github.com/hbstack/header/issues/799)) ([a0f18cb](https://github.com/hbstack/header/commit/a0f18cbd0128d633d68b5ebf4c94374bf7b81f94)), closes [#372](https://github.com/hbstack/header/issues/372)
+
 ## [0.1.26](https://github.com/hbstack/header/compare/modules/language-picker/v0.1.25...modules/language-picker/v0.1.26) (2024-06-15)
 
 
