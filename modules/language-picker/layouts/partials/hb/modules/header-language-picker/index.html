@@ -1,5 +1,16 @@
 {{- $breakpoint := partialCached "hb/modules/header/functions/breakpoint" . }}
-{{- if gt (len .Sites) 1 }}
+{{- $translations := newScratch }}
+{{- range .AllTranslations }}
+  {{- $translations.SetInMap .Language.Lang "title" .Language.LanguageName }}
+  {{- $translations.SetInMap .Language.Lang "url" .Permalink }}
+{{- end }}
+{{- range .Sites }}
+  {{- if not ($translations.Get .Language.Lang) }}
+    {{- $translations.SetInMap .Language.Lang "title" .Language.LanguageName }}
+    {{- $translations.SetInMap .Language.Lang "url" .Home.Permalink }}
+  {{- end }}
+{{- end }}
+{{- if gt (len $translations.Values) 1 }}
   <li class="language-picker nav-item dropdown col-6 col-{{ $breakpoint }}-auto d-flex flex-column justify-content-start justify-content-{{ $breakpoint }}-center">
     <a
       class="btn btn-link nav-link py-2 px-0 px-{{ $breakpoint }}-2 d-flex justify-content-start justify-content-{{ $breakpoint }}-center align-items-center"
@@ -13,13 +24,13 @@
     </a>
 
     <ul class="language-picker-menu dropdown-menu dropdown-menu-end">
-      {{- range .Sites }}
+      {{- range $lang, $translation := $translations.Values }}
         <li>
           <a
-            class="language-picker-item dropdown-item{{ cond (eq .Language.Lang $.Language.Lang) ` active` `` }}"
-            href="{{ .Home.Permalink }}"
+            class="language-picker-item dropdown-item{{ cond (eq $lang $.Language.Lang) ` active` `` }}"
+            href="{{ .url }}"
           >
-            {{- default .Language.Lang .Language.LanguageName -}}
+            {{- .title -}}
           </a>
         </li>
       {{- end }}
