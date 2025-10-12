@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.4](https://github.com/hbstack/header/compare/modules/git-repo/v0.4.3...modules/git-repo/v0.4.4) (2025-10-12)
+
+
+### Bug Fixes 🐞
+
+* **git-repo:** correct the short form for million ([39099ea](https://github.com/hbstack/header/commit/39099ea81b0191404d6d8bbc94e0b1d73e74f852))
+
 ## [0.4.3](https://github.com/hbstack/header/compare/modules/git-repo/v0.4.2...modules/git-repo/v0.4.3) (2025-01-17)
 
 
