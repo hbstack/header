@@ -22,7 +22,7 @@
      * @returns {string}
      */
     const getTheme = (): string => {
-        const v = localStorage.getItem(THEME_KEY)
+        const v = localStorage.getItem(THEME_KEY) || document.documentElement.getAttribute('data-bs-theme')
         return v ? v : THEME_AUTO
     }
 
