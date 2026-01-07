@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.3](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.5.2...modules/theme-toggle/v0.5.3) (2026-01-07)
+
+
+### Bug Fixes 🐞
+
+* **theme-toggle:** comply with the default color ([7ff3d97](https://github.com/hbstack/header/commit/7ff3d9748807260827139dfbc93ef956e41f3a8f))
+
 ## [0.5.2](https://github.com/hbstack/header/compare/modules/theme-toggle/v0.5.1...modules/theme-toggle/v0.5.2) (2024-06-15)
 
 
