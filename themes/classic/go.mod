@@ -3,7 +3,7 @@ module github.com/hbstack/header/themes/classic
 go 1.19
 
 require (
-	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 // indirect
+	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20800 // indirect
 	github.com/hbstack/header v0.16.7 // indirect
 	github.com/hugomods/base v0.7.3 // indirect
 	github.com/hugomods/hugopress v0.5.2 // indirect
