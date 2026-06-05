@@ -10,6 +10,6 @@ require (
 	github.com/hugomods/hugopress v0.5.2 // indirect
 	github.com/hugomods/icons v0.6.6 // indirect
 	github.com/hugomods/search v0.20.0 // indirect
-	github.com/krisk/Fuse v7.4.1+incompatible // indirect
+	github.com/krisk/Fuse v7.4.2+incompatible // indirect
 	github.com/twbs/icons v1.13.1 // indirect
 )
