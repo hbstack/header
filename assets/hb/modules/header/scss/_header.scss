@@ -106,6 +106,12 @@ $hb-header-logo-bg: null !default;
             &[data-columns="#{$cols}"] {
                 grid-template-columns: repeat($cols, 1fr);
 
+                > li.column-span-all,
+                > li:has(> .dropdown-divider) {
+                    grid-column: 1 / -1;
+                    width: 100%;
+                }
+
                 .hb-header-submenu {
                     .dropdown-item-desc {
                         max-width: calc(70vw / $cols);
